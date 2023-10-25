@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Survey Form Example</h1>
+        <div class="survey-form">
+            <form>
+                <label for="name">Name</label><br/>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required /><br/><br/>
+
+                <label for="email">Email</label><br/>
+                <input type="text" name="email" id="email" placeholder="test@gmail.com" required /><br/><br/>
+
+                <label for="password">Password</label><br/>
+                <input type="password" name="password" id="password" placeholder="********" required /><br/><br/>
+
+                <label for="rollno">Roll No</label><br/>
+                <input type="number" name="rollno" id="rollno" placeholder="roll" required /><br/><br/>
+
+                <label for="course-rating-dropdown">How do you rate our courses?</label><br/>
+                <select name="courses" id="courses">
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Poor">Poor</option>
+                    <option value="Very Poor">Very Poor</option>
+                </select><br/><br/>
+
+                <label for="favorite-topic">Your Favorite Topic in HTML </label><br/>
+                <input type="checkbox" name="toipc1" value="Structural Elements" />Structural Elements <br/>
+                <input type="checkbox" name="toipc2" value="Links and List " />Links and List <br/>
+                <input type="checkbox" name="toipc3" value="HTML Media" />HTML Media <br/>
+                <input type="checkbox" name="toipc4" value="HTML Table" />HTML Table <br/>
+                <input type="checkbox" name="toipc5" value="Grouping Elements" />Grouping Elements <br/>
+                <input type="checkbox" name="toipc6" value="Forms" />Forms <br/><br/>
+
+                <label for="course-rating">Do you like HTML course?</label><br/>
+                <input type="radio" name="course" value="Yes" /> Yes
+                <input type="radio" name="course" value="No" /> No <br/><br/>
+
+                <label for="course-notes-label">Few Words about course</label><br/>
+                <textarea name="course-notes" id="course-notes" rows="5" cols="50" placeholder="types few words about this course"></textarea><br/><br/>
+
+                <button type="button" onclick="alert('Validating...')">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
