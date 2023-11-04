@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with CSS - Practice Code</title>
+    <style>
+        /* Element selector style applied */ 
+        p {
+            /*color: red;*/
+            text-align: center;
+        }
+
+        /* ID selector style applied */ 
+        #hworld {
+            color: blue;
+            margin-left: 300px;
+        }
+
+        /* CLASS selector style applied */ 
+        .same-one {
+            color: red;
+            text-align: center;
+        }
+        
+        /* Universal selector style applied */ 
+        * {
+            color: chocolate;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Element selector -->
+    <p>Every Paragraph will be affected by the style.</p>
+    <p id="para2">Me too!</p>
+    <p>And Me!</p>
+
+    <!-- ID selector -->
+    <p id="hworld">Hello World!</p>
+    <p>This paragraph is not affected by the style.</p>
+
+    <!-- Class selector -->
+    <h1 class="same-one">Red and Center Aligned Heading</h1>
+    <p class="same-one">Red and Center Aligned Paragraph</p>
+
+    <!-- Universal Selector -->
+    <h1>Hello World!</h1>
+    <p>Every Element will be affected by the style.</p>
+    <p>Me too!</p>
+    <p>And Me!</p>
+</body>
+</html>
