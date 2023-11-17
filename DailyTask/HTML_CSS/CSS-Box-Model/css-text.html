@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Text</title>
+    <style>
+        * {
+            background-color: black;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: darkgray;
+            text-align: justify;
+            /* text-transform:uppercase; */
+            /* letter-spacing: 5px; */
+        }
+        .decorate {
+            text-decoration:underline;
+            text-transform: uppercase;
+            text-decoration-style: double;
+            letter-spacing: 5px;
+            text-shadow: 5px 5px 8px red;
+        }
+        .para3 {
+            /* text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 5px red; */
+
+        letter-spacing: 5px;
+        text-transform:uppercase;
+        text-shadow: 5px 5px 8px red; 
+
+        }
+
+        .p1 {
+            font-family:'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+        .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .p3 {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style:oblique;
+            font-size: 30px;
+        } 
+
+        #a {
+            color: white;
+            display: contents;
+            padding: 10px; width: 200px;
+        }
+        #b {
+            display:inline;
+            color: blue;
+        }
+        #c {
+            display: inherit;
+        }
+        #d {
+            display: flex;
+            color: white;
+            flex-direction: row-reverse;
+        }
+        #e { 
+            display: none;
+        }
+        #f {
+            display:inline-flex;
+        }
+
+        img {
+            float: left;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        p #float1, #float2, #float3 {
+            text-align: justify;
+            /*letter-spacing: normal;
+            text-indent: 2cm;*/
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Css Text and Font Family Example</h1>
+        <p class="para3"> i love programming</p>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi sint in quis facere amet iste provident atque ipsam, laborum, deleniti illo repellat. Quas est recusandae eaque sequi assumenda. Ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod itaque aspernatur nisi repudiandae fuga doloribus magni deserunt odio ut quaerat, dolor at ducimus assumenda nobis, dolorem eligendi, consequuntur ullam! Eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores quibusdam esse pariatur quod. Quod ut quo voluptatem nobis sit minus maiores quas omnis repudiandae debitis recusandae, fugit harum animi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ea sapiente eius nam magnam sit atque, error unde velit nostrum quam cumque excepturi cum quo, esse veniam harum magni quidem!</p>
+        <p class="p2">Lorem ipsum <span class="decorate">dolor sit, amet consectetur adipisicing elit.</span> Itaque, laborum, earum amet aut aliquid reiciendis inventore vel fugit consequatur cupiditate et repellendus quidem. Totam hic temporibus soluta tenetur amet delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia ad, magni at facere architecto assumenda officia quas deleniti veniam dignissimos quod, autem quaerat maiores voluptates voluptatibus quos vero perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quam voluptatibus distinctio eum facere laboriosam inventore odit repellat eveniet at! Natus mollitia vel delectus iure, dignissimos corrupti sed. Blanditiis, suscipit?</p>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, laborum, earum amet aut aliquid reiciendis inventore vel fugit consequatur cupiditate et repellendus quidem. Totam hic temporibus soluta tenetur amet delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia ad, magni at facere architecto assumenda officia quas deleniti veniam dignissimos quod, autem quaerat maiores voluptates voluptatibus quos vero perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quam voluptatibus distinctio eum facere laboriosam inventore odit repellat eveniet at! Natus mollitia vel delectus iure, dignissimos corrupti sed. Blanditiis, suscipit?</p>
+    </section>
+
+    <section>
+        <h1>Display Properties Example</h1>
+        <div id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <p id="b">Voluptatum magnam necessitatibus labore voluptatibus in! Unde omnis delectus explicabo, quibusdam, dignissimos eum consectetur, cum illum repudiandae facere commodi saepe temporibus ratione.</p>
+        <p id="c">Harum quae reprehenderit. Quisquam assumenda laboriosam doloribus dolores.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laborum, aut ad obcaecati recusandae exercitationem accusantium. Minus vel fugit explicabo vitae sapiente labore architecto perferendis ad optio obcaecati, adipisci quibusdam?</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laborum, aut ad obcaecati recusandae exercitationem accusantium. Minus vel fugit explicabo vitae sapiente labore architecto perferendis ad optio obcaecati, adipisci quibusdam?</p>
+        <p id="f">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laborum, aut ad obcaecati recusandae exercitationem accusantium. Minus vel fugit explicabo vitae sapiente labore architecto perferendis ad optio obcaecati, adipisci quibusdam?</p>
+    </section>
+
+    <section>
+        <h1>Float Example</h1>
+        <img src="../../HTML/game-on-banner.png" />
+        <p id="float1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi sint in quis facere amet iste provident atque ipsam, laborum, deleniti illo repellat. Quas est recusandae eaque sequi assumenda. Ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod itaque aspernatur nisi repudiandae fuga doloribus magni deserunt odio ut quaerat, dolor at ducimus assumenda nobis, dolorem eligendi, consequuntur ullam! Eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores quibusdam esse pariatur quod. Quod ut quo voluptatem nobis sit minus maiores quas omnis repudiandae debitis recusandae, fugit harum animi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ea sapiente eius nam magnam sit atque, error unde velit nostrum quam cumque excepturi cum quo, esse veniam harum magni quidem!</p>
+        <p id="float2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi sint in quis facere amet iste provident atque ipsam, laborum, deleniti illo repellat. Quas est recusandae eaque sequi assumenda. Ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod itaque aspernatur nisi repudiandae fuga doloribus magni deserunt odio ut quaerat, dolor at ducimus assumenda nobis, dolorem eligendi, consequuntur ullam! Eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores quibusdam esse pariatur quod. Quod ut quo voluptatem nobis sit minus maiores quas omnis repudiandae debitis recusandae, fugit harum animi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ea sapiente eius nam magnam sit atque, error unde velit nostrum quam cumque excepturi cum quo, esse veniam harum magni quidem!</p>
+        <p id="float3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi sint in quis facere amet iste provident atque ipsam, laborum, deleniti illo repellat. Quas est recusandae eaque sequi assumenda. Ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod itaque aspernatur nisi repudiandae fuga doloribus magni deserunt odio ut quaerat, dolor at ducimus assumenda nobis, dolorem eligendi, consequuntur ullam! Eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores quibusdam esse pariatur quod. Quod ut quo voluptatem nobis sit minus maiores quas omnis repudiandae debitis recusandae, fugit harum animi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ea sapiente eius nam magnam sit atque, error unde velit nostrum quam cumque excepturi cum quo, esse veniam harum magni quidem!</p>
+    </section>
+</body>
+</html>

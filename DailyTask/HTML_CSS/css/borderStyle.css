@@ -1,0 +1,54 @@
+* {
+    background-color: #dfd4d4;
+}
+
+#div.borderStyle, p {
+    background-color: white;
+    border: 5px darkgrey;
+    padding: 10px;
+}
+
+div .dotted {
+    border-style: dotted;
+}
+
+div .dashed {
+    border-style:dashed;
+}
+
+div .solid {
+    border-style:solid;
+}
+
+div .double {
+    border-style:double;
+}
+
+div .groove {
+    border-style:groove;
+}
+
+div .ridge {
+    border-style:ridge;
+}
+
+div .insert {
+    border-style:inset;
+}
+
+div .outset {
+    border-style:outset;
+}
+
+div .noborder {
+    border-style:none;
+}
+
+div .hidden {
+    border-style:hidden;
+}
+
+div .mixed {
+    border-style: dashed double dotted solid;
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            background-color: rgb(214, 245, 255);
+        }
+
+        /* POSITION OF HTML ELEMENTS */
+        .item {
+            width: 200px;
+            height: 200px;
+            background: rgb(137, 137, 240);
+            margin: 40px 0px 0px 40px;
+            /* position:relative; */
+            /* top:20px; */
+        }
+
+        .item > div {
+            width: 200px;
+            height: 200px;
+            background: rgb(52, 52, 225);
+            margin: 40px 0px 0px 0px;
+            /* position: relative; */
+            /* top: 20px; */
+            /* left: 30px; */
+
+            right: 30px;
+            bottom: 20px;
+        }
+
+        .item2 {
+            width: 200px;
+            height: 200px;
+            background: rgb(20, 20, 55);
+            margin: 40px 0px 0px 40px;
+            position:relative;
+            /* top:20px; */
+        }
+
+        .item2 > div {
+            width: 50px;
+            height: 50px;
+            background: rgb(204, 57, 57);
+
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        .item3 {
+            width: 200px;
+            height: 200px;
+            background: rgb(215, 36, 191);
+            margin: 20px 0px opx 20px;
+            /* position: fixed;
+            top: 0; */
+
+        }
+
+        .item4 {
+            width: 200px;
+            height: 200px;
+            background: rgb(70, 214, 51);
+            position: sticky;
+            top: 20px;
+            /* z-index: 1000; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Yay We are learning positioning in css</h1> -->
+    <div class="item">
+        <div></div>
+    </div>
+    
+    <div class="item2">
+        <div></div>
+    </div>
+
+    <div class="item3">
+        <div>Fixed</div>
+    </div>
+
+    <div class="item4">
+        <div>Sticky</div>
+    </div>
+
+    <div class="item2">
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum odit consequuntur ab autem? Ab reiciendis ducimus hic asperiores deleniti illo quos magnam, vel ad amet non ratione fugit praesentium rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet amet molestias placeat odio quasi, labore expedita tempore necessitatibus? Reiciendis quaerat officiis animi tempore numquam repudiandae expedita, iure laboriosam! Animi!</p>
+</body>
+</html>
