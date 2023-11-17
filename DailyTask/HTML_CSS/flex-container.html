@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow CSS</title>
+    <style>
+        .flex-container {
+            background-color: rgb(237, 219, 219);
+            padding: 15px;
+            height: 600px;
+            display: flex;
+            flex-wrap: row wrap;
+            justify-content:space-around;
+        }
+
+        .item {
+            padding: 10px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+            width: 80px;
+            height: 150px;
+            text-align: center;
+        }
+        .red {
+            background-color: rgb(235, 107, 107);
+        }
+        .blue {
+            background-color: rgb(107, 107, 225);
+        }
+        .yellow {
+            background-color: rgb(227, 227, 100);
+            color:black;
+        }
+        .pink {
+            background-color: rgb(220, 126, 142);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Container </h1>
+
+    <div class="flex-container">
+        <div class="item red">1 Div</div>
+        <div class="item blue">2 Div</div>
+        <div class="item yellow">3 Div</div>
+        <div class="item pink">4 Div</div>
+        <div class="item red">5 Div</div>
+        <div class="item blue">6 Div</div>
+        <div class="item yellow">7 Div</div>
+        <div class="item pink">8 Div</div>
+    </div>
+</body>
+</html>

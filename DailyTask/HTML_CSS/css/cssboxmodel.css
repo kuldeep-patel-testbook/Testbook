@@ -1,0 +1,27 @@
+* {
+    background-color: #dfd4d4;
+    text-align: center;
+}
+img {
+    width: 350px;
+    height: 250px;
+}
+
+div {
+    border: 5px solid grey;
+    width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    color: blue;
+}
+
+#Content {
+    background-color: white;
+    justify-self: auto;
+    min-width: 300px;
+    max-width: 600px;
+
+    min-height: 150px;
+    max-height: 300px;
+    overflow: visible !important;
+}

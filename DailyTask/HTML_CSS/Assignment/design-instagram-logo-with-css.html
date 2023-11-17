@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Design an Instagram Logo </title>
+
+    <style>
+        .instagram-outer {
+            width: 150px;
+            height: 150px;
+            background: #ee2a7b radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            border-radius: 35px;
+            display: grid;
+            place-items: center;
+        }
+
+        .instagram-inner {
+            width: 120px;
+            height: 120px;
+            border: 10px solid #fff;
+            border-radius: 32px;
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+
+        /* center circle of logo */
+        .instagram-inner::before {
+            width: 45px;
+            height: 45px;
+            border: 10px solid #fff;
+            content: '';
+            border-radius: 50%;
+            /* background: transparent; */
+            /* position: relative; */
+        }
+
+        .instagram-inner::after {
+            width: 10px;
+            height: 10px;
+            border: 2px solid #fff;
+            content: '';
+            border-radius: 50%;
+            background: #fff;
+            top: 8px;
+            right: 10px;
+            position:absolute;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width:100vw;
+        } */
+
+    </style>
+
+</head>
+<body>
+    <!-- Create Instagram logo Using CSS Only -->
+    <!-- <div class="instagram"> -->
+        <div class="instagram-outer">
+            <div class="instagram-inner"></div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>
