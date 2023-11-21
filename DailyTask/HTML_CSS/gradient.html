@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Example</title>
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* @keyframes animazione {
+            0% {
+                background-size: 100%;
+            }
+            100% {
+                background-size:400%;
+            }
+        } */
+
+        
+        .gradient {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* background-image:radial-gradient(yellow 10%, green 10%, blue 25%, orange 35%); */
+            /* background-image: repeating-radial-gradient(circle, blue, red 10%); */
+            /* background-image: repeating-linear-gradient(to right,  blue, red 10%); */
+            /* border-radius:100%; */
+            /* animation: animazione 6s ease-in-out infinite alternate; */
+            /* background-image: conic-gradient(lightgreen 0deg 90deg, rgb(116, 18, 116) 90deg 180deg, lightcoral 180deg 270deg, blue 270deg); */
+            background-image: repeating-conic-gradient(red, blue 20%);
+            border-radius: 50%;
+        }
+        h3 {
+            /* text-decoration: underline red wavy; */
+            /* text-decoration-skip-ink: none; */
+            /* text-underline-position: above; */
+            text-shadow: 2px 3px 5px red, 2px 3px 5px blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Linear and Gradient and Conic Example</h3>
+    <div class="gradient"></div>
+</body>
+</html>
