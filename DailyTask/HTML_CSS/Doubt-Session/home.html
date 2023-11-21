@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Doubt session task</title>
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            height: 80px;
+            background-color: skyblue;
+            position: relative;
+            align-items: center;
+            justify-content:space-around;
+        }
+        .sideleft > img {
+            display: flex;
+            width:55px;
+            margin-right: 600px;
+        }
+        span {
+            color: white;
+        }
+        .sideright > a {
+            color: white;
+            text-transform: uppercase;
+            margin-left: 2em;           
+        }
+        .sideright > a:hover {
+            background-color: grey;
+        }
+
+        .container {    
+            background-color: rgb(240, 231, 231);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .card {
+            height: 260px;
+            width: 275px;
+            background: white;
+            display:inline-block;
+            border: solid 1px black;
+        }
+        
+        .card2 {
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        .card3 {
+            width: 150px;
+            height: 150px;
+            padding-left: 60px;
+        }
+
+        .card5 {
+            text-align: center;
+            color: tomato;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .cardText {
+            text-align: center;
+            color: tomato;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .card6 {
+            text-align: center;
+        }
+        .card6 > button {
+            background-color: tomato;
+            color: white;
+            padding: 5px;
+            padding: 5 10px;
+            font-weight: bold;
+        }
+
+        .sp {
+            background: tomato;
+            float: right;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="sideleft">
+            <img src="./pngegg.png" alt="AK Creative"/><span>AK Creative</span>
+        </div>
+        <div class="sideright">
+            <a>Home</a>
+            <a>Products</a>
+            <a>Cart</a>
+            <a>Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card2">PRODUCT 1<span class="sp">sale</span></div>
+            <div class="card3">
+                <img src="https://th.bing.com/th/id/OIP.oxk-NL-1_JfJUXFenTSzVAHaHK?rs=1&pid=ImgDetMain" height="150px">
+            </div>
+            <div class="card5">$19.99</div>
+            <div class="cardText">This is a custom product one</div>
+            <div class="card6"><button>ADD TO CART</button></div> 
+        </div>
+        <div class="card">
+            <div class="card2">PRODUCT 2<span class="sp">sale</span></div>
+            <div class="card3">
+                <img src="https://i.pinimg.com/736x/56/ca/9f/56ca9f1bd60588767fa1a6fbfcb166d8.jpg" height="150px">
+            </div>
+            <div class="card5">$19.99</div>
+            <div class="cardText">This is a custom product two</div>
+            <div class="card6"><button>ADD TO CART</button></div> 
+        </div>
+        <div class="card">
+            <div class="card2">PRODUCT 3<span class="sp">sale</span></div>
+            <div class="card3">
+                <img src="https://th.bing.com/th/id/OIP.nv7EHQlx98yKaYLbsvFAtgHaJX?rs=1&pid=ImgDetMain" height="150px">
+            </div>
+            <div class="card5">$19.99</div>
+            <div class="cardText">This is a custom product Three</div>
+            <div class="card6"><button>ADD TO CART</button></div> 
+        </div>
+    </div>
+</body>
+</html>
