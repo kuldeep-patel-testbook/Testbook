@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 'navbar section aside footer';
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+        #section {
+            grid-area: section;
+        }
+        #aside {
+            grid-area: aside;
+        }
+        #footer {
+            grid-area: footer;
+        }
+
+        .item {
+            background-color: lightgreen;
+            border: 2px solid black;
+            padding: 12px 23px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="navbar" class="item">
+            Home About US Contact US Gallery
+        </div>
+
+        <div id="section" class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab iste quidem error facilis corporis
+                voluptatum repudiandae perspiciatis deserunt consequuntur a doloribus nisi tempora doloremque atque
+                dolorum ullam facere exercitationem.Lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                unde odit distinctio adipisci doloremque ullam iste, delectus alias voluptatibus impedit at repudiandae.
+                Molestiae unde asperiores cum, quia doloribus quo tempora.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab iste quidem error facilis corporis
+                voluptatum repudiandae perspiciatis deserunt consequuntur a doloribus nisi tempora doloremque atque
+                dolorum ullam facere exercitationem.Lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                unde odit distinctio adipisci doloremque ullam iste, delectus alias voluptatibus impedit at repudiandae.
+                Molestiae unde asperiores cum, quia doloribus quo tempora.</p>
+        </div>
+        <div id="aside" class="item">
+            <p>loreum Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam et, cupiditate esse
+                quisquam praesentium quidem? Debitis neque nesciunt incidunt totam, modi perspiciatis earum autem. Rem
+                nesciunt placeat blanditiis accusantium.</p>
+        </div>
+        <div id="footer" class="item">
+            <p>This is a footer content</p>
+        </div>
+    </div>
+</body>
+
+</html>

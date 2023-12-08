@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1 Example</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.4fr 1fr 1fr 0.4fr;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'asidebar maincontent maincontent maincontent'
+            'asidebar section1 section2 section3'
+            'footer footer footer footer';
+            gap: 20px;
+            text-align: center;
+        }
+        #navbar {
+            grid-area: navbar;
+            background-color: lightseagreen;
+            padding-top: 30px;
+            border-radius: 5px;
+        }
+
+        #asidebar {
+            grid-area: asidebar;
+            background-color: blueviolet;
+            padding-top: 30px;
+            border-radius: 5px;
+        }
+
+        #maincontent {
+            grid-area: maincontent;
+            background-color: lightcoral;
+            padding-top: 30px;
+            border-radius: 10px;
+        }
+        .section1 {
+            grid-area: section1;
+            background-color: lightsalmon;
+            padding-top: 30px;
+            border-radius: 10px;
+        }
+        .section2 {
+            grid-area: section2;
+            background-color: lightslategray;
+            padding-top: 30px;
+            border-radius: 10px;
+        }
+        .section3 {
+            grid-area: section3;
+            background-color: limegreen;
+            padding-top: 30px;
+            border-radius: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: violet;
+            padding-top: 30px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <nav id="navbar">
+            Nav Bar Section
+        </nav>
+        
+        <main id="maincontent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, non modi odit, aperiam repellendus, veniam
+            quibusdam assumenda omnis hic numquam saepe ipsam labore quis. Optio sit fugiat suscipit veniam laboriosam!
+        </main>
+
+        <div id="asidebar"></div>
+
+        <div class="section1">Section 1</div>
+        <div class="section2">Section 2</div>
+        <div class="section3">Section 3</div>
+        <footer>Footer Section</footer>
+    </div>
+</body>
+
+</html>

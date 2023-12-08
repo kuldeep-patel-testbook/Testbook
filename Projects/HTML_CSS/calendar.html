@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Animation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .calendar-wrapper {
+            border: 1px solid gray;
+            max-width: 280px;
+            font: 100% system-ui;
+        }
+
+        .calendar {
+            list-style-type: none;
+            text-align: center;
+            display:grid;
+            grid-template-columns:repeat(7, 1fr);
+        }
+
+        .dayname {
+            background-color: #eee;
+        }
+
+        .firstday {
+            grid-column-start: 5;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        li {
+            padding: 5px;
+        }
+        .holiday {
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+        .calendar-wrapper > h5 {
+            margin-bottom: 10px;
+        }
+
+        h5 > marquee > span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calendar-wrapper">
+        <h1>December 2023</h1>
+        <h5><marquee>*Offices will be closed in 
+            <span>25</span> and 
+            <span>31</span> for the holidays*.</marquee> </h5>
+        <ol class="calendar">
+            <li class="dayname">Mon</li>
+            <li class="dayname">Tue</li>
+            <li class="dayname">Wed</li>
+            <li class="dayname">Thu</li>
+            <li class="dayname">Fri</li>
+            <li class="dayname">Sat</li>
+            <li class="dayname">Sun</li>
+
+            <li class="firstday">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li class="holiday">25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li class="holiday">31</li>
+        </ol>
+    </div>
+    
+</body>
+</html>
