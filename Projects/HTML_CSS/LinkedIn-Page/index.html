@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/left-panel.css" rel="stylesheet" type="text/css" />
+    <link href="./css/middle-panel.css" rel="stylesheet" type="text/css" />
+    <link href="./css/right-panel.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/82422a484a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Create a Navigation Bar -->
+        <nav>
+            <div class="navigation-bar">
+                <!-- Create a linkedin logo div -->
+                <div class="logo-left">
+                    <img src="./images/LinkedIn logo.png" alt="LinkedIn" title="LinkedIn" />
+                </div>
+                <!-- Create a searchbar div -->
+                <div class="searchbar">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" name="search_bar" placeholder="Search" />
+                </div>
+                <!-- Create a navigation menu div -->
+                <div class="navigation-menu">
+
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-house-chimney"></i> <span> Home </span>
+                    </div>
+
+                    <div class="nav-icon">
+                        <i class='fa-solid fa-user-group'></i> <span> My Network </span>
+                    </div>
+
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-briefcase"></i> <span> Jobs </span>
+                    </div>
+
+                    <div class="nav-icon">
+                        <span class="position-count"> 3 </span>
+                        <i class="fa-solid fa-message"></i> <span> Messaging </span>
+                    </div>
+
+                    <div class="nav-icon">
+                        <span class="position-count"> 3 </span>
+                        <i class="fa-solid fa-bell"></i> <span> Notifications </span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- User Profile Section -->
+                    <div class="nav-icon">
+                        <img src="./images/Profile image.png" alt="usericon" title="usericon" />
+                        <div>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- Try Premium Free Section -->
+                    <div class="premium">
+                        <a> Try Premium Free for 1 Month </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- create container div and divide into three div-->
+    <div class="container">
+
+        <!-- Create a left content div -->
+        <div class="left-panel">
+
+            <div class="upper-section">
+                <!-- Create a Profile Section div-->
+                <div class="profile-section">
+                    <img src="./images/background.jpg" alt="background" title="background" id="background" />
+                    <img src="./images/Profile image.png" alt="profile-image" title="profile-image" id="profile-pic" />
+                    <div id="name">Kuldeep Patel</div>
+                    <div id="position">Software Developer at Encora</div>
+                </div>
+
+                <!-- Create a connection css div-->
+                <div class="section" id="connection">
+                    <span class="c1">
+                        <span id="connection1">Connnections</span>
+                        <span id="connection2">Grow your network</span>
+                    </span>
+                    <span class="count">30</span>
+                </div>
+
+                <!-- Create a viewed profile div-->
+                <div class="section" id="c2">
+                    <span>
+                        <span id="connection1">Who viewed your profile</span>
+                    </span>
+                    <span class="count">30</span>
+                </div>
+
+                <!-- Create a premium div-->
+                <div class="section" id="premium">
+                    <span id="premium1">Access exclusive tools and sights</span>
+                    <a href="#">Try premium for one month</a>
+                </div>
+
+                <!-- Create a my items div-->
+                <div class="section" id="myitems">
+                    <div>
+                        <i class="fa-solid fa-bookmark"></i><span>My items</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Create a recent section div-->
+            <div class="property" id="recent-topics">
+                <div class="links">
+                    Recent
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                    </ul>
+                </div>
+                <div class="links">
+                    Groups
+                    <div>
+                        <i class="fa-solid fa-user-group"></i>
+                        Tensorflow
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user-group"></i>
+                        Tensorflow
+                    </div>
+                </div>
+                <div class="links">
+                    Followed Hashtags
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                    <div><i class="fa-solid fa-hashtag"></i>Tensorflow</div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-panel">
+            <!-- Make a Post Section div -->
+            <div class="property" id="postsection">
+
+                <!-- Profile and textarea section -->
+                <div id="writepost">
+                    <img src="./images/Profile image.png" alt="profile-pic" title="Kuldeep Patel">
+                    <input type="text" name="textarea" id="textarea" placeholder="Start a post">
+                </div>
+
+                <!-- Attachments -->
+                <div class="attachments">
+                    <div id="photo">
+                        <i class="fa-solid fa-image"></i>
+                        <span>Photo</span>
+                    </div>
+                    <div id="video">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Video</span>
+                    </div>
+                    <div id="event">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Event</span>
+                    </div>
+                    <div id="article">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span>Write article</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- LinkedIn Post starts div -->
+
+            <div class="property" id="postsection1">
+
+                <div class="user">
+                    <div>
+                        <img src="./images/myntra logo.jpg" alt="Myntra" title="Myntra" id="myntra">
+                    </div>
+                    <div class="userinfo">
+                        <div class="username"> Myntra Fashion </div>
+                        <div class="followers">792,456 Followers </div>
+                        <div class="posted">
+                            <span>Promoted</span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                <div id="postpics">
+                    <div>
+                        <img src="./images/myntra-upcomming-sale-min-1.png.webp" alt="upcoming sale"
+                            title="upcoming sale" id="myntrapost">
+                    </div>
+                </div>
+
+                <!-- Reactions made by the Community starts div -->
+
+                <div id="reactions">
+                    <img src="./images/Like.svg" alt="Like" title="Like" id="likeSvg">
+                    <img src="./images/Appreciate.svg" alt="Appriciate" title="Appreciate" id="appreciateSvg">
+                    <img src="./images/Clap.svg" alt="Clap" title="Clap" id="clapSvg">
+                    <div class="reactionsCount">
+                        <div class="reactionNumber">20</div>
+                        <div class="comments">comments</div>
+                    </div>
+                </div>
+
+                <div id="dividerLine"></div>
+
+                <div id="reactionButton">
+                    <div>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property" id="postsection2">
+                <div class="user">
+                    <div>
+                        <img src="images/Kuldeep-logo.png" alt="Creative" title="Creative" id="creative">
+                    </div>
+                    <div class="userinfo">
+                        <div class="username"> Kuldeep Creative </div>
+                        <div class="followers">188,695 followers </div>
+                        <div class="posted">
+                            <span> 2w Posted ago </span>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <div>
+                        Post Event Film of 1st Tourism Working Group Meeting held at Rann of Kutch from <span
+                            class="hashtag"> 07th-09th February 2023</span> under G20 Presidency of India.
+                    </div>
+                </div>
+
+                <div id="postVideo">
+                    <video
+                        src="video/Post Event Film of 1st Tourism Working Group Meeting 2023 under G20 Presidency of India.mp4"
+                        id="G20Summit" title="G20Summit" controls>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Reactions made by the Community starts div -->
+
+                <div id="reactions">
+                    <img src="./images/Like.svg" alt="Like" title="Like" id="likeSvg">
+                    <img src="./images/Appreciate.svg" alt="Appriciate" title="Appreciate" id="appreciateSvg">
+                    <img src="./images/Clap.svg" alt="Clap" title="Clap" id="clapSvg">
+                    <div class="reactionsCount">
+                        <div class="reactionNumber">20</div>
+                        <div class="comments">comments</div>
+                    </div>
+                </div>
+
+                <div id="dividerLine"></div>
+
+                <div id="reactionButton">
+                    <div>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="right-panel">
+
+            <!-- LinkedIn News Section -->
+
+            <div class="property" id="newsSection">
+
+                <!-- LinkedIn News -->
+
+                <div id="newsHeading">
+                    <span> LinkedIn News </span>
+                    <i class="fa-solid fa-info"></i>
+                </div>
+
+                <!-- News multiple section div -->
+
+                <div id="news">
+                    <div id="news1">
+                        <div class="newsInfo">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Indian Crosses Covid 3,58,974 daily cases</span>
+                        </div>
+                        <div class="readerInfo">
+                            <span>10h ago</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>5,043 readers</span>
+                        </div>
+                    </div>
+                    <div id="news2">
+                        <div class="newsInfo">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Zomato filles for $1.18 IPO</span>
+                        </div>
+                        <div class="readerInfo">
+                            <span>13h ago</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>52,043 readers</span>
+                        </div>
+                    </div>
+                    <div id="news3">
+                        <div class="newsInfo">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Jobs pay in IT soar</span>
+                        </div>
+                        <div class="readerInfo">
+                            <span>1d ago</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>7865 readers</span>
+                        </div>
+                    </div>
+                    <div id="news4">
+                        <div class="newsInfo">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Google saving $1B a year from 2022 WFH</span>
+                        </div>
+                        <div class="readerInfo">
+                            <span>2d ago</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>7,865 readers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property" id="mostViewdSection">
+
+                <!-- LinkedIn Mostviewd Section -->
+
+                <div id="newsHeading">
+                    <span> Today's most viewed courses </span>
+                    <i class="fa-solid fa-info"></i>
+                </div>
+
+                <!-- Mostviewd List Section Div -->
+
+                <div id="news">
+                    <div id="news1">
+                        <div class="newsInfo">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Indian Crosses Covid 3,58,974 daily cases</span>
+                        </div>
+                        <div class="readerInfo">
+                            <span>Top news</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>9874 reviews</span>
+                        </div>
+                    </div>
+                    <div id="news2">
+                        <div class="newsInfo">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Indian Crosses Covid 3,58,974 daily cases</span>
+                        </div>
+                        <div class="readerInfo">
+                            <span>Top news</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>9874 reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add to Your Feed Section Div -->
+            <div class="property" id="feedSection">
+
+                <div id="newsHeading">
+                    <span> Add to Your Feed </span>
+                    <i class="fa-solid fa-info"></i>
+                </div>
+
+                <!-- Add Company Section 1 -->
+                <div class="companies">
+                    <div>
+                        <img src="./images/unilever logo.png" alt="Unilever" title="Unilever">
+                    </div>
+                    <div>
+                        <div class="companyName"> Unilever </div>
+                        <div class="companyText">
+                            <span>Company</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Consumenr Goods</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Follow Button Container -->
+                <div class="followButton-container">
+                    <button class="followButton">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+                <div id="dividerLine"></div>
+
+                <!-- Add Company Section 2 -->
+                <div class="companies">
+                    <div>
+                        <img src="./images/Kuldeep-logo.png" alt="Creative" title="Creative">
+                    </div>
+                    <div>
+                        <div class="companyName"> Creative </div>
+                        <div class="companyText">
+                            <span>Company</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Inspirational Designs</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Follow Button Container -->
+                <div class="followButton-container">
+                    <button class="followButton">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+                <div id="dividerLine"></div>
+
+                <!-- Add Company Section 3 -->
+                <div class="companies">
+                    <div>
+                        <img src="./images/myntra logo.jpg" alt="Myntra" title="Myntra">
+                    </div>
+                    <div>
+                        <div class="companyName"> Myntra </div>
+                        <div class="companyText">
+                            <span>Company</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Online Shopping Site</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Follow Button Container -->
+                <div class="followButton-container">
+                    <button class="followButton">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+                <div id="dividerLine"></div>
+
+                <!-- Add Company Section 2 -->
+                <div class="companies">
+                    <div>
+                        <img src="./images/LinkedIn logo.png" alt="Unilever" title="Unilever">
+                    </div>
+                    <div>
+                        <div class="companyName"> LinkedIn </div>
+                        <div class="companyText">
+                            <span>Company</span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Professional Network</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Follow Button Container -->
+                <div class="followButton-container">
+                    <button class="followButton">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

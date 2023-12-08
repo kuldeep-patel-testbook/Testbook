@@ -1,0 +1,141 @@
+#newsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 12px 12px 12px;
+}
+
+#newsHeading > span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--custom-gray-color);
+}
+
+#newsHeading > i {
+    font-size: 10px;
+    font-weight: 600;
+    color:whitesmoke;
+    background: var(--custom-black-color);
+    height: 16px;
+    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+#news > div {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 12px;
+}
+
+.newsInfo {
+    display: flex;
+    align-items: center;
+}
+
+.newsInfo > i {
+   font-size: 6px;
+   font-weight: 600;
+   color: var(--custom-gray-color);
+   margin-right: 8px;
+}
+
+.newsInfo > span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--custom-black-color);
+}
+
+.readerInfo {
+    display: flex;
+    align-items: center;
+    margin: 4px 16px;
+}
+
+.readerInfo > i {
+    font-size: 4px;
+    font-weight: 600;
+    color: var(--custom-gray-color);
+    margin: 0 6px;
+}
+
+.readerInfo > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--custom-gray-color);
+}
+
+#mostViewdSection {
+    margin-top: 8px;
+}
+
+#feedSection {
+    margin-top: 8px;
+    padding-bottom: 16px;
+}
+
+.companies {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.companies > div > img {
+    width: 48px;
+    margin: 0 8px;
+}
+
+.companyName {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--custom-black-color);
+}
+
+.companyText {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--custom-black-color);
+    margin: 4px 0;
+}
+
+.companyText > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--custom-gray-color);
+}
+
+.companyText > i {
+    font-size: 4px;
+    font-weight: 600;
+    color: var(--custom-gray-color);
+    margin: 0 6px;
+}
+
+.followButton-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.followButton {
+    border: 2px solid var(--custom-gray-color);
+    background: whitesmoke;
+    border-radius: 100px;
+    padding: 4px 48px;
+    margin: 8px auto;
+}
+
+.followButton > div > i, .followButton > div > span  {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--custom-black-color);
+}
