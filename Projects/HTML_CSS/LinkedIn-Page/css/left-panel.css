@@ -1,0 +1,139 @@
+#background {
+     height: 56px;
+     width: 233px;
+     border-radius: 8px 8px 0px 0px;
+}
+
+#profile-pic {
+
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    border:1px solid #0000001a;
+    margin: -36px 90px 0px 90px;
+}
+
+.profile-section #name {
+    text-align: center;
+    font-size: 16px;
+    font-weight:500;
+}
+
+.profile-section #position {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--custom-gray-color);
+    margin: 5px 0 8px 0; 
+}
+
+#connection {
+    border-top: 1px solid #0000001a;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 12px;
+}
+
+#connection > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.c1 > #connection1 {
+    color: var(--custom-gray-color);
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+.c1 > #connection2 {
+    color: var(--custom-black-color);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#connection > #count {
+    font-size: 1rem;
+    padding: 0 0.25rem;
+    cursor: pointer;
+}
+
+#c2 {
+    border-bottom: 1px solid #0000001a;
+    padding-top: 0;
+}
+
+#c2 > span > #connection1 {
+    color: var(--custom-gray-color);
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 1px;
+}
+
+#premium {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #0000001a;
+}
+
+#premium > span { 
+    color: var(--custom-gray-color);
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+#premium > a { 
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 1px;
+    text-decoration: none;
+}
+
+#myitems {
+    justify-content: flex-start;
+}
+
+#myitems > div > .fa-bookmark {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+#myitems > div > span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#recent-topics {
+    margin-top: 16px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    color: var(--custom-gray-color);
+    font-weight: 500;
+}
+
+.links > div {
+    margin: 4px 0;
+    font-size: 12px;
+}
+.upper-section {
+    background: white;
+    border-radius: 8px;
+    margin: 0rem 12px;
+}
+
+.fa-hashtag {
+    margin-right: 5px;
+}
+
+.fa-user-group {
+    margin-right: 5px;
+}
