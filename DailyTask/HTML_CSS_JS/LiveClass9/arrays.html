@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in Javascript</title>
+</head>
+<body>
+    <h1>Arrays in Javascript Example</h1>
+
+    <script>
+        console.log("The .push() method adds one or more elements to the end of an array and returns the new length.");
+        const colors = ["Red", "Blue", "Green", "Yellow"];
+        colors.push("Pink","Maroon");
+        console.log(colors);
+        console.log("-------------");
+
+
+        // console.log("The .pop() method Removes the last element of an array, decrements the array length, and returns the value that it removed.");
+        // colors.pop();
+        // console.log(colors);
+        // console.log("-------------");
+
+        
+        console.log("The .splice() method modifies an array in place by inserting, removing, and/or replacing array elements then returning an array of removed elements.");
+        colors.splice(6, 0, "Sky Blue", "Orange");
+        console.log(colors);
+        console.log("-------------");
+
+        console.log("The .shift() method Removes and returns the first element of the array. All subsequent elements will shift down one place.");
+        colors.shift();
+        console.log(colors);
+        console.log("-------------");
+
+        console.log("The .unshift() method Adds one or more elements to beginning of array and returns new length.");
+        colors.unshift("Purple","White");
+        console.log(colors);
+        console.log("-------------");
+
+        console.log("The .toSpliced() is a method that modifies multiple array elements. It has a starting point (the first element to be modified) and an end point (the last element to be modified). .toSpliced() can make the following changes to an array:");
+        
+        // Extracting Purple, White, and Blue. Start at index 3 and delete 3 elements
+        const myColors = colors.toSpliced(3, 3);
+        console.log(myColors);
+        console.log(colors);
+        console.log("-------------");
+
+        console.log("Replacing red, yellow, and blue. Start at index 0, and replace three items.");
+        
+        const replaceColorArray = colors.toSpliced(
+            0,
+            3,
+            'Blue-green',
+            'Red-violet',
+            'Yellow-orange'
+        );
+
+        console.log(replaceColorArray);
+        
+    </script>
+</body>
+</html>

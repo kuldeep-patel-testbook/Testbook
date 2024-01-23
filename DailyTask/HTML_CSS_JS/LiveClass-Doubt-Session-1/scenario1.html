@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 1 Example</title>
+
+    <style>
+        #studentDemo {
+            background-color: lightblue;
+            font-size: 30px;
+            font-weight: bold;
+            height: 100px;
+            border: 2px solid red;
+            text-align: center;
+            padding-top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Example Student Marks</h1>
+
+    <p id="studentDemo"></p>
+
+    <script>
+        const studentMarks = prompt("Enter the student marks");
+
+        if(studentMarks >=90 && studentMarks <=99) {
+            document.getElementById("studentDemo").innerHTML = 'Your Grade is A';
+        } else if(studentMarks >=80 && studentMarks <=89) {
+            document.getElementById("studentDemo").innerHTML = 'Your Grade is B';
+        } else if(studentMarks >=70 && studentMarks <=79) {
+            document.getElementById("studentDemo").innerHTML = 'Your Grade is C';
+        } else if(studentMarks >=60 && studentMarks <=69) {
+            document.getElementById("studentDemo").innerHTML = 'Your Grade is D';
+        } else if(studentMarks >=50 && studentMarks <=59) {
+            document.getElementById("studentDemo").innerHTML = 'Your Grade is E';
+        } else if(studentMarks >=1 && studentMarks <=49) {
+            document.getElementById("studentDemo").innerHTML = 'Your Grade is F';
+        } else if(studentMarks <= -1 || studentMarks > 100) {
+            document.getElementById("studentDemo").innerHTML = 'OOPS this is a Error.... Negative Value or 100 plus value not allowed';
+        }
+        else {
+            document.getElementById("studentDemo").innerHTML = '';
+        }        
+    </script>
+</body>
+</html>

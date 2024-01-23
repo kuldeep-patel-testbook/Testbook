@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript this keyword in method</title>
+</head>
+<body>
+    <h1>Javascript this keyword in method</h1>
+    <p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+    <p>Because <b>fullName</b> is a method of the person object.</p>
+    <p id="demo"></p>
+    <p>---------------------------------------------------------</p>
+    
+    <p>In this example, <b>this</b> refers to the window object:</p>
+    <p id="demo1"></p>
+
+    <script>
+        // Create an object
+        const person = {
+            fname: "Kuldeep",
+            lname: "Patel",
+            fullname: function() {
+                return this.fname + " " + this.lname;
+            }
+        };
+
+        // Display data from the object:
+        document.getElementById('demo').innerHTML = `<b>${person.fullname()}</b>`;
+
+        //this keyword refers to the window object
+        // let abc = this;
+        // console.log(abc);
+        // document.getElementById('demo1').innerHTML = abc;
+        document.getElementById('demo1').innerHTML = myFunction();
+
+        function myFunction() {            
+            //console.log(this);
+            return this;
+        }
+        
+    </script>
+
+</body>
+</html>

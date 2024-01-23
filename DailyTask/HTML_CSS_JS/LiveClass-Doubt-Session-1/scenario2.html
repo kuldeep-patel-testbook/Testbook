@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 2 Example</title>
+
+    <style>
+        #studentDemo {
+            background-color:lightsalmon;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            height: 100px;
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Example Scenario 2</h1>
+
+    <div id="studentDemo"></div>
+
+    <script>
+        
+
+        const finePerDay = 0.50;
+        const maxFineFor7Days = 3.5;
+        const afterFineFor7Days = 1;
+        const therafter7Days = 2;
+        const daysOverdue = 7;
+        let count;
+        if(daysOverdue <=0) {
+            //return 0;
+        } else if (daysOverdue <=7) {
+            console.log(finePerDay * daysOverdue);
+            //return finePerDay * daysOverdue;
+        } else if(daysOverdue <=8) {
+            console.log(daysOverdue - 7 * afterFineFor7Days);
+            //return daysOverdue - 7 * afterFineFor7Days;
+        }
+        // const fineAmount = calculateFine(daysOverdue);
+
+        console.log(count);
+
+    // Example usage:
+    //const daysOverdue = 15; // Change this to test different overdue days
+    //const fineAmount = calculateFine(daysOverdue);
+    //console.log(`The fine for ${daysOverdue} days overdue is $${fineAmount.toFixed(2)}`);
+    //document.getElementById("studentDemo").innerHTML = `The fine for ${daysOverdue} days overdue is $${fineAmount.toFixed(2)}`;
+    </script>
+</body>
+</html>

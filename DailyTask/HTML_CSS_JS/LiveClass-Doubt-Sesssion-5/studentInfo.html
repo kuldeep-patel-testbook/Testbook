@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>StudentInfo Program</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Details</h2>
+        <form id="myForm">
+          <div class="form-group">
+            <label for="course-name">Course Name:</label>
+            <input type="text" class="form-control" id="courseName" placeholder="Enter course name">
+          </div>
+          <div class="form-group">
+            <label for="student-name">Student Name:</label>
+            <input type="text" class="form-control" id="studentName" placeholder="Enter student name">
+          </div>
+          <div class="form-group">
+            <label for="student-uid">Student UID:</label>
+            <input type="text" class="form-control" id="studentUid" placeholder="Enter User Id">
+          </div>
+          <div class="form-group">
+            <label for="student-marks">Student marks:</label>
+            <input type="number" class="form-control" id="studentMarks" placeholder="Enter student Marks">
+          </div>
+          <div class="form-group">
+            <label for="email">Student Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <button type="submit" id="submitForm" class="btn btn-default">Submit</button>
+        </form>
+
+        <div id="studentwithmarks"></div>
+
+        <div id="studentalldetails"><h2>Student All Details</h2></div>
+
+      </div>
+
+      <script>
+        
+        const form = document.getElementById('myForm');
+        
+        function addForm(e) {
+            e.preventDefault();
+
+            console.log(e);
+
+            let courseName = document.getElementById('courseName').value;
+            let studentName = document.getElementById('studentName').value;
+            let studentUid = document.getElementById('studentUid').value;
+            let studentMarks = document.getElementById('studentMarks').value;
+            let email = document.getElementById('email').value;
+            let studentDetails = [];
+            let studentFilterMarks = [];
+            
+            const formData = {
+                courseName: courseName,
+                studentName: studentName,
+                studentUid: studentUid,
+                studentMarks: studentMarks,
+                email:email,
+            }
+
+            studentDetails.push(formData);
+
+            studentwithmarks.innerHTML = '';
+            studentalldetails.innerHtml = '';
+
+            studentDetails.forEach((f, index) => {
+                
+                console.log("displayForm", f);
+
+                const displayElement = document.createElement("div");
+                displayElement.classList.add('studentAllData');
+
+                console.log(displayElement);
+
+                displayElement.innerHTML = `
+                <br/><div class='studentRecords'>
+                    <ul>
+                        <li>studentName: ${f.studentName}</li>
+                        <li>courseName: ${f.courseName}</li>
+                        <li>UserId: ${f.studentUid}</li>
+                        <li>Marks: ${f.studentMarks}</li>
+                        <li>Email: ${f.email}</li>
+                    </ul>
+                </div>
+                `;
+
+                studentalldetails.appendChild(displayElement);
+
+                    const displayElement1 = document.createElement("div");
+                    displayElement1.classList.add('studentData');
+
+                    if(f.studentMarks > 80) {
+
+                        displayElement1.innerHTML = `
+                        <h2>Student With Marks > 80</h2><div class='studentRecords'>
+                            <ul>
+                                <li>studentName: ${f.studentName}</li>
+                                <li>courseName: ${f.courseName}</li>
+                                <li>UserId: ${f.studentUid}</li>
+                                <li>Marks: ${f.studentMarks}</li>
+                                <li>Email: ${f.email}</li>
+                            </ul>
+                        </div>
+                        `;
+                    }
+                    studentwithmarks.appendChild(displayElement1);
+            })
+
+            console.log(studentDetails);
+        }
+
+        /*function displayForm() {
+            
+            studentalldetails.innerHtml = '';
+
+            studentDetails.forEach((f, index) => {
+                
+                console.log("displayForm", f);
+
+                const displayElement = document.createElement("div");
+                displayElement.classList.add('studentData');
+
+                console.log(displayElement);
+
+                displayElement.innerHTML = `
+                <div class='studentRecords'>
+                    <ul>
+                        <li>studentName: ${f.studentName}</li>
+                        <li>courseName: ${f.courseName}</li>
+                        <li>UserId: ${f.studentUid}</li>
+                        <li>Marks: ${f.studentMarks}</li>
+                        <li>Email: ${f.email}</li>
+                    </ul>
+                </div>
+                `;
+
+                studentalldetails.appendChild(displayElement);
+            })
+
+
+        }*/
+        form.addEventListener('submit', addForm);
+      </script>
+</body>
+</html>

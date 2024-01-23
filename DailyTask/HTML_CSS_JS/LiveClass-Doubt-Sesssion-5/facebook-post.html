@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript facebook post example</title>
+</head>
+<body>
+ <h1>Facebook Posts</h1>
+ <div class="container">
+
+    <div id="postForm">
+        <label for="postTitle">Post Title:</label>
+        <textarea name="post-text" id="postText" cols="30" rows="10"></textarea><br><br>
+        <label for="imageURL">Image URL:</label>
+        <input type="text" id="imageURL" name="imageURL"><br><br>
+        <button id="postButton">Post</button>
+    </div>
+
+    <div id="postContainer"></div>
+
+ </div>
+
+ <script>
+    const postText = document.getElementById("postText");
+    const postButton  = document.getElementById("postButton");
+    const postContainer = document.getElementById("postContainer");
+    const imageURL = document.getElementById('imageURL');
+
+    let posts = [];
+
+    console.log('postsF', posts)
+
+    function addPost() {
+        const textValue = postText.value;
+        const getImage = imageURL.value;
+        console.log(textValue);
+        if(textValue !='') {
+            const single_posts = {
+                text : textValue,
+                image : getImage,
+                likes: 0,
+                comments: []
+            };
+            posts.push(single_posts);
+            console.log(posts);
+        }
+        displayPost();
+    }
+
+    function displayPost () {
+        postContainer.innerHTML = "";
+        posts.forEach((p, index) => {
+            //console.log("P value in for each is:", p);
+
+            const postElement = document.createElement('div');
+            postElement.classList.add('postdata');
+
+            postElement.innerHTML = `
+            <p>${p.text}</p>
+            <img class='post-image' src='${p.image}' alt='Post Image' />
+            <button onclick='likePost(${index})'>Likes (${p.likes})</button>
+            <input type='text' id='commentInput-${index}' placeholder='Add a comment' />
+            <button onclick="commentPost(${index}, document.getElementById('commentInput-${index}').value)">Comment </button>
+            <ul>
+               ${p.comments.map((comment) => `<li>${comment}</li>`)}
+            </ul>
+            `;
+            postContainer.appendChild(postElement);
+            console.log(postElement);
+        });
+
+    }
+
+    function likePost(index) {
+        posts[index].likes++;
+        displayPost();
+    }
+
+    function commentPost(index, comment) {
+       posts[index].comments.push(comment);
+       displayPost();
+    }
+
+
+    postButton.addEventListener('click', addPost);
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom example in javascipt</title>
+</head>
+<body>
+    <h1>Palindrom String in Javascript</h1>
+
+    <div>
+        <input type="text" name="txtString" id="txtString" />
+        <button id="btnCheck">Check Palindrom</button>
+    </div>
+    <p id="message"></p>
+
+    <script>
+
+        let btnCheck = document.getElementById("btnCheck");
+        btnCheck.addEventListener("click", checkInput);
+        function checkInput() {
+            
+            // Test the function with a string
+            const inputVal = document.getElementById("txtString").value;
+
+            console.log(isPalindrome(inputVal));
+
+            if(isPalindrome(inputVal)  == true) {
+                document.getElementById("message").innerHTML = "Its Palindrome";
+            } else {
+                document.getElementById("message").innerHTML = "Its Not Palindrome";
+            }
+        }
+
+        /*const inputVal = "MOM";
+        if(isPalindrome(inputVal)  == true) {
+            document.getElementById("message").innerHTML = "Its Palindrome";
+        } else {
+            document.getElementById("message").innerHTML = "Its Not Palindrome";
+        }*/
+
+        function isPalindrome(str) {
+
+            // Remove non-alphanumeric characters and convert to lowercase
+            //const alphanumericStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+            // Convert the string to lowercase
+            const lowercaseStr = str.toLowerCase();
+
+            // Reverse the string
+            const reversedStr = lowercaseStr.split('').reverse().join('');
+
+            // Check if the original string is equal to its reversed version
+            return lowercaseStr === reversedStr;
+        }
+
+    </script>
+</body>
+</html>

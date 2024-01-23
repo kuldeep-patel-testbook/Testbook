@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 1 Example Using Functions</title>
+
+    <style>
+        #studentDemo {
+            background-color:chocolate;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            height: 100px;
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Example Student Marks Using Functions</h1>
+
+    <div id="studentDemo"></div>
+
+    <script>
+
+        function calculateMarks(marks) {
+            let grade;
+            if(marks >= 90 && marks <= 100) {
+                grade = "A";
+            }
+            else if(marks >= 80 && marks <= 89) {
+                grade = "B";
+            }
+            else if(marks >= 70 && marks <= 79) {
+                grade = "C";
+            }
+            else if(marks >= 60 && marks <= 69) {
+                grade = "D";
+            } 
+            else {
+                grade = "F";
+            }
+            return grade;
+        }
+
+        const studentMarks = prompt("Enter the student Marks");
+        console.log(studentMarks);
+
+        if(studentMarks > 100 || studentMarks <= -1) {
+            document.getElementById("studentDemo").innerHTML = 'score is not allowed negative value or max 100 plus';
+        } else {
+            const grade = calculateMarks(studentMarks);
+            console.log(`Student Grade is ${grade}`);
+            document.getElementById("studentDemo").innerHTML = `Student Grade is ${grade}`;
+        }
+
+    </script>
+</body>
+</html>

@@ -3,13 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cssboxmodel.css" />
+    <!-- <link rel="stylesheet" href="./css/cssboxmodel.css" /> -->
     <title>CSS Box Model</title>
+    <style>
+
+        h1 ~p {
+            background: darkgoldenrod;
+        }
+
+        /* p + p {
+            background: navy;
+            color: white;
+        } */
+
+        /* div p {
+            background: navy;
+            color: white;
+        } */
+
+        /* div > p {
+            background: navy;
+            color: white;
+        } */
+
+        .flex-container  {
+            background:grey;
+            display: flex;
+            color: whitesmoke;
+        }
+
+        .flext-item {
+            height: 200px;
+            width: 200px;
+            margin: 15px;
+            border: 2px solid red;
+        }
+
+        .grid-container {
+            display: grid;
+            background: lightblue;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 10px;
+            justify-content:space-evenly;
+        }
+
+        .grid-item {
+            width: 100px;
+            height: 100px;
+            /* margin: 10px; */
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
+
+
+    <div class="flex-container">
+        <div class="flext-item">Item 1</div>
+        <div class="flext-item">Item 2</div>
+        <div class="flext-item">Item 3</div>
+    </div>
     <p>The dimensions of an element's box.</p>
 
     <p id="Content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam fugit ipsa unde sit molestias obcaecati, neque accusamus, sequi eum reiciendis commodi explicabo rerum nesciunt laudantium magnam soluta minus quos vero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt nostrum sed sint iure itaque aspernatur debitis minus quam eos. Doloribus earum sit illum fugiat molestiae, nam magnam? Repellendus, labore eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quia cupiditate nulla veniam exercitationem asperiores sed, debitis harum repudiandae numquam doloribus adipisci illo quas ratione explicabo id. Similique, quaerat veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio amet maiores alias nostrum excepturi dolore atque sit harum sed voluptates. Perferendis impedit blanditiis corrupti? Deleniti voluptatum possimus exercitationem amet repellat?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, rem delectus veniam quibusdam deserunt eius adipisci sapiente. Quasi recusandae maiores illum vero consectetur debitis quas. Maxime id aperiam impedit soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur consequuntur voluptates maiores, excepturi dolores, id ratione numquam fugit eos architecto velit modi praesentium amet, vero nemo. Doloremque atque dolor eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum quis autem quibusdam explicabo iste qui, optio reiciendis eaque quod voluptatibus eos rem excepturi hic facere dolores deserunt mollitia error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ut inventore enim fugit animi necessitatibus, earum quam repellendus sunt cum deserunt, voluptatem officia nostrum, est corrupti aut maxime sit similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut molestiae iusto quo quae pariatur expedita temporibus molestias alias harum? Repellendus autem voluptatem similique accusamus harum quasi, nulla amet enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, est harum, quaerat sapiente odit fugiat earum dolorem iste voluptate iusto molestiae ducimus alias vero illum aliquid nesciunt delectus blanditiis suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo facilis eos id, autem nostrum a ad quas quos eveniet sequi accusamus debitis ex impedit est, adipisci tempore voluptatibus nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati maxime rerum deleniti sapiente repellat corporis neque officiis eum ad? Vitae voluptatem dolore error accusamus quas reprehenderit natus voluptate dolorum ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quod laboriosam rem sequi ratione nemo quos officia, sunt quo veritatis nihil non illum consequatur similique aspernatur mollitia qui. Nobis, exercitationem?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quia incidunt quisquam recusandae nemo atque quae nesciunt distinctio perferendis illum nulla voluptates, vitae ea animi quis doloribus est similique repellendus.</p>
+    
+    <div></div>
+    <h1>New one</h1>
+    <p>The dimensions of an element's box.</p>
+
+    <p>The dimensions of an element's box.</p>
+
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 3</div>
+    </div>
+    
 </body>
 </html>

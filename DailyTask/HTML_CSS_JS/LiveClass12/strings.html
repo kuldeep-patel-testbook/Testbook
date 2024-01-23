@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Javascript </title>
+</head>
+<body>
+    <h1>Strings in Javascript </h1>
+
+    <script>
+        let name3 = new String("Peter");
+        let name4 = new String("Peter");
+        let name1 = "Peter";
+        let name2 = "Peter";
+
+        let name5 = name3;
+        console.log(typeof name3);
+        console.log("--------");
+        console.log( typeof name5);
+
+
+        const detail1 = {
+            id:1,
+            name:"KP",
+            age:"31",            
+        }
+
+        for(const detailKey in detail1){
+            if(detail1.hasOwnProperty(detailKey)) {
+                console.log("Key is", detailKey, "Value is", detail1[detailKey]); 
+            }
+        }
+        
+
+
+        if(name5 === name3) {
+            console.log("Its Satisfied");
+        } else {
+            console.log("Its Not Satisfied");
+        }
+
+
+    </script>
+</body>
+</html>
