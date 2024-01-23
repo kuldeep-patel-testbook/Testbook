@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Closure Example</title>
+</head>
+<body>
+    <h1>Function Closure</h1>
+    <script>
+        let a=15;
+        function outer(){
+            let b=20;
+            function inner() {
+                console.log(a);
+                console.log(b);
+            }
+            inner();
+        }
+        outer();
+    </script>
+</body>
+</html>

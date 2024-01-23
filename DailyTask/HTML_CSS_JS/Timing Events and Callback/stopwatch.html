@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Example</title>
+
+    <style>
+        #container, .card {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            width: 400px;
+            height: 300px;
+            background-color: black;
+            color:white;
+            border-radius: 10px;
+        }
+        .timer {
+            font-size: 50px;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>    
+    <div id="container">
+        <div class="card">
+            <h1>Stopwatch</h1>
+            <div class="timer">
+                <span id="seconds">00</span>:<span id="milliseconds">00</span>
+            </div>
+            <div id="btnWrapper">
+                <button id="mystart">Start</button>
+                <button id="mystop">Stop</button>
+                <button id="myreset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/Javascript">
+
+        window.onload = function () {
+
+            var minutes = 00;
+            var seconds = 00;
+            var milliseconds = 00;
+            var appendMinutes = document.getElementById("minutes");
+            var appendSeconds = document.getElementById("seconds");
+            var appendMilliSeconds = document.getElementById("milliseconds");
+            var btnStart = document.getElementById("mystart");
+            var btnStop = document.getElementById("mystop");
+            var btnReset = document.getElementById("myreset");
+            var Interval;
+
+            btnStart.onclick = function() {
+                clearInterval(Interval);
+                Interval = setInterval(startTimer, 10);
+            }
+
+            btnStop.onclick = function() {
+                clearInterval(Interval);
+            }
+
+            btnReset.onclick = function() {
+                clearInterval(Interval);
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("milliseconds").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+
+
+            function startTimer () {
+                milliseconds++;
+
+                if (milliseconds <= 9) {
+                    appendMilliSeconds.innerHTML = "0" + milliseconds;
+                    
+                }
+                
+                if (milliseconds > 9) {
+                    appendMilliSeconds.innerHTML = milliseconds;
+                }
+
+                if (milliseconds > 99) {
+                    seconds++;
+                    
+                    if(seconds <= 9) {
+                        appendSeconds.innerHTML = "0" + seconds;
+                    } else {
+                        appendSeconds.innerHTML = seconds;
+                    }
+                    
+                    milliseconds = 0;
+                    appendMilliSeconds.innerHtml = "0" + 0;
+                }
+
+                if(seconds > 9) {
+                    appendSeconds.innerHtml = seconds;
+                }
+
+            }
+        }
+    </script>
+</body>
+</html>

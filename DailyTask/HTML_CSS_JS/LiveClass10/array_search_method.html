@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search Methods</title>
+</head>
+<body>
+    <h1>Array Search Methods in Javascript</h1>
+
+    <p>The Array.sort() method sorts the elements of an array.</p>
+
+    <p id="demo"></p>
+    <script>
+        // let fruits = ["Apple","Banana","Orange","Mango","Strawberry","Black Grapes","Sitafal","Kiwi","Watermelon","Pinapple"];
+        // let searchIndex = fruits.indexOf("Kiwi");
+        // console.log(searchIndex);
+
+        //sorting array
+        // let days = [4,5,8,9,3,7,88,92,95,93,63,77,69,59,49,44,23,15];
+        // console.log(days.sort());
+
+        
+        const pointsArray = [4,5,8,9,3,7,88,92,95,93,63,77,69,59,49,44,23,15];
+        
+        pointsArray.sort(function(a, b)
+        {   
+            console.log(a,b, "return Value", a-b);
+            return a-b;
+        });
+        document.getElementById("demo").innerHTML = pointsArray;
+
+
+    </script>
+</body>
+</html>

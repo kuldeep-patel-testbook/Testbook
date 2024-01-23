@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in Loops Example</title>
+</head>
+<body>
+    <h1>Closure in Loops</h1>
+    <script>
+        /*for (var index = 1; index <=3; index++) {
+            // immediately invoked function expressionSolution (IIFE)
+            (function (index) {
+                    setTimeout(function() {
+                    console.log(' after ' + index + ' seconds(s):' + index );
+                }, index * 1000 );
+            })(index);
+        }*/
+
+        for (let index = 1; index <=3; index++) {
+            // Using let keyword
+            setTimeout(function() {
+                console.log(' after ' + index + ' seconds(s):' + index );
+            }, index * 1000);
+        }
+
+
+    </script>
+</body>
+</html>

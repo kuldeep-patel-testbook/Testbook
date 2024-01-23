@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Example US Universities API Fetching and Displaying Data</title>
+    <style>
+        body {
+            height: 100%;
+            background-image: linear-gradient(to right, rgb(211, 235, 238), rgb(37, 169, 173));
+            font-family: "Montserrat","Helvetica Neue","sans-serif";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Ajax Example US Universities API Fetching and Displaying Data </h1>
+        <p>Fetching and Displaying Data in Table...</p>    
+        <table id="table" class="table"></table>
+    </div>
+
+    <script>
+        let fetchRes = fetch("http://universities.hipolabs.com/search?country=United+States");
+        fetchRes.then(res => res.json()).then(jsonData => show(jsonData))
+
+        function show(universities) {
+            let table = document.getElementById('table');
+
+            for (i=0; i< universities.length; i++) {
+                let obj = universities[i]
+                console.log(obj);
+                let row = document.createElement('tr');
+                let name = document.createElement('td');
+                let domains = document.createElement('td');
+                let country = document.createElement('td');
+
+                name.innerHTML = obj.name;
+                domains.innerHTML = obj.domains;
+                country.innerHTML = obj.country;
+
+                row.appendChild(name);
+                row.appendChild(domains);
+                row.appendChild(country);
+
+                
+                table.appendChild(row);
+
+                
+            }
+        }
+
+    </script>
+</body>
+</html>

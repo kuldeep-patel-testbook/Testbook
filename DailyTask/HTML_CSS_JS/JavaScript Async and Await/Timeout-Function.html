@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout Function</title>
+</head>
+<body>
+    <h1>JavaScript Timeout Function Using Async And Await</h1>
+    <h4 id="text"></h4>
+    
+    <script>
+        async function display() {
+            let myPromise = new Promise(function(resolve, reject) {
+                setTimeout(function() {
+                    resolve("Hello World");
+                }, 5000);
+            });
+            document.getElementById("text").innerHTML = await myPromise;
+        }
+        display();
+    </script>
+</body>
+</html>

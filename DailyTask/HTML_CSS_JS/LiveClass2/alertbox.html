@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertbox</title>
+    <script src="./js/alertbox.js"></script>
+</head>
+<body>
+    <h1 id="switchdayDemo"></h1>
+    <script>
+
+        let seasonText = prompt("Please enter a valid season name:");
+
+        console.log(seasonText);
+
+        let type = "";
+
+        switch(seasonText) {
+
+            case 0:
+                type ="Winter Season";
+                break;
+            case 1:
+                type ="Winter Season";
+                break;
+            case 2:
+                type ="Winter Season";
+                break;
+            case 3:
+                type ="Winter Season";
+                break;
+            case 4:
+                type ="Summer Season";
+                break;
+            case 5:
+                type ="Summer Season";
+                break;
+            case 6:
+                type ="Summer Season";
+                break;
+            case 7:
+                type ="Summer Season";
+                break;
+            case 8:
+                type ="Summer Season";
+                break;
+            default:
+                type = "Monsoon Season";
+                break;
+        }
+
+        document.getElementById('switchdayDemo').innerHTML = type;
+    </script>
+</body>
+</html>

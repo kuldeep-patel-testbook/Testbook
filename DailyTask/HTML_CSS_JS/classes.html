@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Objects in javascript</title>
+</head>
+<body>
+
+    <div id="displayValue1"></div>
+    <div id="displayValue2"></div>
+    <div id="displayValue3"></div>
+
+    <form id="studForm">
+        <label for="uid">Enrolment Number:</label>
+        <input type="text" name="enrollmentId" id="enrollmentId" placeholder="Enter a student enrollment no" />
+        <br/>
+        <label for="name">Student Name:</label>
+        <input type="text" name="studentName" id="studentName"  placeholder="Enter a student name" />
+        <br/>
+        <label for="designation">Student Designation:</label>
+        <input type="text" name="designation" id="designation"  placeholder="Enter a student designation" />
+        <br/>
+        <button type="button" onClick="btnSubmit()">Submit</button>
+    </form>
+
+    <script>
+    
+        function btnSubmit() {
+
+            let submitData = {
+                uid: document.getElementById('enrollmentId').value,
+                name: document.getElementById('studentName').value,
+                designation: document.getElementById('designation').value
+            }
+            
+            document.getElementById('displayValue1').innerHTML = `The Student No is: ${submitData.uid}`;
+            document.getElementById('displayValue2').innerHTML = `The Student name is: ${submitData.name}`;
+            document.getElementById('displayValue3').innerHTML = `The Student designation is: ${submitData.designation}`;
+        }
+        
+    </script>
+</body>
+</html>

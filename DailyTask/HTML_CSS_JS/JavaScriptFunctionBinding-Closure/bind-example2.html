@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Binding & Closure</title>
+</head>
+<body>
+    <h1>JavaScript Function Binding & Closure Example 2</h1>
+    <p id="demo"></p>
+    <script>
+        
+        let animal = {
+            name:"Rabbit",
+            run: function(speed) {
+               document.getElementById("demo").innerHTML = this.name + " runs at " + speed + " mph."; 
+            }
+        };
+
+        let bird = {
+            name:"Eagle",
+            fly: function(speed) {
+                document.write(this.name + " flies at "+ speed + " mph.");
+            }
+        };
+
+        let fn = animal.run.bind(bird, 10);
+        fn();
+    </script>
+</body>
+</html>
