@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2 Example</title>
+</head>
+<body>
+    <h1>addEventListener() using MouseOver, Clicked, Mouse out!</h1>
+    <p>This example uses the addEventListener() method to add two click events to the same button</p>
+
+    <button id="myBtn">Try It</button>
+
+    <p id="myContent"></p>
+
+    <script>
+        const btnClick = document.getElementById("myBtn"); 
+        btnClick.addEventListener('mouseover', myMouseoverFunction);
+        btnClick.addEventListener("click", myClickFunction)
+        btnClick.addEventListener("mouseout", myMouseoutFunction)
+
+        function myMouseoverFunction() {
+            //alert("This is a mouseover function");
+            document.getElementById("myContent").innerHTML += "This is a mouseover function!<br>";
+        }
+
+        function myClickFunction() {
+            //alert("This is a click function");
+            document.getElementById("myContent").innerHTML += "This is a click function!<br>";
+        }
+
+        function myMouseoutFunction() {
+            //alert("This is a mouseout function");
+            document.getElementById("myContent").innerHTML += "This is a mouseout function!<br>";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Borrowing Example</title>
+</head>
+<body>
+    <h1>Function Borrowing Example</h1>
+    
+    <p>Person and Member are two objeccts</p>
+    <p>The member object borrows the fullname method from person:</p>
+    
+    <p id="demo"></p>
+
+    <script>
+        
+        const person = {
+            fname:"Kuldeep",
+            lname:"Patel",
+            fullname: function() {
+                return this.fname + " " + this.lname;
+            }
+        }
+
+        const member =  {
+            fname:"Meet",
+            lname:"Patel",
+        }
+
+        let fullname = person.fullname.bind(member);
+        document.getElementById('demo').innerHTML = fullname();
+
+    </script>
+
+</body>
+</html>

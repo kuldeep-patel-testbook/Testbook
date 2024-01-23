@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <style>
+        body {
+            height: 100%;
+            background-image: linear-gradient(to right, rgb(113, 196, 209), rgb(102, 89, 187));
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Guesser Program</h1>
+
+    <script>
+
+        const enterNumber = () => {
+            return new Promise((resolve, reject) => {
+                const userNumber = Number(window.prompt("Enter a number (1 - 15):"));
+                console.log(userNumber);
+
+                const randomNum = Math.floor(Math.random() * 15 + 1);
+
+                if(isNaN(userNumber)){
+                    reject(new Error ("Wrong Input Type"));
+                }
+
+                if(userNumber === randomNum) {
+                    resolve({
+                        score: 2,
+                        randomNum,
+                    });
+                } else if(userNumber === randomNum -1 || userNumber === +1) {
+                    resolve({
+                        score:1,
+                        randomNum,
+                    });
+                } else {
+                    resolve({
+                        score:0,
+                        randomNum,
+                    });
+                }
+            });
+        };
+
+        const continueGame = () => {
+            return new Promise((resolve) =>  {
+
+                if(window.confirm("Do you want to continue?")) {
+                    resolve(true);
+                } else{
+                    resolve(false);
+                }
+            });
+        };
+
+
+        const handleGuess = async () => {
+
+            try {
+                
+                const result = await enterNumber();
+                alert(`Number: ${result.randomNum}: you got ${result.score} score`);
+
+                const isContinuing = await continueGame();
+
+                if(isContinuing) {
+                    handleGuess();
+                } else {
+                    alert("Game ends");
+                }
+
+
+            } catch (error) {
+                alert(error);
+            }
+
+        }; 
+
+        handleGuess();
+
+    </script>
+
+</body>
+</html>

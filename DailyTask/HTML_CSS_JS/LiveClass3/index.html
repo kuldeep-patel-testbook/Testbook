@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season Checker</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            background-color: black;
+            color: white;
+         }
+
+         #container {
+            padding-top: 30px;
+            text-align: center;
+         }
+
+         #boxInput {
+            margin-bottom: 40px;
+            padding: 20px 0px;
+            border: 2px solid whitesmoke;
+         }
+         button, input, #res {
+            padding: 5px;
+         }
+         button:hover {
+            background-color: mintcream;
+         }
+
+         #res {
+            font-size: 20px;
+            font-weight: bold;
+         }
+
+         #imageId {
+            
+            margin: 0;
+            padding: 10px 0 0 0; 
+            height: 520px;
+         }
+
+         #imageId > img {
+            border: 2px solid whitesmoke;
+            height: 500px;
+            width: 800px;
+         }
+         
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="boxInput">
+            <h1>Season Checker</h1>
+            <label for="monthInput">Enter a Month (eg. january, february, march, etc...)</label>
+            <input type="text" id="monthInput" />
+            <button onclick="checkSeason()">Season Checker</button>
+        </div>
+        <p id="res"></p>
+        <div id="imageId">
+            <img src="https://i.ytimg.com/vi/vAWyJZErshg/maxresdefault.jpg" alt="Season Image" id="seasonImg">
+        </div>
+    </div>
+    
+    <script>
+        function checkSeason() {
+            const userInput = document.getElementById('monthInput').value.toLowerCase();
+            console.log(userInput)
+
+            let seasonImg;
+            let season;
+
+            console.log(seasonImg);
+            console.log(season);
+
+            if (userInput == 'december' || userInput == 'january' || userInput == 'february') {
+
+                season = "Winter";
+                seasonImg = "https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?cs=srgb&dl=pexels-pixabay-235621.jpg&fm=jpg"
+
+            }
+
+            else if (userInput == 'march' || userInput == 'april' || userInput == 'may') {
+
+                season = "Spring";
+                seasonImg = "https://wallpapers.com/images/hd/720p-spring-background-ornkvkrw7dmrztc6.jpg"
+            }
+
+            else if (userInput == 'june' || userInput == 'july' || userInput == 'august') {
+
+                season = "Summer";
+                seasonImg = "https://c4.wallpaperflare.com/wallpaper/1006/122/383/summer-background-wallpaper-preview.jpg"
+            }
+
+            else if (userInput == 'september' || userInput == 'octomber' || userInput == 'november') {
+
+                season = "Autumn";
+                seasonImg = "https://c4.wallpaperflare.com/wallpaper/250/960/845/fall-high-resolution-widescreen-wallpaper-preview.jpg"
+            }
+            else {
+                season = "Nothing";
+                seasonImg = "https://i.ytimg.com/vi/vAWyJZErshg/maxresdefault.jpg"
+            }
+
+            document.getElementById('res').innerHTML = `This is a ${season} Season`; 
+            document.getElementById('seasonImg').src = `${seasonImg}`;
+        }
+    </script>
+</body>
+</html>

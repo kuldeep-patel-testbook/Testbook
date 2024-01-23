@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove the space only between two words</title>
+</head>
+<body>
+    <h1>Remove the space only between two words</h1>
+
+    <p id="removeSpaceText"></p>
+
+    <script>
+        let stringWithSpace = "  Full       Stack - Cou      rse   ";
+        let stringWithoutSpace = stringWithSpace.replace(/\s/g, '');
+
+        document.getElementById('removeSpaceText').textContent = stringWithoutSpace;
+
+        console.log(stringWithoutSpace);
+    </script>
+</body>
+</html>

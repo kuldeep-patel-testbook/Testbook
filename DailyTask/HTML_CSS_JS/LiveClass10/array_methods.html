@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Example</title>
+</head>
+
+<body>
+    <h1>Array Methods of (lastIndexof, findLast, findIndex, findLastIndex, Includes)</h1>
+
+    <script>
+
+        //1) lastIndexOf Methods Example
+        const stringIndex = "Full Stack Development Career Program (ChatGPT Included)";
+        const result = stringIndex.lastIndexOf("ChatGPT"); // lastIndexOf() returns the index of the last occurrence of a specified value in a string.
+        console.log("lastIndexOf Methods");
+        console.log(result);
+        console.log("-----------------");
+
+        //2) findLast Methods Example
+        const arrayMethods = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K","L","M","N","O"];
+        console.log("findLast Methods");
+        //The .findLast() array method returns the last instance of an element in an array that meets the specified condition.
+        //The array is searched in reverse: from the end of the array to the beginning.
+        arrayMethods.findLast((value, index) => {
+            //console.log(value, index);
+            
+            if(value == "K") {
+                console.log(`There is an instance of ${value} at index ${index}`);
+            }
+        });
+        console.log("---------------");
+
+        //3) findIndex Methods Example
+        console.log("findIndex Methods");
+
+        const animals = ["Tiger","Lion","Bear","Elephant","Leopard","Zebra","Jaguar","Gorilla","Panda"];
+        // The .findIndex() array method returns the first index that passes the callback function’s test.
+        // Returns -1 if no element passes the test.
+        const findAnimal = animals.findIndex((value) => {
+            //console.log(value);
+            return value == "Jaguar";
+        });
+        console.log(findAnimal);
+        console.log("---------------");
+
+
+        //4) findLastIndex Methods Example
+        console.log("findLastIndex Methods");
+        // The .findLastIndex() iterates through the array in reverse order and returns the index that passes the provided testing function.
+        // If no item passes, it returns -1.
+        const findIndex = animals.findLastIndex((value, index) => {
+            return value === 'Jaguar';
+        });
+        console.log("Checking animals index :", findIndex);
+        console.log("---------------");
+
+        //5) Includes Methods Example
+
+        console.log("Includes Methods");
+        const numberArr = [2, 5, 10, 15, 22, 30];
+
+        // includes() returns true if an array contains a specified element.
+        console.log(numberArr.includes(5));
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // Check if fruit[] contains "Banana", starting the search from position 3:
+        console.log("Check if fruit[] contains Banana, starting the search from position 3:");
+        console.log(fruits.includes('Banana', 3));
+        
+    </script>
+</body>
+
+</html>

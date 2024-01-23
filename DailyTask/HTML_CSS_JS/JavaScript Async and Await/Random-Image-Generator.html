@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Generator</title>
+    <style>
+        body{
+            height: 100%;
+            background-image: linear-gradient(to right, rgb(161, 113, 209), rgb(18, 8, 85));
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #image {
+            width: 350px;
+            height: 350px;
+            border: 5px solid #fff;
+            box-sizing: border-box;
+            overflow: hidden;            
+        }
+        .container h1 {
+            text-align: center;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Random Image Generator</h1>
+        <img id="image" />
+    </div>
+    
+    <script>
+        const url = "https://source.unsplash.com/featured/";
+        const img = document.getElementById("image");
+        const getImage = async (url) => {
+            return await fetch(url).then(res => res.url);
+        }
+        const img_url = getImage;
+        getImage(url).then(result => {
+            img.setAttribute('src', result)
+        })
+    </script>
+    
+
+</body>
+</html>

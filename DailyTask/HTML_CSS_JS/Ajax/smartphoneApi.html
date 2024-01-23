@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Smartphone API </title>
+    <style>
+        body {
+            height:100%;
+            background-image:linear-gradient(to right,rgb(77,168,183),rgb(131, 120, 202));
+            font-family: "Montserrat","Helvetica Neue","sans-serif";
+        }
+
+        table th, td, tr {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+   <h1>Ajax Example - Smartphone API Fetch data</h1>
+   <table id="table" class="table">
+    <tr> 
+        <th>Title</th> 
+        <th>Description</th> 
+        <th>Discount</th> 
+        <th>Brand</th>
+        <th>Price</th> 
+        <th>Stock</th> 
+        <th>Rating</th> 
+        <th>Thumbnail</th>
+        <th>Image 1</th> 
+        <th>Image 2</th> 
+        <th>Image 3</th> 
+        <th>Image 4</th> 
+        <th>Image 5</th> 
+    </tr> 
+   </table>
+   <script>
+
+        let fetchRes = fetch("https://dummyjson.com/products/1");
+        
+        fetchRes.then(res => res.json()).then(json => {
+            
+            let table = document.getElementById('table');
+            let row = document.createElement('tr');
+            let title = document.createElement('td');
+            let description = document.createElement('td');
+            let discountPercentage = document.createElement('td');
+            let brand = document.createElement('td');
+            let price = document.createElement('td');
+            let stock = document.createElement('td');
+            let rating = document.createElement('td');
+            let thumbnail = document.createElement('td');
+            
+            console.log(json)
+
+            //document.getElementById("name").innerHTML = json.title;
+            title.innerHTML = json.title;
+            description.innerHTML = json.description;
+            discountPercentage.innerHTML = json.discountPercentage;
+            brand.innerHTML = json.brand;
+            price.innerHTML = json.price;
+            stock.innerHTML = json.stock;
+            rating.innerHTML = json.rating;
+            thumbnail.innerHTML = `<img height=50px; width=100px; src=${json.thumbnail}>`;
+
+            row.appendChild(title);
+            row.appendChild(description);
+            row.appendChild(discountPercentage);
+            row.appendChild(brand);
+            row.appendChild(price);
+            row.appendChild(stock);
+            row.appendChild(rating);
+            row.appendChild(thumbnail);
+
+            for (i=0; i<json.images.length; i++) {
+                let images = document.createElement('td');
+                images.innerHTML = `<img height=50px; width=100px; src=${json.images[i]}>`;
+                row.appendChild(images);
+            }
+
+            table.appendChild(row);
+        })
+
+        // fetchRes.then(res => res.json()).then(json => {
+        //     console.log(json);
+        // })
+   </script>
+</body>
+</html>

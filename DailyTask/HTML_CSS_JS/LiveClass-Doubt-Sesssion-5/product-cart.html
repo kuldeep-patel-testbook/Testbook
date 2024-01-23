@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Shopping Cart Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #productList {
+            border-radius: 5px;
+            display: flex;
+            border: 1px solid #d3d3d3;
+            background-color: whitesmoke;
+            color: black;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .products {
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .products>button {
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .products>button:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        #shoppingcart {
+            border: 1px solid #d3d3d3;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            text-align: center;
+            padding-left: 500px;
+            margin-top: 16px;
+        }
+
+        #cart {
+            width: 500px;
+            height: 340px;
+            border: none;
+        }
+
+        .quantity-box>input {
+            width: 10px;
+            padding: 8px;
+
+        }
+
+        .quantity-box button {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .quantity-box>button:hover {
+            background-color: white;
+            font-weight: bold;
+
+        }
+
+        .shopping-cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .shopping-cart-item>button {
+            margin: 5px;
+            cursor: pointer;
+            padding: 5px;
+
+        }
+
+        .shopping-cart-item>button:hover {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .mini-cart-icon {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-count {
+            background-color: red;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 50%;
+            padding: 4px 8px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+
+        .mini-cart-icon img {
+            width: 40px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Your Brand</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+            <div class="mini-cart-icon">
+                <span class="cart-count" id="mini-cart-total-items">0</span>
+                <img id="minicartIcon" src="pngwing.com.png" alt="Mini Cart Icon">
+            </div>
+        </nav>
+    </header>
+
+    <div id="productList">
+        <h2>Products</h2>
+        <!-- Display Product List -->
+        <div class="products" id="product1">
+            <h3>Product 1</h3>
+            <p>Price: $10.99</p>
+            <button onclick="addToCart('Product 1',10.99)">Add to Cart</button>
+        </div>
+        <div class="products" id="product2">
+            <h3>Product 2</h3>
+            <p>Price: $20.99</p>
+            <button onclick="addToCart('Product 2',20.99)">Add to Cart</button>
+        </div>
+        <div class="products" id="product3">
+            <h3>Product 3</h3>
+            <p>Price: $30.99</p>
+            <button onclick="addToCart('Product 3',30.99)">Add to Cart</button>
+        </div>
+        <div class="products" id="product4">
+            <h3>Product 4</h3>
+            <p>Price: $40.99</p>
+            <button onclick="addToCart('Product 4',40.99)">Add to Cart</button>
+        </div>
+        <div class="products" id="product5">
+            <h3>Product 5</h3>
+            <p>Price: $50.99</p>
+            <button onclick="addToCart('Product 5',50.99)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div id="shoppingcart">
+        <div id="cart" class="products">
+            <h2>Your Cart</h2>
+            <ul class="cart-items" id="cart-items"></ul>
+            <p>Total Cost: $<span class="mini-cart-total" id="mini-cart-total">0</span></p>
+        </div>
+    </div>
+
+
+    <script>
+        let cart = []; // blank array define
+
+        function addToCart(productName, price) {
+            console.log("Click Fired");
+
+            const existProduct = cart.find(item => item.productName === productName);
+
+            if (existProduct) {
+                alert(`${productName} - This product exist in cart`);
+                existProduct.quantity += 1;
+                existProduct.totalPrice += price
+
+            } else {
+                alert(`${productName} - This product not exist in cart`);
+                cart.push({
+                    productName: productName,
+                    price: price,
+                    quantity: 1,
+                    totalPrice: price
+                });
+            }
+
+            console.log(cart);
+
+            updateCart();
+        };
+
+        function updateCart() {
+
+            console.log("updateCart-- ", cart);
+
+            const miniCartTotalItemsElement = document.getElementById("mini-cart-total-items");
+            const cartItemsElement = document.getElementById("cart-items");
+            const miniCartTotalElement = document.getElementById("mini-cart-total");
+
+            cartItemsElement.innerHTML = '';
+
+
+            cart.forEach(item => {
+
+                const listItem = document.createElement("li");
+                listItem.classList.add("shopping-cart-item");
+
+                const quantityBox = document.createElement("div");
+                quantityBox.classList.add("quantity-box");
+
+                const quantityMinusButton = document.createElement("button");
+                quantityMinusButton.textContent = "-";
+                quantityMinusButton.onclick = () => updateQuantity(item.productName, -1);
+
+                quantityBox.appendChild(quantityMinusButton);
+
+                const quantityInput = document.createElement("input");
+                quantityInput.classList.add("input-box");
+                quantityInput.type = 'text';
+                quantityInput.value = item.quantity;
+                quantityInput.readOnly = true;
+
+                quantityBox.appendChild(quantityInput);
+
+                const quantityPlusButton = document.createElement("button");
+                quantityPlusButton.textContent = "+";
+                quantityPlusButton.onclick = () => updateQuantity(item.productName, +1);
+
+                quantityBox.appendChild(quantityPlusButton);
+
+                listItem.appendChild(quantityBox);
+
+                const text = document.createTextNode(`${item.productName} - $${item.totalPrice}`);
+                listItem.appendChild(text);
+
+
+                const addButton = document.createElement("button");
+                addButton.textContent = 'Add To Cart';
+                addButton.onclick = () => updateQuantity(item.productName, item.quantity);
+
+                listItem.appendChild(addButton);
+
+                const removeButton = document.createElement("button");
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = () => removeProductFromCart(item.productName);
+
+                listItem.appendChild(removeButton);
+
+                cartItemsElement.appendChild(listItem);
+            });
+
+            const totalItems = cart.reduce((accumulated, item) => accumulated + item.quantity, 0);
+            const totalAmount = cart.reduce((accumulated, item) => accumulated + item.totalPrice, 0);
+
+            console.log("totalItems", totalItems);
+
+            console.log("totalAmount", totalAmount);
+
+            miniCartTotalItemsElement.textContent = totalItems;
+            miniCartTotalElement.textContent = totalAmount;
+            miniCartCountElement.textContent = totalItems;
+
+
+
+
+        }
+
+        function updateQuantity(productName, change) {
+
+            const product = cart.find(item => item.productName === productName);
+
+            if (product) {
+                product.quantity += change;
+                //The JavaScript Math max() Method is used to return the largest of zero or more numbers.
+                product.quantity = Math.max(product.quantity, 0); //The result is “-Infinity” if no arguments are passed and the result is NaN if at least one of the arguments cannot be converted to a number.                
+                product.totalPrice = 10 * product.quantity;
+            }
+
+            updateCart();
+        }
+
+        function removeProductFromCart(productName) {
+            //alert("remove from cart");
+            cart = cart.filter(item => item.productName !== productName);
+            console.log("removeCart", cart);
+            updateCart();
+        }
+
+    </script>
+
+</body>
+
+</html>

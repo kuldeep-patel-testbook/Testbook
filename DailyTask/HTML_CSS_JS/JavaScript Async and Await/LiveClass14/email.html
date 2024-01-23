@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation using Regular Expression</title>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    <form onsubmit="return emailPattern(event)">
+        <div>
+            <label for="emailCheck">Enter Email</label>
+            <input type="text" name="email" id="emailCheck"><br>
+            <span id="error_msg"></span>
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <script>
+        function emailPattern(e) {
+            e.preventDefault();
+            let mailFormat = /[A-z,0-9]{3,}@[A-z]{5}.{3,6}/gm;
+            let emailValue = document.getElementById("emailCheck");
+            if(emailValue.value.match(mailFormat)) {
+                alert("valid email address");
+                document.emailCheck.focus();
+                return true;
+            } else {
+                alert("You have entered an invalid email address!");
+                document.emailCheck.focus();
+                return false;
+            }
+
+        }
+    </script>
+</body>
+</html>
