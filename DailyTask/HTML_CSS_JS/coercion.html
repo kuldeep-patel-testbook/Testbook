@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coercion Example</title>
+</head>
+<body>
+    <script>
+    // Type Coercion (convert number to string)
+    // var num = 42;
+    // var str = `the result is ${num}`;
+    // console.log("typeof is", typeof(str));
+    // console.log"typeof is", (typeof(num));
+
+    // (convert string to number)
+    var str = "44"; 
+    console.log("typeof is", typeof(str));
+    var num = +str;
+    console.log("typeof is", typeof(num));
+    
+    console.log(num == str); // Its result is true, because the string "44" is coerced to a number  (`==` also known as loose equality operator)
+    console.log(num === str); // Its result is false, because the types of different (`===` also known as strict equality operator)
+    
+    console.log("Use of == and result is", 1 == true);
+    console.log("Use of === and result is", 1 === true);
+    
+    console.log("typeof is", typeof(true));
+    console.log("typeof is", typeof(1));
+
+
+    console.log("Use of == and result is", null == undefined);
+    console.log("Use of === and result is", null === undefined);
+
+    console.log("typeof is", typeof(null));
+    console.log("typeof is", typeof(undefined));
+
+</script>
+</body>
+</html>
