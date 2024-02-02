@@ -1,0 +1,232 @@
+/* default basic style applied */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Quiz main container style applied */
+#container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/*user-details style applied */
+#user-details {
+    margin-bottom: 20px;
+}
+
+/*logo css style applied */
+#quiz-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo image style applied */
+#quiz-logo img {
+    width: 210px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+/* welcome text style applied */
+#welcome-text {
+    text-align: center;
+}
+
+#welcome-note {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #20a8e7;
+}
+
+#continue-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Username input box style applied */
+#username {
+    width: 400px;
+    padding: 5px;
+}
+/* categories buttons set margin and space */
+#category-buttons {
+    display: inline-block;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#timer,
+#score {
+    font-size: 16px;
+}
+
+#score span {
+    font-weight: bold;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+/* ul options remove default bullet */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Options li style applied */
+li {
+    background-color: #ebf9ff;
+    color: #20a8e7;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #20a8e7;
+    color: white;
+}
+
+button {
+    background-color: #ebf9ff;
+    padding: 10px 20px;
+    border: 2px solid #20a8e7;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 240px;
+}
+
+button:hover {
+    background-color: #20a8e7;
+}
+
+
+#enter-btn {
+    background-color: #20a8e7;
+    color: #ffffff;
+    padding: 5px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+#enter-btn:hover {
+    background-color: #0056b3;
+}
+
+#hello-user {
+    color: #20a8e7;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+#line-text {
+    font-size: 14px;
+    margin: 20px 50px 10px 0px;
+}
+
+#border-line {
+    max-width: 500px;
+    border: 1px solid #c0b8b5;
+}
+
+#category-text {
+    color: #20a8e7;
+    font-size: 24px;
+    margin: 16px auto;
+}
+
+.result-page-button {
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.next-show-btn {
+    text-align: center;
+    margin-left: 120px;
+    border-radius: 20px;
+}
+
+.next-show-btn:hover, .result-page-button:hover  {
+    background-color: #20a8e7;
+    color: white;
+}
+#question-header .question-count {
+    width: 500px;
+    height: 120px;
+    border: 2px solid #d2c4af;
+    position: relative;
+    
+}
+.question-count > div {
+    background-color: white;
+    color: #20a8e7;
+    font-weight: bold;
+    padding-top: 10px;
+    width: 50px;
+    height:30px;
+    border: 2px solid #20a8e7;
+    border-radius: 50%;
+    top: -22px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.question-count > p {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#timer { 
+    width: 38px;
+    height:28px;
+    border: 2px solid #20a8e7;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50%;
+    color: #20a8e7;
+    font-weight: bold;
+    position: relative;
+}
+
+#timesUp {
+    color: red;
+    position: absolute;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+#scoreElement {
+    margin-bottom: 16px;
+}

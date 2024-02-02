@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Major Assignments</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="quiz-page">
+            <h2 id="hello-user"></h2>
+            <div id="quiz-header">
+                <div id="timer">0</div>
+                <div id="timesUp" style="display: none;">TIMES'S UP</div>
+                <div id="score">Score: <span>0</span></div>
+            </div>
+            <div id="question-container"></div>
+            <ul id="options-container"></ul>
+            <button id="next-btn" onclick="nextQuestion()" class="next-show-btn">Next Questions</button>
+        </div>
+        <div id="result-page" style="display: none;">
+            <button id="show-result" onclick="quizResults()" class="next-show-btn">Show Results</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchParams = new URLSearchParams(window.location.search);
+            const searchParamsQuizKey = searchParams.get('quizkey'); // quizkey
+            startQuiz(searchParamsQuizKey);
+        });
+    </script>
+    <script src="js/quiz.js" />
+</body>
+
+</html>

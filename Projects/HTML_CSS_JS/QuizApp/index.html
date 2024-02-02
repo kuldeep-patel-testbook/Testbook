@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Major Assignments</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Quiz main container div -->
+    <div id="container">
+        <div id="user-details">
+            <!-- Homepage div -->
+            <div id="home-page">
+                <!-- Logo Section -->
+                <div id="quiz-logo">
+                    <img src="images/Testbook-Logo.svg" alt="testbook-quiz-logo">
+                    <div id="welcome-text">
+                        <h2 id="welcome-note">Hello User!</h2>
+                        <p id="continue-text">Enter your name to continue to the Quiz.</p>
+                    </div>
+                </div>
+                <!-- User Input Section -->
+                <input type="text" name="username" id="username" placeholder="Enter your username">
+                <!-- enter button check user not empty value -->
+                <button id="enter-btn" onclick="categoryBtn1()">Enter</button>
+            </div>
+            <div id="user-details-page">
+                <div id="line-text">You'll have 10 seconds answer to each questions.</div>
+                <!-- line text after display border line  -->
+                <div id="border-line"></div>
+                <!-- Multiple Categories section div with buttons -->
+                <div id="category-sections">
+                    <h2 id="category-text">Select Category</h2>
+                    <div id="category-buttons">
+                        <button onclick="categoryBtn1()">HTML and CSS</button>
+                        <button onclick="categoryBtn2()">Advanced Javascript</button><br /><br />
+                        <button onclick="categoryBtn3()">Advanced ReactJs</button>
+                        <button onclick="categoryBtn4()">NodeJs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js" />
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Major Assignments</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="result-page">
+            <h2 id="hello-user">Quiz Result</h2>
+            <div id="result-message">
+                <p id="uname"></p>
+                <p id="totalTimeTaken"></p>
+                <p id="displayElements"></p>
+                <div id="scoreElement"></div>
+                <button class="result-page-button" onclick="startAgain()">Start Again</button>
+                <button class="result-page-button" onclick="goToHome()">Go to Home</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            showResults();
+        });
+    </script>
+    <script src="js/result.js" />
+</body>
+
+</html>
