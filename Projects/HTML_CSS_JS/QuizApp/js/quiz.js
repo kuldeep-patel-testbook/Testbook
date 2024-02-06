@@ -231,7 +231,7 @@ let maxTime = 300;
 // Start quiz functions works
 function startQuiz(category) {
     //alert("welcome to the quiz");
-
+    category = sessionStorage.getItem('quizkey')
     currentCategory = category;
     console.log("Currentcategory => ", currentCategory);
 
@@ -351,9 +351,6 @@ function selectOption(selectedOption) {
 
 function quizResults() {
     //alert("quiz result page");
-    const searchParams = new URLSearchParams(window.location.search);
-    const searchParamsuserName = searchParams.get('username'); // get username
-
     clearInterval(timer); // all questions are answered then stop the timer.
 
     //set correctAnswersLength value
@@ -375,6 +372,12 @@ function quizResults() {
     const percentageScore = (correctAnswersLength / totalQuestions) * 100;
     const percentageScoreFixed = `${percentageScore.toFixed(2)}`;
 
-    window.location.href = `
-    result.html?quizkey=${currentCategory}&username=${searchParamsuserName}&totalTimeElement=${totalTimeElement}&totalQuestions=${totalQuestions}&totalAttempt=${totalAttempt}&correctAnswersLength=${correctAnswersLength}&wrongAnswers=${wrongAnswers}&percentageScore=${percentageScoreFixed}`; //startQuiz('htmlcss'); default categories question display 
+    sessionStorage.setItem('totalTimeElement', totalTimeElement);
+    sessionStorage.setItem('totalQuestions', totalQuestions);
+    sessionStorage.setItem('totalAttempt', totalAttempt);
+    sessionStorage.setItem('correctAnswersLength', correctAnswersLength);
+    sessionStorage.setItem('wrongAnswers', wrongAnswers);
+    sessionStorage.setItem('percentageScore', percentageScoreFixed);
+
+    window.location.href = "result.html";
 }

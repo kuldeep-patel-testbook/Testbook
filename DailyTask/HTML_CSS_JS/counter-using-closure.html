@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter using the Closure Functions</h1>
+    <button onclick="decreseCounter()">-</button><input type="number" name="counter" id="counter" value="0" /><button onclick="createCounter()">+</button>
+    <button onclick="resetCounter()">Reset</button>
+    <script>
+
+        // let count = 0;
+        // let counterElement = document.getElementById('counter');
+
+        // function updateCounter(){
+        //     counterElement.value = count;
+        // }
+
+        // function increment() {
+        //     count++;
+        //     updateCounter();    
+        // }
+
+        // function decrement() {
+        //     count--;
+        //     updateCounter();
+        // }
+
+        // function reset() {
+        //     count = 0;
+        //     updateCounter();
+        // }
+
+        // function createCounter() {
+        //     let count = 0;
+
+        //     function increment() {
+        //         count++;
+        //         console.log("increment count", count);
+        //     }
+
+        //     function decrement(){
+        //         count--;
+        //         console.log("decrement count", count);
+        //     }
+
+        //     function reset() {
+        //         count = 0;
+        //         console.log("reset count", count);
+        //     }
+
+        //     return {
+        //         increment,
+        //         decrement,
+        //         reset
+        //     }
+        // }
+
+        // let counter = createCounter();
+        // console.log(counter);
+        // document.getElementById('counter').innerText = counter.increment();
+        // console.log(counter.increment());
+        // console.log(counter.increment());
+        // console.log(counter.increment());
+        
+        let counter = 0;
+        const increment = (function () {
+            return function () {
+                counter++;
+                return counter;
+            }
+        })();
+        const decrement = (function () {
+            return function () {
+                counter--;
+                return counter;
+            }
+        })();
+        const resetCount = (function () {
+            return function () {
+                counter = 0;
+                return counter;
+            }
+        })();
+        function createCounter() {
+            document.getElementById('counter').value = increment();
+        }
+        function decreseCounter() {
+            document.getElementById('counter').value = decrement();
+        }
+        function resetCounter() {
+            document.getElementById('counter').value = resetCount();
+        }
+        
+    </script>
+</body>
+</html>

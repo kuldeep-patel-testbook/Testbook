@@ -27,12 +27,11 @@
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const searchParams = new URLSearchParams(window.location.search);
-            const searchParamsQuizKey = searchParams.get('quizkey'); // quizkey
+            const searchParamsQuizKey = sessionStorage.getItem('quizkey'); // quizkey
             startQuiz(searchParamsQuizKey);
         });
     </script>
-    <script src="js/quiz.js" />
+    <script type="text/javascript" src="js/quiz.js"></script>
 </body>
 
 </html>
