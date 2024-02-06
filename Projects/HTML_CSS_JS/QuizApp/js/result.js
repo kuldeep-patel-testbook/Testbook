@@ -1,14 +1,17 @@
 // Display a result page all the related logic, total questions, attempt, wrong answer, corect answer and start agin button using createElement 
 function showResults() {
+    
     // alert("showing show results");
-    const searchParams = new URLSearchParams(window.location.search);
-    const searchParamsuserName = searchParams.get('username'); // get username
-    const searchParamstotalTimeElement = searchParams.get('totalTimeElement'); // get Total Time Taken
-    const searchParamstotalQuestions = searchParams.get('totalQuestions'); // get totalQuestions
-    const searchParamstotalAttempt = searchParams.get('totalAttempt'); // get totalAttempt
-    const searchParamscorrectAnswersLength = searchParams.get('correctAnswersLength'); // get correctAnswersLength
-    const searchParamswrongAnswers = searchParams.get('wrongAnswers'); // get wrongAnswers
-    const searchParamspercentageScore = searchParams.get('percentageScore'); // get percentageScore
+    // const searchParamsuserName = searchParams.get('username'); // get username
+    
+    const searchParamsuserName = sessionStorage.getItem('username'); // get username
+
+    const searchParamstotalTimeElement = sessionStorage.getItem('totalTimeElement'); // get Total Time Taken
+    const searchParamstotalQuestions = sessionStorage.getItem('totalQuestions'); // get totalQuestions
+    const searchParamstotalAttempt = sessionStorage.getItem('totalAttempt'); // get totalAttempt
+    const searchParamscorrectAnswersLength = sessionStorage.getItem('correctAnswersLength'); // get correctAnswersLength
+    const searchParamswrongAnswers = sessionStorage.getItem('wrongAnswers'); // get wrongAnswers
+    const searchParamspercentageScore = sessionStorage.getItem('percentageScore'); // get percentageScore
 
     document.getElementById('uname').innerHTML = `<b>${searchParamsuserName.trim()}</b> your result is:`;
     document.getElementById('totalTimeTaken').innerHTML = `Total Time Taken: <b>${searchParamstotalTimeElement}</b> seconds`;
@@ -21,13 +24,19 @@ function showResults() {
 
 //Start the quiz again.
 function startAgain() {
-    const searchParams = new URLSearchParams(window.location.search);
-    const searchParamsQuizKey = searchParams.get('quizkey'); // get quizkey
-    const searchParamsuserName = searchParams.get('username'); // get username
-    window.location.href = `quiz.html?quizkey=${searchParamsQuizKey}&username=${searchParamsuserName}`;
+    window.location.href = `quiz.html`;
 }
 
 // Redirect to the home page.
 function goToHome() {
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('quizkey');
+    sessionStorage.removeItem('totalTimeElement');
+    sessionStorage.removeItem('totalQuestions');
+    sessionStorage.removeItem('totalAttempt');
+    sessionStorage.removeItem('correctAnswersLength');
+    sessionStorage.removeItem('wrongAnswers');
+    sessionStorage.removeItem('percentageScore');
+
     window.location.href = "index.html";
 }

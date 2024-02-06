@@ -1,7 +1,10 @@
+
 //check username value function
 function checkUserName() {
     const username = document.getElementById('username').value;
-    return username.trim();
+    username.trim();
+    sessionStorage.setItem('username', username);
+    return username;
 }
 
 // Enter Button click move to categoryBtn function then check username and move to if condition.
@@ -11,8 +14,9 @@ function categoryBtn1() {
         alert("Please enter a username.");
         document.getElementById('username').focus();
     } else {
-        //Redirect to the quiz page then startQuiz function works 
-        window.location.href = "quiz.html?quizkey=htmlcss&username=" + checkUserName(); //startQuiz('htmlcss'); default categories question display
+        //Redirect to the quiz page then startQuiz function works
+        sessionStorage.setItem('quizkey', 'htmlcss'); 
+        window.location.href = "quiz.html"; //startQuiz('htmlcss'); default categories question display
     }
 }
 
@@ -24,7 +28,8 @@ function categoryBtn2() {
         document.getElementById('username').focus();
     } else {
         //Redirect to the quiz page then startQuiz function works 
-        window.location.href = "quiz.html?quizkey=javascript&username=" + checkUserName();
+        sessionStorage.setItem('quizkey', 'javascript');
+        window.location.href = "quiz.html";
     }
 }
 
@@ -36,7 +41,8 @@ function categoryBtn3() {
         document.getElementById('username').focus();
     } else {
         //Redirect to the quiz page then startQuiz function works 
-        window.location.href = "quiz.html?quizkey=reactjs&username=" + checkUserName();
+        sessionStorage.setItem('quizkey', 'reactjs');
+        window.location.href = "quiz.html";
     }
 }
 
@@ -47,8 +53,9 @@ function categoryBtn4() {
         alert("Please enter a username.");
         document.getElementById('username').focus();
     } else {
-        //Redirect to the quiz page then startQuiz function works 
-        window.location.href = "quiz.html?quizkey=nodejs&username=" + checkUserName();
+        //Redirect to the quiz page then startQuiz function works
+        sessionStorage.setItem('quizkey', 'nodejs');
+        window.location.href = "quiz.html";
 
     }
 }
