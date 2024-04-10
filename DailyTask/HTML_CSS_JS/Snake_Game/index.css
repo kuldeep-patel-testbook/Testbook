@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.snakeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.score {
+    padding: 0px 20px 0px 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.start {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0;
+    background: skyblue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: rgb(26, 152, 201);
+    color: white;
+}
+
+.grid {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    flex-wrap:wrap;
+    border: 5px ridge black;
+}
+.grid div {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.apple {
+    max-width: 10px;
+    max-height: 10px;
+    background-color: deeppink;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.snake {
+    background-color: black;
+    border: 1px solid white;
+}

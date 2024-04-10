@@ -41,7 +41,7 @@
         <div class="card">
             <h1>Stopwatch</h1>
             <div class="timer">
-                <span id="seconds">00</span>:<span id="milliseconds">00</span>
+                <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
             </div>
             <div id="btnWrapper">
                 <button id="mystart">Start</button>
@@ -50,70 +50,34 @@
             </div>
         </div>
     </div>
+    
+    <!-- <div class="container"> 
+		<h1>Stop Watch</h1> 
+		<div id="time"> 
+			<span class="digit" id="hr"> 
+				00</span> 
+			<span class="txt">Hr</span> 
+			<span class="digit" id="min"> 
+				00</span> 
+			<span class="txt">Min</span> 
+			<span class="digit" id="sec"> 
+				00</span> 
+			<span class="txt">Sec</span> 
+			<span class="digit" id="millisecond"> 
+				00</span>
+            <span class="txt">ms</span> 
+		</div> 
+		<div id="buttons"> 
+			<button class="btn" id="start"> 
+				Start</button> 
+			<button class="btn" id="stop"> 
+				Stop</button> 
+			<button class="btn" id="reset"> 
+				Reset</button> 
+		</div> 
+	</div> -->
+    
+    <script src="./stopwatch.js"></script>
 
-    <script type="text/Javascript">
-
-        window.onload = function () {
-
-            var minutes = 00;
-            var seconds = 00;
-            var milliseconds = 00;
-            var appendMinutes = document.getElementById("minutes");
-            var appendSeconds = document.getElementById("seconds");
-            var appendMilliSeconds = document.getElementById("milliseconds");
-            var btnStart = document.getElementById("mystart");
-            var btnStop = document.getElementById("mystop");
-            var btnReset = document.getElementById("myreset");
-            var Interval;
-
-            btnStart.onclick = function() {
-                clearInterval(Interval);
-                Interval = setInterval(startTimer, 10);
-            }
-
-            btnStop.onclick = function() {
-                clearInterval(Interval);
-            }
-
-            btnReset.onclick = function() {
-                //clearInterval(Interval);
-                //document.getElementById("minutes").innerText = "00";
-                // document.getElementById("milliseconds").innerHTML = "00";
-                // document.getElementById("seconds").innerHTML = "00";
-            }
-
-
-            function startTimer () {
-                milliseconds++;
-
-                if (milliseconds <= 9) {
-                    appendMilliSeconds.innerHTML = "0" + milliseconds;
-                    
-                }
-                
-                if (milliseconds > 9) {
-                    appendMilliSeconds.innerHTML = milliseconds;
-                }
-
-                if (milliseconds > 99) {
-                    seconds++;
-                    
-                    if(seconds <= 9) {
-                        appendSeconds.innerHTML = "0" + seconds;
-                    } else {
-                        appendSeconds.innerHTML = seconds;
-                    }
-                    
-                    milliseconds = 0;
-                    appendMilliSeconds.innerHtml = "0" + 0;
-                }
-
-                if(seconds > 9) {
-                    appendSeconds.innerHtml = seconds;
-                }
-
-            }
-        }
-    </script>
 </body>
 </html>

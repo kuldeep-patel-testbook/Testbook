@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check Pallindrome</h1>
+    <script>
+        // function checkPallindrome(input) {
+        //     const reverseStr = input.split("").reverse().join("");
+        //     return input === reverseStr;
+        // }
+
+        const checkPallindrome = (input) => {
+            const reverseStr = input.split("").reverse().join("");
+            return input === reverseStr;
+        }
+        
+        console.log(checkPallindrome("MOM"));
+    </script>
+</body>
+
+</html>

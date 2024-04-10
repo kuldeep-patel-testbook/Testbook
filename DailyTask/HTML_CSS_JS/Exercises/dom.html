@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btnClick" onclick="btnClick()">Click Me</button>
+    <div id="demo"></div>
+    <script>
+
+        // function btnClick() {
+        //     const demoElement = document.getElementById('demo');
+        //     const pElement = document.createElement('p');
+        //     pElement.textContent = "Namaste Javascript";
+        //     demoElement.appendChild(pElement);
+        // }
+
+        const btnClick = document.getElementById('btnClick');
+        btnClick.addEventListener('click', function(){
+            const demoElement = document.getElementById('demo');
+            const pElement = document.createElement('p');
+            pElement.textContent = "Namaste Javascript";
+            demoElement.appendChild(pElement);
+        });
+        
+        // const btnClick = () => {
+        //     const demoElement = document.getElementById('demo');
+        //     const pElement = document.createElement('p');
+        //     pElement.textContent = "Namaste Javascript";
+        //     demoElement.appendChild(pElement);
+        // };
+    </script>
+</body>
+</html>
