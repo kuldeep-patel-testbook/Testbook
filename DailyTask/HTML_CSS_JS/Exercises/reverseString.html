@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Reverse Strings</h1>
+    <script>
+        //using arrow function
+        // let reverseString = (str) => {
+        //     return str.split("").reverse().join("");
+        // }
+
+        // using regular function
+        function reverseString(str) {
+            return str.split("").reverse().join("");
+            //console.log(str.split("").reverse().join(""));
+        }
+
+        const strName = "Kuldeep patel";
+        console.log(reverseString(strName));
+        //reverseString(strName);
+    </script>
+</body>
+
+</html>

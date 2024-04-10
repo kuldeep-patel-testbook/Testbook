@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <!-- <script src="./fizzbuzz.js"></script> -->
+</head>
+
+<body>
+    <h2>Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, and
+        for multiples of 5, print "Buzz."
+        For numbers which are multiples of both three and five, print "FizzBuzz."</h2>
+    <div id="demo"></div>
+    <script>
+        for (let i = 0; i <= 100; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("FizzBuzz");
+
+            } else if (i % 3 === 0) {
+                console.log("Fizz");
+
+            } else if (i % 5 === 0) {
+                console.log("Buzz");
+
+            } else {
+                console.log(i);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

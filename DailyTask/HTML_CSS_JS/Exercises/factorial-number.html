@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Factorial Numbers</h1>
+    <script>
+        // Using Regular Functions
+        function factorialNum(n) {
+
+            if (n == 0 || n == 1) {
+                return 1;
+            } else {
+                return n * factorialNum(n - 1);
+            }
+        }
+
+        // const factorialNum = (n) => {
+        //     if (n == 0 || n == 1) {
+        //         return 1;
+        //     } else {
+        //         return n * factorialNum(n-1);
+        //     }
+        // }
+        
+
+        // function factorialNum(num) {
+        //     let a;
+        //     if(num==0 || num ==1){
+        //         a = 1;
+        //     } else {
+        //         a = num * (factorialNum(num-1));
+        //     }
+        //     return a;
+        // }
+
+
+        console.log(factorialNum(5));
+        //reverseString(strName);
+    </script>
+</body>
+
+</html>

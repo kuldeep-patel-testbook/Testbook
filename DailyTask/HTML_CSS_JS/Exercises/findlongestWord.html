@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Find Longest Words</h1>
+    <script>
+        /*const findLongestWord = (str) => {
+            const words = str.split(" ");
+            let longestWord = "";
+            for(let word of words) {
+                if(word.length > longestWord.length) {
+                    longestWord = word;
+                    //console.log(longestWord);
+                }
+            }
+            return `Longest word: ${longestWord} and its length is ${longestWord.length}`;
+        }*/
+
+        function findLongestWord(str) {
+            const words = str.split(" ");
+            let longestWord = "";
+            for (let word of words) {
+                if (word.length > longestWord.length) {
+                    longestWord = word;
+                    //console.log(longestWord);
+                }
+            }
+            return `Longest word: ${longestWord} and its length is ${longestWord.length}`;
+        }
+        console.log(findLongestWord("This is a New humpty store to sale a clothes and shoes, would you purchase ? are u able to buy right extraordinary items as of now."));
+    </script>
+</body>
+
+</html>

@@ -8,18 +8,97 @@
 <body>
     <script>
         // Basic Example
-        class studentInfo {
-            // name = "Kuldeep";
-            // uid = 89;
-            constructor() {
-                this.name = "Kuldeep";
-                this.uid = "89";   
+        // class studentInfo {
+        //     // name = "Kuldeep";
+        //     // uid = 89;
+        //     constructor() {
+        //         this.name = "Kuldeep";
+        //         this.uid = "89";   
+        //     }
+        // }
+
+        // let studObj = new studentInfo();
+        // console.log(studObj.name, studObj.uid);
+        // console.log('this', this);
+
+
+        // const obj = {
+        // property: "value",
+        // method: function() {
+        //     console.log(this.property);
+        // }
+        // };
+
+        // obj.method(); // refers to the obj, logs "value"
+
+        
+
+        // variable hoisting
+        console.log(x); 
+        var x= 5;
+        console.log(x);
+        
+        // console.log(a);
+        // let a = 10;
+        // console.log(a);
+
+        // console.log(b);
+        // const b = 10;
+        // console.log(b);
+
+        //Function Hoisting
+        
+        // abc();
+        // function abc() {
+        //     console.log("hello");
+        // }
+
+
+        function outerFunction(x) {
+            console.log(x);
+            function innerFunction(y) {
+                console.log(y);
+                return x*y;
             }
+
+            return innerFunction;
+
         }
 
-        let studObj = new studentInfo();
-        console.log(studObj.name, studObj.uid);
-        console.log('this', this);
+        const outer = outerFunction(5);
+
+        console.log(outer(3));
+
+        // const narray = ["1","2","3","4","5"]; 
+        // const newArr = narray.map( function(num){
+        //     console.log(num * num);
+        // });
+        
+        const obj = {
+            value: 42,
+            getValue: function() {
+                // Regular function has its own 'this'
+                return function() {
+                    return this.value;
+                };
+            }
+        };
+
+        const getValue = obj.getValue();
+        console.log(getValue()); // undefined (in non-strict mode) or an error (in strict mode)
+
+
+        // function Person(name, age, city) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.city = city;
+        //     }
+
+        // const person = new Person('John', 25, 'New York');
+        // for (let key in person) {
+        //     console.log(key, person[key]);
+        // }
+    
     </script>
 </body>
 </html>
