@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+//document.addEventListener('DOMContentLoaded', function () {
 
     var minutes = "00";
     var seconds = "00";
@@ -149,4 +149,4 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(stopWatch, 10); 
         } 
     }*/
-});
+//});

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST Hackthon Exercise</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./checklist.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="todolist">
+                <div class="inputBox">
+                    <div class="h1class">
+                        <h1>TODO List</h1>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="inputText" id="inputText" class="inputText" placeholder="Type a task" autocomplete="off">
+                        <button type="button" name="btnadd" id="btnadd">ADD</button>
+                    </div>
+                </div>
+
+                <div class="listofTasks">
+                    <h2>LIST OF TASKS</h2>
+                    <p id="emptyList">The list is empty</p>
+                    <ul class="displayList" id="displayList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="editContainer" class="editContainer">
+        <input type="hidden" id="hdnValue" />
+        <div class="main">
+            <div class="todolist">
+                <div class="inputBox">
+                    <div class="h2class">
+                        <h2>Edit Task:</h2>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="editinputText" id="editinputText" class="inputText"
+                            placeholder="Type a task" autocomplete="off">
+                    </div>
+                    <div class="ebutton">
+                        <button type="button" name="btnEdit" onclick="editBtn(this)" id="editBtn">SUBMIT</button>
+                        <button type="button" name="btnCancel" id="cancelBtn">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="todolist.js" type="text/javascript"></script>
+</body>
+
+</html>

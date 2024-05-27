@@ -1,0 +1,11 @@
+{
+  "name": "system-information",
+  "version": "1.0.0",
+  "description": "\"Write a Node.js program that usess the os module to display basic system information such as the operation system  platform, architecture and total memory available.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kuldeep Patel",
+  "license": "ISC"
+}

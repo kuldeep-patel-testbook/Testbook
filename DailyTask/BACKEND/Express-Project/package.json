@@ -1,0 +1,14 @@
+{
+  "name": "express-project",
+  "version": "1.0.0",
+  "description": "\"This is a first expressjs program with node\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kuldeep Patel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

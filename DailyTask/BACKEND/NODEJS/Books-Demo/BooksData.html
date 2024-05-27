@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books List</title>
+    <style>
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .li_book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        li_book li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Books Library</h1>
+    <div class="Book-Form">
+        <form id="bookForm">
+            Name: <input type="text" name="title" id="title" /><br><br>
+            Author: <input type="text" name="author" id="author" /><br><br>
+            Description: <textarea name="description" id="description"></textarea><br><br>
+            Price: <input type="text" name="price" id="price" /><br><br>
+            <button type="submit"> Submit </button>
+        </form>
+    </div>
+    <div class="main">
+        <ul id="bookList">
+        </ul>
+    </div>
+    <script>
+        const booksList = document.getElementById('bookList');
+        const fetchBook = async() => {
+            const response = await fetch('http://localhost:3400/books');
+            const books = await response.json();
+            console.log(books);
+
+            books.forEach(book => {
+                //console.log(book);
+
+                const liElement = document.createElement('li');
+                liElement.className = 'li_book';
+                liElement.innerHTML = `
+                <p>${book.title} by ${book.author}</p>
+                <p>${book.description}</p>
+                <p>${book.price}</p><hr>`;
+
+                booksList.appendChild(liElement);
+
+            });
+        }
+        fetchBook();
+
+        document.getElementById('bookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('title').value;
+            const author = document.getElementById('author').value;
+            const description = document.getElementById('description').value;
+            const price = document.getElementById('price').value;
+
+            fetch('/booksadd', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title, author, description, price })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Optionally, you can clear the form or show a success message here
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+    </script>
+</body>
+</html>

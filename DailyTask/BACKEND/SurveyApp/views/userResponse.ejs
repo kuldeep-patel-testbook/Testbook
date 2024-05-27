@@ -1,0 +1,13 @@
+<%- include('layout', { body: `
+
+<h1>User Response</h1>
+<form action="/userResponse" method="GET">
+  <label for="email">Enter email to fetch responses:</label>
+  <input type="email" id="email" name="email" required>
+  <button type="submit">Fetch</button>
+</form>
+<% if (survey) { %>
+  <h2>Responses for <%= survey.email %>:</h2>
+  <p><%= JSON.stringify(survey.responses) %></p>
+<% } %>
+` }) %>

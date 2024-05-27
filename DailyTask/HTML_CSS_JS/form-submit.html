@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo File</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <form onsubmit="submit(event)">
+        Name : <input type="text" name="fname" /> <br/>
+        <input type="submit" name="submit" />
+    </form>
+
+    <script>
+
+        function submit(event) {
+            alert("heelo");
+
+            event.preventDefault();
+            console.log(event);
+        
+            return false;
+
+        } 
+    </script>
+</body>
+</html>

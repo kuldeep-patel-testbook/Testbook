@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .editformat {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Medicine Data</h1>
+    <table id="" border="1">
+        <thead>
+            <tr>
+                <th>Medicine Id</th>
+                <th>Medicine Name</th>
+                <th>Medicine Salt</th>
+                <th>Medicine Mfg</th>
+                <th>Medicine Exp</th>
+                <th>Medicine Usage</th>
+                <th>Medicine Storing Place</th>
+                <th>Medicine Time to take</th>
+                <th>Medicine Dosage</th>
+                <th>Medicine Side Effects</th>
+                <th>Medicine Prescription</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    <h2>Add New Medicine</h2>
+    <form id="medicineForm">
+        <label for="medicine_name">Medicine Name:</label>
+        <input type="text" id="medicine_name" name="medicine_name" required><br>
+
+        <label for="medicine_salt">Medicine Salt:</label>
+        <input type="text" id="medicine_salt" name="medicine_salt" required><br>
+
+        <label for="medicine_mfg">Medicine Mfg:</label>
+        <input type="text" id="medicine_mfg" name="medicine_mfg" required><br>
+
+        <label for="medicine_expiration">Medicine Exp:</label>
+        <input type="date" id="medicine_expiration" name="medicine_expiration" required><br>
+
+        <label for="medicine_usage">Medicine Usage:</label>
+        <input type="text" id="medicine_usage" name="medicine_usage" required><br>
+
+        <label for="medicine_storing_place">Medicine Storing Place:</label>
+        <input type="text" id="medicine_storing_place" name="medicine_storing_place" required><br>
+
+        <label for="best_time_to_take_medicine">Medicine Time To Take:</label>
+        <input type="text" id="best_time_to_take_medicine" name="best_time_to_take_medicine" required><br>
+
+        <label for="medicine_dosage">Medicine Dosage:</label>
+        <input type="text" id="medicine_dosage" name="medicine_dosage" required><br>
+
+        <label for="medicine_side_effects">Medicine Side Effects:</label>
+        <input type="text" id="medicine_side_effects" name="medicine_side_effects" required><br>
+
+        <label for="medicine_prescription_required">Medicine Prescription Required:</label>
+        <input type="text" id="medicine_prescription_required" name="medicine_prescription_required" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    <script>
+        fetch('http://localhost:3200/medicinedata')
+        .then((res)=> res.json())
+        .then((data)=> {
+            console.log(data);
+            const tableBody = document.getElementById('tableBody');
+            data.forEach(medicine => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${medicine.id}</td>
+                    <td>${medicine.medicine_name}</td>
+                    <td>${medicine.medicine_salt}</td>
+                    <td>${medicine.medicine_mfg}</td>
+                    <td>${medicine.medicine_expiration}</td>
+                    <td>${medicine.medicine_usage}</td>
+                    <td>${medicine.medicine_storing_place}</td>
+                    <td>${medicine.best_time_to_take_medicine}</td>
+                    <td>${medicine.medicine_dosage}</td>
+                    <td>${medicine.medicine_side_effects}</td>
+                    <td>${medicine.medicine_prescription_required}</td>
+                    <td>
+                        <button onclick='editRow(this)'>Edit</button>
+                        <button style='display:none;' onclick='saveRow(this)'>Save</button>
+                        <button onclick=deleteRow("${medicine.id}")>Delete</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        });
+
+        async function saveRow(button) {
+            const row = button.parentNode.parentNode;
+            //const row = button.closest('tr');
+            console.log(row);
+
+            const cells = row.querySelectorAll('td:not(:last-child)');
+            console.log(cells);
+
+
+            const newData = {
+                id: cells[0].querySelector('input').value,
+                medicine_name: cells[1].querySelector('input').value,
+                medicine_salt: cells[2].querySelector('input').value,
+                medicine_mfg: cells[3].querySelector('input').value,
+                medicine_expiration: cells[4].querySelector('input').value,
+                medicine_usage: cells[5].querySelector('input').value,
+                medicine_storing_place: cells[6].querySelector('input').value,
+                best_time_to_take_medicine: cells[7].querySelector('input').value,
+                medicine_dosage: cells[8].querySelector('input').value,
+                medicine_side_effects: cells[9].querySelector('input').value,
+                medicine_prescription_required: cells[10].querySelector('input').value
+            };
+
+            cells.forEach((cell, index) => {
+                cell.innerText = cell.querySelector('input').value;
+            });
+            
+            button.style.display = 'none';
+            button.previousElementSibling.style.display = 'block';
+
+            console.log(newData.medicine_name);
+
+            try {
+                const response = await fetch(`http://localhost:3200/medicine/${newData.id}`, {
+                    method: "PUT",
+                    headers: {
+                     'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify(newData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const updatedData = await response.json();
+                console.log('Updated record successfully', updatedData);
+                location.reload();
+
+            } catch(error) {
+                console.log(error);
+            }
+
+        }
+
+        function editRow(button) {
+            const row = button.parentNode.parentNode;
+            console.log("row",row);
+
+            const cells = row.querySelectorAll('td:not(:last-child)');
+            console.log("cells",cells);
+
+            cells.forEach(cell => {
+                const text = cell.innerHTML;
+                console.log(text);
+                cell.innerHTML = `<input class="editformat" type="text" value="${text}">`;
+            });
+            const editButton = row.querySelector('button:nth-child(1)');
+            const saveButton = row.querySelector('button:nth-child(2)');
+
+            editButton.style.display = 'none';
+            saveButton.style.display = 'block';
+            console.log(editButton, "Updated record successfully");
+        }
+
+        document.getElementById('medicineForm').addEventListener('submit', async function(e) {
+            console.log('form submited');
+            e.preventDefault();
+
+            var rows = tableBody.getElementsByTagName('tr');
+
+            const newMedicine = {
+                id: rows.length + 1,
+                medicine_name: document.getElementById('medicine_name').value,
+                medicine_salt: document.getElementById('medicine_salt').value,
+                medicine_mfg: document.getElementById('medicine_mfg').value,
+                medicine_expiration: document.getElementById('medicine_expiration').value,
+                medicine_usage: document.getElementById('medicine_usage').value,
+                medicine_storing_place: document.getElementById('medicine_storing_place').value,
+                best_time_to_take_medicine: document.getElementById('best_time_to_take_medicine').value,
+                medicine_dosage: document.getElementById('medicine_dosage').value,
+                medicine_side_effects: document.getElementById('medicine_side_effects').value,
+                medicine_prescription_required: document.getElementById('medicine_prescription_required').value,
+            }
+            
+           console.log(newMedicine);
+
+           try {
+                const response = await fetch('http://localhost:3200/medicines/', {
+                    method : 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(newMedicine)
+                });
+
+                if(!response.ok) {
+                    throw new Error("Network response not ok!");
+                }
+
+                const data = await response.json();
+                console.log("Medicine added", data);
+
+                // Add medicine to table body
+                const tableBody = document.getElementById('tableBody');
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${data.id}</td>
+                    <td>${data.medicine_name}</td>
+                    <td>${data.medicine_salt}</td>
+                    <td>${data.medicine_mfg}</td>
+                    <td>${data.medicine_expiration}</td>
+                    <td>${data.medicine_usage}</td>
+                    <td>${data.medicine_storing_place}</td>
+                    <td>${data.best_time_to_take_medicine}</td>
+                    <td>${data.medicine_dosage}</td>
+                    <td>${data.medicine_side_effects}</td>
+                    <td>${data.medicine_prescription_required}</td>
+                    <td>
+                        <button onclick='editRow(this)'>Edit</button>
+                        <button style='display:none;' onclick='saveRow(this)'>Save</button>
+                        <button onclick=deleteRow("${data.id}")>Delete</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+
+           } catch (error) {
+            console.log("error adding medicine", error);
+           }
+
+        });
+
+        const deleteRow = async(id) => {
+
+            try {
+                const response = await fetch(`http://localhost:3200/medicine/${id}`, {
+                    method: 'DELETE'
+                });
+                const data = await response.json();
+                console.log("Deleted record successfully");
+                location.reload();
+            } catch (error) {
+                console.error("Error deleting medicine record", error);
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -28,6 +28,9 @@ const transposeArray = [
     [7,8,9]
 ];
 
+
+
+
 console.log(transposeArray);
 
 // 1st Way
