@@ -1,0 +1,1000 @@
+[{
+  "_id": {
+    "$oid": "6658480bca324988fc60c0de"
+  },
+  "name": "Hotel ABC",
+  "description": "A luxurious hotel with all amenities.",
+  "price": 150,
+  "image": "https://cms.hoteliers.guru/demo26/images/518x1600x900.jpg",
+  "location": "New York",
+  "rooms": [
+    {
+      "$oid": "6659a3130e3c045c9059f15a"
+    },
+    {
+      "$oid": "6659a3130e3c045c9059f15d"
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6658480bca324988fc60c0df"
+  },
+  "name": "Hotel B",
+  "description": "Comfortable and affordable.",
+  "price": 80,
+  "image": "https://th.bing.com/th/id/R.cff1643a2ecf28f98d8d9cd893365664?rik=6KUuwkB%2bSwaqcg&riu=http%3a%2f%2fwww.nicdarkthemes.com%2fthemes%2fresort%2fwp%2fdemo%2fresort%2fwp-content%2fuploads%2fsites%2f2%2f2019%2f05%2fpara04.jpg&ehk=ejjowzEu9zLPfXgjDE4LNMwwPuqSw3SdJfpeZ5PRohM%3d&risl=&pid=ImgRaw&r=0",
+  "location": "Los Angeles",
+  "rooms": [
+    {
+      "$oid": "6658480bca324988fc60c0e6"
+    },
+    {
+      "$oid": "6658480bca324988fc60c0e7"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "name": "Hotel Paradise",
+  "description": "A luxurious hotel with top-notch amenities and breathtaking views.",
+  "price": 250,
+  "image": "https://simkl.net/fanart/91/91345104b390f0b4a_0.jpg",
+  "location": "Miami",
+  "rooms": [
+    {
+      "$oid": "66584912ca324988fc60c0f5"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f2"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f1"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f0"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f6"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f7"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f8"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f9"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f4"
+    },
+    {
+      "$oid": "66584912ca324988fc60c0f3"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "name": "Urban Stay",
+  "description": "A contemporary hotel in the heart of the city.",
+  "price": 180,
+  "image": "https://lirp.cdn-website.com/9cb5b692/dms3rep/multi/opt/3-1920w.jpg",
+  "location": "New York",
+  "rooms": [
+    {
+      "$oid": "66584912ca324988fc60c104"
+    },
+    {
+      "$oid": "66584912ca324988fc60c105"
+    },
+    {
+      "$oid": "66584912ca324988fc60c106"
+    },
+    {
+      "$oid": "66584912ca324988fc60c107"
+    },
+    {
+      "$oid": "66584912ca324988fc60c108"
+    },
+    {
+      "$oid": "66584912ca324988fc60c109"
+    },
+    {
+      "$oid": "66584912ca324988fc60c10a"
+    },
+    {
+      "$oid": "66584912ca324988fc60c10b"
+    },
+    {
+      "$oid": "66584912ca324988fc60c10e"
+    },
+    {
+      "$oid": "66584912ca324988fc60c10f"
+    },
+    {
+      "$oid": "66584912ca324988fc60c10c"
+    },
+    {
+      "$oid": "66584912ca324988fc60c10d"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "name": "Mountain View Inn",
+  "description": "A charming hotel with breathtaking mountain views.",
+  "price": 150,
+  "image": "https://img.freepik.com/free-vector/flat-design-hotel-banner-template_23-2148918227.jpg?t=st=1717084844~exp=1717088444~hmac=ab4d3de9b44a2aa601488108d2d34d7e3d04eff908f9ef437dba9191fbada343&w=1480",
+  "location": "Denver",
+  "rooms": [
+    {
+      "$oid": "665849cdca324988fc60c142"
+    },
+    {
+      "$oid": "665849cdca324988fc60c143"
+    },
+    {
+      "$oid": "665849cdca324988fc60c144"
+    },
+    {
+      "$oid": "665849cdca324988fc60c145"
+    },
+    {
+      "$oid": "665849cdca324988fc60c146"
+    },
+    {
+      "$oid": "665849cdca324988fc60c147"
+    },
+    {
+      "$oid": "665849cdca324988fc60c148"
+    },
+    {
+      "$oid": "665849cdca324988fc60c149"
+    },
+    {
+      "$oid": "665849cdca324988fc60c14a"
+    },
+    {
+      "$oid": "665849cdca324988fc60c14b"
+    },
+    {
+      "$oid": "665849cdca324988fc60c14c"
+    },
+    {
+      "$oid": "665849cdca324988fc60c14d"
+    },
+    {
+      "$oid": "665849cdca324988fc60c14e"
+    },
+    {
+      "$oid": "665849cdca324988fc60c14f"
+    },
+    {
+      "$oid": "665849cdca324988fc60c150"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "name": "Beachside Resort",
+  "description": "A beachfront resort with a tropical vibe and luxurious amenities.",
+  "price": 300,
+  "image": "https://img.freepik.com/free-vector/flat-hotel-banner-template-with-photo_23-2148928550.jpg?t=st=1717084845~exp=1717088445~hmac=d669e77f8854791a755206e845c91bd98f777d6950a05a9f9039c520e7c029ef&w=1480",
+  "location": "Honolulu",
+  "rooms": [
+    {
+      "$oid": "665849cdca324988fc60c188"
+    },
+    {
+      "$oid": "665849cdca324988fc60c189"
+    },
+    {
+      "$oid": "665849cdca324988fc60c18a"
+    },
+    {
+      "$oid": "665849cdca324988fc60c18b"
+    },
+    {
+      "$oid": "665849cdca324988fc60c18c"
+    },
+    {
+      "$oid": "665849cdca324988fc60c18d"
+    },
+    {
+      "$oid": "665849cdca324988fc60c18e"
+    },
+    {
+      "$oid": "665849cdca324988fc60c18f"
+    },
+    {
+      "$oid": "665849cdca324988fc60c190"
+    },
+    {
+      "$oid": "665849cdca324988fc60c191"
+    },
+    {
+      "$oid": "665849cdca324988fc60c192"
+    },
+    {
+      "$oid": "665849cdca324988fc60c193"
+    },
+    {
+      "$oid": "665849cdca324988fc60c194"
+    },
+    {
+      "$oid": "665849cdca324988fc60c195"
+    },
+    {
+      "$oid": "665849cdca324988fc60c196"
+    },
+    {
+      "$oid": "665849cdca324988fc60c197"
+    },
+    {
+      "$oid": "665849cdca324988fc60c198"
+    },
+    {
+      "$oid": "665849cdca324988fc60c199"
+    },
+    {
+      "$oid": "665849cdca324988fc60c19a"
+    },
+    {
+      "$oid": "665849cdca324988fc60c19b"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "name": "City Lights Hotel",
+  "description": "A modern hotel in the city center with convenient access to attractions.",
+  "price": 200,
+  "image": "https://img.freepik.com/free-vector/organic-flat-hotel-banner-with-photo_23-2148926523.jpg?t=st=1717084848~exp=1717088448~hmac=d25b15f0ba6ee1620ea79d553fb0a2931ea8c2d5ce78e91b4303789a98967fc6&w=2000",
+  "location": "Chicago",
+  "rooms": [
+    {
+      "$oid": "665849cdca324988fc60c160"
+    },
+    {
+      "$oid": "665849cdca324988fc60c161"
+    },
+    {
+      "$oid": "665849cdca324988fc60c162"
+    },
+    {
+      "$oid": "665849cdca324988fc60c163"
+    },
+    {
+      "$oid": "665849cdca324988fc60c167"
+    },
+    {
+      "$oid": "665849cdca324988fc60c164"
+    },
+    {
+      "$oid": "665849cdca324988fc60c165"
+    },
+    {
+      "$oid": "665849cdca324988fc60c166"
+    },
+    {
+      "$oid": "665849cdca324988fc60c16a"
+    },
+    {
+      "$oid": "665849cdca324988fc60c16b"
+    },
+    {
+      "$oid": "665849cdca324988fc60c16c"
+    },
+    {
+      "$oid": "665849cdca324988fc60c16d"
+    },
+    {
+      "$oid": "665849cdca324988fc60c16e"
+    },
+    {
+      "$oid": "665849cdca324988fc60c173"
+    },
+    {
+      "$oid": "665849cdca324988fc60c16f"
+    },
+    {
+      "$oid": "665849cdca324988fc60c170"
+    },
+    {
+      "$oid": "665849cdca324988fc60c171"
+    },
+    {
+      "$oid": "665849cdca324988fc60c172"
+    },
+    {
+      "$oid": "665849cdca324988fc60c168"
+    },
+    {
+      "$oid": "665849cdca324988fc60c169"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "name": "Hotel Serenity",
+  "description": "A serene retreat with stunning views and excellent service.",
+  "price": 220,
+  "image": "https://img.freepik.com/free-psd/horizontal-banner-template-hotel-resort_23-2148843056.jpg?w=2000&t=st=1717084853~exp=1717085453~hmac=d63415cc5f68a1b8b3ae1dea22c8f22055c18448ef051555e0420587467f29ca",
+  "location": "San Francisco",
+  "rooms": [
+    {
+      "$oid": "665849cdca324988fc60c126"
+    },
+    {
+      "$oid": "665849cdca324988fc60c12d"
+    },
+    {
+      "$oid": "665849cdca324988fc60c12e"
+    },
+    {
+      "$oid": "665849cdca324988fc60c127"
+    },
+    {
+      "$oid": "665849cdca324988fc60c128"
+    },
+    {
+      "$oid": "665849cdca324988fc60c129"
+    },
+    {
+      "$oid": "665849cdca324988fc60c12a"
+    },
+    {
+      "$oid": "665849cdca324988fc60c12f"
+    },
+    {
+      "$oid": "665849cdca324988fc60c130"
+    },
+    {
+      "$oid": "665849cdca324988fc60c132"
+    },
+    {
+      "$oid": "665849cdca324988fc60c131"
+    },
+    {
+      "$oid": "665849cdca324988fc60c133"
+    },
+    {
+      "$oid": "665849cdca324988fc60c12c"
+    },
+    {
+      "$oid": "665849cdca324988fc60c12b"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "name": "Ocean Breeze Resort",
+  "description": "A beachfront resort with stunning ocean views.",
+  "price": 240,
+  "image": "https://img.freepik.com/free-vector/horizontal-sale-banner-template-hotel-business_23-2150245693.jpg?t=st=1717084859~exp=1717088459~hmac=6c16fed827a0e31d75111b3e280a86556a5a0583a46cf3d90921bc5a380867e6&w=1800",
+  "location": "Miami Beach",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fdb6"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdb7"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdb8"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdb9"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdba"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdbb"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda2"
+  },
+  "name": "Hotel Tranquility",
+  "description": "A peaceful hotel in the heart of nature.",
+  "price": 180,
+  "image": "https://img.freepik.com/free-vector/gradient-colored-hotel-banner-template-with-photo_23-2148916706.jpg?t=st=1717084861~exp=1717088461~hmac=0181bfefe3de1d5a8e46d75371a84c1c22a1f96c26ca8aaca3477fe14e77542a&w=1480",
+  "location": "Seattle",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fdce"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdd1"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdd2"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdcf"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdd0"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "name": "City Center Hotel",
+  "description": "A modern hotel located in the city center.",
+  "price": 210,
+  "image": "http://example.com/image9.jpg",
+  "location": "Boston",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fdd8"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdda"
+    },
+    {
+      "$oid": "66584ba40a695c622929fddb"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdd9"
+    },
+    {
+      "$oid": "66584ba40a695c622929fddc"
+    },
+    {
+      "$oid": "66584ba40a695c622929fddd"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdde"
+    },
+    {
+      "$oid": "66584ba40a695c622929fddf"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "name": "Mountain Escape Lodge",
+  "description": "A cozy lodge with beautiful mountain views.",
+  "price": 190,
+  "image": "http://example.com/image10.jpg",
+  "location": "Aspen",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fdc2"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdc5"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdc3"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdc4"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdc6"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdc7"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "name": "Luxury Lakeside Inn",
+  "description": "A luxurious inn with scenic lake views.",
+  "price": 230,
+  "image": "http://example.com/image13.jpg",
+  "location": "Lake Tahoe",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fde8"
+    },
+    {
+      "$oid": "66584ba40a695c622929fde9"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdea"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdeb"
+    },
+    {
+      "$oid": "66584ba40a695c622929fded"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdec"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdee"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "name": "Urban Oasis Hotel",
+  "description": "A stylish hotel in a bustling urban area.",
+  "price": 210,
+  "image": "http://example.com/image14.jpg",
+  "location": "San Francisco",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fdf6"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdf7"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdf8"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdfb"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdf9"
+    },
+    {
+      "$oid": "66584ba40a695c622929fdfa"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "name": "Seaside Serenity Resort",
+  "description": "A tranquil resort by the seaside.",
+  "price": 250,
+  "image": "http://example.com/image15.jpg",
+  "location": "Malibu",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fe03"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe05"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe06"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe07"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe02"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe04"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdab"
+  },
+  "name": "Countryside Retreat",
+  "description": "A cozy retreat in the countryside.",
+  "price": 170,
+  "image": "http://example.com/image16.jpg",
+  "location": "Nashville",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fe0f"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe0e"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe12"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe10"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe11"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "name": "Tropical Paradise Resort",
+  "description": "A luxurious resort in a tropical paradise.",
+  "price": 280,
+  "image": "http://example.com/image11.jpg",
+  "location": "Hawaii",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fe1a"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe1b"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe1c"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe1f"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe1d"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe1e"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe20"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe21"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe22"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "name": "Historic Downtown Hotel",
+  "description": "A historic hotel in the heart of downtown.",
+  "price": 220,
+  "image": "http://example.com/image12.jpg",
+  "location": "Charleston",
+  "rooms": [
+    {
+      "$oid": "66584ba40a695c622929fe2c"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe2d"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe33"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe2e"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe2f"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe30"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe31"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe32"
+    },
+    {
+      "$oid": "66584ba40a695c622929fe34"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658dc8bc4f4dec6fb598855"
+  },
+  "name": "Hotel Example 1",
+  "description": "Description for Hotel Example 1",
+  "price": 100,
+  "image": "url_to_image_1",
+  "location": "Location 1",
+  "rooms": [
+    {
+      "$oid": "6658dc8bc4f4dec6fb598859"
+    },
+    {
+      "$oid": "6658dc8bc4f4dec6fb59885a"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfcc"
+  },
+  "name": "Hotel Example 1",
+  "description": "Description for Hotel Example 1",
+  "price": 100,
+  "image": "url_to_image_1",
+  "location": "Location 1",
+  "rooms": [
+    {
+      "$oid": "6658dcce1baecc2f34c7dfd0"
+    },
+    {
+      "$oid": "6658dcce1baecc2f34c7dfd1"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfcd"
+  },
+  "name": "Hotel Example 2",
+  "description": "Description for Hotel Example 2",
+  "price": 150,
+  "image": "url_to_image_2",
+  "location": "Location 2",
+  "rooms": [
+    {
+      "$oid": "6658dcce1baecc2f34c7dfd4"
+    },
+    {
+      "$oid": "6658dcce1baecc2f34c7dfd5"
+    },
+    {
+      "$oid": "6658dcce1baecc2f34c7dfd6"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658de70cc9c3dd266d70bc6"
+  },
+  "name": "Seaside Resort",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658de70cc9c3dd266d70bc9"
+    },
+    {
+      "$oid": "6658de70cc9c3dd266d70bc8"
+    },
+    {
+      "$oid": "6658de70cc9c3dd266d70bca"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658dedac6b589706a383104"
+  },
+  "name": "Seaside Resort New",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658dedac6b589706a383106"
+    },
+    {
+      "$oid": "6658dedac6b589706a383108"
+    },
+    {
+      "$oid": "6658dedac6b589706a383107"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658df2d6a1afb18ec6b1df5"
+  },
+  "name": "Seaside Resort New One",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658df2d6a1afb18ec6b1df9"
+    },
+    {
+      "$oid": "6658df2d6a1afb18ec6b1df7"
+    },
+    {
+      "$oid": "6658df2d6a1afb18ec6b1df8"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658e031e0a22a142edf8421"
+  },
+  "name": "Seaside Resort New Test",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658e031e0a22a142edf8423"
+    },
+    {
+      "$oid": "6658e031e0a22a142edf8424"
+    },
+    {
+      "$oid": "6658e031e0a22a142edf8425"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658e09375fb3b613d0948a1"
+  },
+  "name": "Seaside Resort New VVVVVV",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6659a8c59fea5403884f6a49"
+    },
+    {
+      "$oid": "6659a8c59fea5403884f6a4c"
+    },
+    {
+      "$oid": "6659a8c59fea5403884f6a4f"
+    }
+  ],
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "6658e0d308f70f15a73f0210"
+  },
+  "name": "Seaside Resort New MMMMM",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658e0d308f70f15a73f0212"
+    },
+    {
+      "$oid": "6658e0d308f70f15a73f0213"
+    },
+    {
+      "$oid": "6658e0d308f70f15a73f0214"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658e103a9db39ee1d8a74e5"
+  },
+  "name": "Seaside Resort New SSSSS",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658e103a9db39ee1d8a74e7"
+    },
+    {
+      "$oid": "6658e103a9db39ee1d8a74e9"
+    },
+    {
+      "$oid": "6658e103a9db39ee1d8a74e8"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658e12030b9da5cd4236b97"
+  },
+  "name": "Seaside Resort New VVVVV",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658e12030b9da5cd4236b99"
+    },
+    {
+      "$oid": "6658e12030b9da5cd4236b9b"
+    },
+    {
+      "$oid": "6658e12030b9da5cd4236b9a"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658e1492841266fca4cbd36"
+  },
+  "name": "Seaside Resort New WWWWW",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6658e1492841266fca4cbd39"
+    },
+    {
+      "$oid": "6658e1492841266fca4cbd38"
+    },
+    {
+      "$oid": "6658e1492841266fca4cbd3a"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6658e1750cb10c5adb087513"
+  },
+  "name": "Seaside Resort New AAAAAAAAAAAAA",
+  "description": "A luxurious resort with stunning sea views.",
+  "price": 300,
+  "image": "https://example.com/images/seaside-resort.jpg",
+  "location": "456 Ocean Drive, Malibu, CA",
+  "rooms": [
+    {
+      "$oid": "6659ba3d676e03b308c60994"
+    },
+    {
+      "$oid": "6659ba3d676e03b308c60997"
+    },
+    {
+      "$oid": "6659ba3d676e03b308c6099a"
+    }
+  ],
+  "__v": 2
+}]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    
+    <div class="container mt-5">
+        <h1 class="text-center">Admin Dashboard</h1>
+        <p class="lead text-center">Welcome to the admin panel. Here you can manage users, hotels, and bookings.</p>
+        
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Users</h5>
+                        <p class="card-text">Add, edit, or remove users from the system.</p>
+                        <a href="#" class="btn btn-primary">Go to Users</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Hotels</h5>
+                        <p class="card-text">Add, edit, or remove hotels from the system.</p>
+                        <a href="/hotels" class="btn btn-primary">Go to Hotels</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Bookings</h5>
+                        <p class="card-text">View and manage all bookings.</p>
+                        <a href="#" class="btn btn-primary">Go to Bookings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bokFooter mt-5">
+        <%- include('partials/footer') %>
+    </div>
+    
+</body>
+</html>

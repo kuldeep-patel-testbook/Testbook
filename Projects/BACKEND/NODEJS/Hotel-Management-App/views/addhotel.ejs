@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+
+        <div class="container mt-3">
+            <br />
+            <h1>Add Hotels</h1>
+            <br />
+            <form action="/addhotelPost" method="POST">
+                <div class="form-row">
+
+                    <div class="form-group col-md-6">
+                        <label class="signup-label" for="name">
+                            Name
+                        </label>
+                        <input type="text" class="form-control" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label class="signup-label" for="location">
+                            Location
+                        </label>
+                        <input type="text" class="form-control" id="location" name="location" required />
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label class="signup-label" for="price">
+                            Price
+                        </label>
+                        <input type="text" class="form-control" id="price" name="price" required />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label class="signup-label" for="image">
+                            Image Link
+                        </label>
+                        <input type="text" class="form-control" id="image" name="image" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="signup-label" for="address">Description</label>
+                    <textarea class="form-control" name="description" id="description" cols="5" rows="4"
+                        required></textarea>
+                </div>
+
+                <h2>Rooms:</h2>
+                <div id="rooms">
+                    <div class="room">
+
+                        <div class="form-group col-md-6">
+                            <label class="signup-label" for="roomNumber">
+                                Room Number:
+                            </label>
+                            <input type="text" class="form-control" id="roomNumber" name="rooms[0][number]" required />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label class="signup-label" for="roomType">
+                                Room Type:
+                            </label>
+                            <input type="text" class="form-control" id="roomType" name="rooms[0][type]" required />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label class="signup-label" for="roomType">
+                                Room Price:
+                            </label>
+                            <input type="text" class="form-control" id="roomPrice" name="rooms[0][price]" required />
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button" onclick="addRoom()">Add Room</button><br>
+
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <script>
+            let roomIndex = 1;
+
+            function addRoom() {
+                const roomsDiv = document.getElementById('rooms');
+                const newRoomDiv = document.createElement('div');
+                newRoomDiv.classList.add('room');
+
+                newRoomDiv.innerHTML = `
+
+            <div class="form-group col-md-6">
+                <label class="signup-label" for="roomNumber">
+                    Room Number:
+                </label>
+                <input type="text" class="form-control"
+                    id="roomNumber${roomIndex}" name="rooms[${roomIndex}][number]" required />
+            </div>
+
+            <div class="form-group col-md-6">
+                <label class="signup-label" for="roomType">
+                    Room Type:
+                </label>
+                <input type="text" class="form-control"
+                    id="roomType${roomIndex}" name="rooms[${roomIndex}][type]" required />
+            </div>
+
+            <div class="form-group col-md-6">
+                <label class="signup-label" for="roomType">
+                    Room Price:
+                </label>
+                <input type="text" class="form-control"
+                    id="roomPrice${roomIndex}" name="rooms[${roomIndex}][price]" required />
+            </div>
+
+          `;
+
+                roomsDiv.appendChild(newRoomDiv);
+                roomIndex++;
+            }
+        </script>
+        <div class="footerfixn">
+            <%- include('partials/footer') %>
+        </div>
+</body>
+
+</html>

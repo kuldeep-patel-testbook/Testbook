@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+  <div class="container mt-3">
+    <h1>Edit Hotel</h1>
+    <form action="/edit/<%= hotel._id %>" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" value="<%= hotel.name %>" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" name="location" value="<%= hotel.location %>" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="price">Price</label>
+          <input type="text" class="form-control" id="price" name="price" value="<%= hotel.price %>" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="image">Image Link</label>
+          <input type="text" class="form-control" id="image" name="image" value="<%= hotel.image %>" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" name="description" id="description" cols="5" rows="4"
+          required><%= hotel.description %></textarea>
+      </div>
+
+      <h2>Rooms:</h2>
+      <div id="rooms" class="form-row">
+        <% hotel.rooms.forEach((room, index) => { %>
+        <div class="room form-group col-md-12">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="roomNumber<%= index %>">Room Number</label>
+              <input type="text" class="form-control" id="roomNumber<%= index %>" name="rooms[<%= index %>][number]"
+                value="<%= room.number %>" required />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="roomType<%= index %>">Room Type</label>
+              <input type="text" class="form-control" id="roomType<%= index %>" name="rooms[<%= index %>][type]"
+                value="<%= room.type %>" required />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="roomPrice<%= index %>">Room Price</label>
+              <input type="text" class="form-control" id="roomPrice<%= index %>" name="rooms[<%= index %>][price]"
+                value="<%= room.price %>" required />
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+      <button type="button" class="btn btn-secondary" onclick="addRoom()">Add Room</button><br><br>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+  <div class="bokFooter mt-5">
+    <%- include('partials/footer') %>
+  </div>
+  <script>
+    let roomIndex = `<%= hotel.rooms.length %>`;
+
+    function addRoom() {
+      const roomsDiv = document.getElementById('rooms');
+      const newRoomDiv = document.createElement('div');
+      newRoomDiv.classList.add('room', 'form-group', 'col-md-12');
+
+      newRoomDiv.innerHTML = `
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="roomNumber${roomIndex}">Room Number</label>
+            <input type="text" class="form-control" id="roomNumber${roomIndex}" name="rooms[${roomIndex}][number]" required />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="roomType${roomIndex}">Room Type</label>
+            <input type="text" class="form-control" id="roomType${roomIndex}" name="rooms[${roomIndex}][type]" required />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="roomPrice${roomIndex}">Room Price</label>
+            <input type="text" class="form-control" id="roomPrice${roomIndex}" name="rooms[${roomIndex}][price]" required />
+          </div>
+        </div>
+      `;
+
+      roomsDiv.appendChild(newRoomDiv);
+      roomIndex++;
+    }
+  </script>
+</body>
+
+</html>

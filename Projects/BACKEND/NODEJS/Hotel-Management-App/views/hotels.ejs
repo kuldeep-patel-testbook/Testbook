@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+  <div class="userData">
+    <h1>Hotel List</h1>
+    <button class="btnAddHotel"><a href="/hotels-with-rooms">Add Hotel</a></button> <br> <br>
+   
+    <table id="userTable" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Rooms</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userList">
+            <% hotels.forEach(hotel => { %>
+                <tr>
+                <td><%= hotel.name %></td>
+                <td><%= hotel.location %></td>
+                <td>
+                    <ul>
+                    <% hotel.rooms.forEach(room => { %>
+                        <li>Number: <%= room.number %>, Type: <%= room.type %>, Price: <%= room.price %></li>
+                    <% }) %>
+                    </ul>
+                </td>
+                <td>
+                    <a href="/edit/<%= hotel._id %>">Edit</a>
+                    <form action="/delete/<%= hotel._id %>" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                    </form>
+                </td>
+                </tr>
+            <% }) %>
+            </tbody>
+    </table>
+</div>
+<div class="bokFooter mt-5">
+    <%- include('partials/footer') %>
+</div>
+</body>
+</html>

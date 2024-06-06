@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Hotel and Resort World</h1>
+            <p>Book unique places to stay and things to do.</p>
+            <a href="#" class="btn btn-primary">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Listings Section -->
+    <section class="featured-listings container mt-5">
+        <h2 class="text-center mb-4">Featured Listings</h2>
+        <div class="row listings">
+            <% if(hotels != null && hotels !== "") { %>
+                <% hotels.forEach(hotel => { %>
+                    <div class="col-md-4 mb-4">
+                        <div class="card listing h-100">
+                            <img src="<%= hotel.image %>" class="card-img-top" alt="<%= hotel.name %>">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <a href="hotel/<%= hotel._id %>"><%= hotel.name %></a>
+                                </h3>
+                                <p class="card-text">$<%= hotel.price %> per night</p>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } %>
+        </div>
+    </section>
+
+    <div class="bokFooter mt-5">
+        <%- include('partials/footer') %>
+    </div>
+</body>
+</html>
