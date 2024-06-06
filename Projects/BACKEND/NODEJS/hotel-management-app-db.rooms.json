@@ -1,0 +1,2872 @@
+[{
+  "_id": {
+    "$oid": "6658480bca324988fc60c0e2"
+  },
+  "number": 101,
+  "type": "Deluxe",
+  "price": 100,
+  "available": true,
+  "hotel": {
+    "$oid": "6658480bca324988fc60c0de"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658480bca324988fc60c0e3"
+  },
+  "number": 102,
+  "type": "Standard",
+  "price": 80,
+  "available": true,
+  "hotel": {
+    "$oid": "6658480bca324988fc60c0de"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658480bca324988fc60c0e6"
+  },
+  "number": 201,
+  "type": "Suite",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "6658480bca324988fc60c0df"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658480bca324988fc60c0e7"
+  },
+  "number": 202,
+  "type": "Standard",
+  "price": 70,
+  "available": true,
+  "hotel": {
+    "$oid": "6658480bca324988fc60c0df"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f0"
+  },
+  "number": 101,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f1"
+  },
+  "number": 102,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f2"
+  },
+  "number": 103,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f5"
+  },
+  "number": 106,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f6"
+  },
+  "number": 107,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f7"
+  },
+  "number": 108,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f8"
+  },
+  "number": 109,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f9"
+  },
+  "number": 110,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c104"
+  },
+  "number": 201,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c105"
+  },
+  "number": 202,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c106"
+  },
+  "number": 203,
+  "type": "Suite",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c107"
+  },
+  "number": 204,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c108"
+  },
+  "number": 205,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c109"
+  },
+  "number": 206,
+  "type": "Suite",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c10a"
+  },
+  "number": 207,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f3"
+  },
+  "number": 104,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c0f4"
+  },
+  "number": 105,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ec"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c10e"
+  },
+  "number": 211,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c10f"
+  },
+  "number": 212,
+  "type": "Suite",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c10c"
+  },
+  "number": 209,
+  "type": "Suite",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584912ca324988fc60c10d"
+  },
+  "number": 210,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584912ca324988fc60c0ed"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c126"
+  },
+  "number": 301,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c127"
+  },
+  "number": 302,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c128"
+  },
+  "number": 303,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c129"
+  },
+  "number": 304,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c12a"
+  },
+  "number": 305,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c12d"
+  },
+  "number": 308,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c12e"
+  },
+  "number": 309,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c12f"
+  },
+  "number": 310,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c130"
+  },
+  "number": 311,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c131"
+  },
+  "number": 312,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c132"
+  },
+  "number": 313,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c133"
+  },
+  "number": 314,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c142"
+  },
+  "number": 401,
+  "type": "Standard",
+  "price": 100,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c143"
+  },
+  "number": 402,
+  "type": "Deluxe",
+  "price": 140,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c144"
+  },
+  "number": 403,
+  "type": "Suite",
+  "price": 180,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c145"
+  },
+  "number": 404,
+  "type": "Standard",
+  "price": 100,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c146"
+  },
+  "number": 405,
+  "type": "Deluxe",
+  "price": 140,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c147"
+  },
+  "number": 406,
+  "type": "Suite",
+  "price": 180,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c148"
+  },
+  "number": 407,
+  "type": "Standard",
+  "price": 100,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c149"
+  },
+  "number": 408,
+  "type": "Deluxe",
+  "price": 140,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c14a"
+  },
+  "number": 409,
+  "type": "Suite",
+  "price": 180,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c14b"
+  },
+  "number": 410,
+  "type": "Standard",
+  "price": 100,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c14c"
+  },
+  "number": 411,
+  "type": "Deluxe",
+  "price": 140,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c14d"
+  },
+  "number": 412,
+  "type": "Suite",
+  "price": 180,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c14e"
+  },
+  "number": 413,
+  "type": "Standard",
+  "price": 100,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c14f"
+  },
+  "number": 414,
+  "type": "Deluxe",
+  "price": 140,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c150"
+  },
+  "number": 415,
+  "type": "Suite",
+  "price": 180,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11f"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c160"
+  },
+  "number": 601,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c161"
+  },
+  "number": 602,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c162"
+  },
+  "number": 603,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c163"
+  },
+  "number": 604,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c164"
+  },
+  "number": 605,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c165"
+  },
+  "number": 606,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c166"
+  },
+  "number": 607,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c167"
+  },
+  "number": 608,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c12b"
+  },
+  "number": 306,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c12c"
+  },
+  "number": 307,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c11e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c16a"
+  },
+  "number": 611,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c16b"
+  },
+  "number": 612,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c16c"
+  },
+  "number": 613,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c16d"
+  },
+  "number": 614,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c16e"
+  },
+  "number": 615,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c16f"
+  },
+  "number": 616,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c170"
+  },
+  "number": 617,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c171"
+  },
+  "number": 618,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c172"
+  },
+  "number": 619,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c173"
+  },
+  "number": 620,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c188"
+  },
+  "number": 501,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c189"
+  },
+  "number": 502,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c18a"
+  },
+  "number": 503,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c18b"
+  },
+  "number": 504,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c18c"
+  },
+  "number": 505,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c18d"
+  },
+  "number": 506,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c18e"
+  },
+  "number": 507,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c18f"
+  },
+  "number": 508,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c190"
+  },
+  "number": 509,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c191"
+  },
+  "number": 510,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c192"
+  },
+  "number": 511,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c193"
+  },
+  "number": 512,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c194"
+  },
+  "number": 513,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c195"
+  },
+  "number": 514,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c196"
+  },
+  "number": 515,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c197"
+  },
+  "number": 516,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c198"
+  },
+  "number": 517,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c199"
+  },
+  "number": 518,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c19a"
+  },
+  "number": 519,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c19b"
+  },
+  "number": 520,
+  "type": "Garden View",
+  "price": 250,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c120"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c168"
+  },
+  "number": 609,
+  "type": "Suite",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665849cdca324988fc60c169"
+  },
+  "number": 610,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "665849cdca324988fc60c121"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdb6"
+  },
+  "number": 801,
+  "type": "Ocean View",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdb7"
+  },
+  "number": 802,
+  "type": "Garden View",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdb8"
+  },
+  "number": 803,
+  "type": "Suite",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdb9"
+  },
+  "number": 804,
+  "type": "Ocean View",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdba"
+  },
+  "number": 805,
+  "type": "Garden View",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdbb"
+  },
+  "number": 806,
+  "type": "Suite",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda3"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdc2"
+  },
+  "number": 1001,
+  "type": "Standard",
+  "price": 130,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdc3"
+  },
+  "number": 1002,
+  "type": "Deluxe",
+  "price": 170,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdc4"
+  },
+  "number": 1003,
+  "type": "Suite",
+  "price": 240,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdc5"
+  },
+  "number": 1004,
+  "type": "Standard",
+  "price": 130,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdc6"
+  },
+  "number": 1005,
+  "type": "Deluxe",
+  "price": 170,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdc7"
+  },
+  "number": 1006,
+  "type": "Suite",
+  "price": 240,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdce"
+  },
+  "number": 701,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdd1"
+  },
+  "number": 704,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdd2"
+  },
+  "number": 705,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdd8"
+  },
+  "number": 901,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdd9"
+  },
+  "number": 902,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdda"
+  },
+  "number": 903,
+  "type": "Suite",
+  "price": 270,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fddb"
+  },
+  "number": 904,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fddc"
+  },
+  "number": 905,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fddd"
+  },
+  "number": 906,
+  "type": "Suite",
+  "price": 270,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdde"
+  },
+  "number": 907,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fddf"
+  },
+  "number": 908,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda4"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fde8"
+  },
+  "number": 1301,
+  "type": "Lake View",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fde9"
+  },
+  "number": 1302,
+  "type": "Garden View",
+  "price": 220,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdea"
+  },
+  "number": 1303,
+  "type": "Suite",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdeb"
+  },
+  "number": 1304,
+  "type": "Lake View",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdec"
+  },
+  "number": 1305,
+  "type": "Garden View",
+  "price": 220,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fded"
+  },
+  "number": 1306,
+  "type": "Suite",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdee"
+  },
+  "number": 1307,
+  "type": "Lake View",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdf6"
+  },
+  "number": 1401,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdf7"
+  },
+  "number": 1402,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdf8"
+  },
+  "number": 1403,
+  "type": "Suite",
+  "price": 270,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdf9"
+  },
+  "number": 1404,
+  "type": "Standard",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdfa"
+  },
+  "number": 1405,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdfb"
+  },
+  "number": 1406,
+  "type": "Suite",
+  "price": 270,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda9"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdcf"
+  },
+  "number": 702,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe03"
+  },
+  "number": 1502,
+  "type": "Garden View",
+  "price": 240,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fdd0"
+  },
+  "number": 703,
+  "type": "Suite",
+  "price": 220,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda2"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe05"
+  },
+  "number": 1504,
+  "type": "Ocean View",
+  "price": 320,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe06"
+  },
+  "number": 1505,
+  "type": "Garden View",
+  "price": 240,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe07"
+  },
+  "number": 1506,
+  "type": "Suite",
+  "price": 380,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe0e"
+  },
+  "number": 1601,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdab"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe0f"
+  },
+  "number": 1602,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdab"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe10"
+  },
+  "number": 1603,
+  "type": "Suite",
+  "price": 220,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdab"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe11"
+  },
+  "number": 1604,
+  "type": "Standard",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdab"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe12"
+  },
+  "number": 1605,
+  "type": "Deluxe",
+  "price": 160,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdab"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe1a"
+  },
+  "number": 1101,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe1b"
+  },
+  "number": 1102,
+  "type": "Garden View",
+  "price": 260,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe1c"
+  },
+  "number": 1103,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe1d"
+  },
+  "number": 1104,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe1e"
+  },
+  "number": 1105,
+  "type": "Garden View",
+  "price": 260,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe1f"
+  },
+  "number": 1106,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe20"
+  },
+  "number": 1107,
+  "type": "Ocean View",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe21"
+  },
+  "number": 1108,
+  "type": "Garden View",
+  "price": 260,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe22"
+  },
+  "number": 1109,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe2c"
+  },
+  "number": 1201,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe2d"
+  },
+  "number": 1202,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe2e"
+  },
+  "number": 1203,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe2f"
+  },
+  "number": 1204,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe30"
+  },
+  "number": 1205,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe31"
+  },
+  "number": 1206,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe32"
+  },
+  "number": 1207,
+  "type": "Standard",
+  "price": 150,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe33"
+  },
+  "number": 1208,
+  "type": "Deluxe",
+  "price": 200,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe34"
+  },
+  "number": 1209,
+  "type": "Suite",
+  "price": 280,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fda7"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe02"
+  },
+  "number": 1501,
+  "type": "Ocean View",
+  "price": 320,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66584ba40a695c622929fe04"
+  },
+  "number": 1503,
+  "type": "Suite",
+  "price": 380,
+  "available": true,
+  "hotel": {
+    "$oid": "66584ba40a695c622929fdaa"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dc8bc4f4dec6fb598859"
+  },
+  "number": 101,
+  "type": "Single",
+  "price": 50,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dc8bc4f4dec6fb598855"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dc8bc4f4dec6fb59885a"
+  },
+  "number": 102,
+  "type": "Double",
+  "price": 75,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dc8bc4f4dec6fb598855"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dc8bc4f4dec6fb59885d"
+  },
+  "number": 201,
+  "type": "Single",
+  "price": 60,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dc8bc4f4dec6fb598856"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dc8bc4f4dec6fb59885e"
+  },
+  "number": 202,
+  "type": "Double",
+  "price": 90,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dc8bc4f4dec6fb598856"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dc8bc4f4dec6fb59885f"
+  },
+  "number": 203,
+  "type": "Suite",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dc8bc4f4dec6fb598856"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfd0"
+  },
+  "number": 101,
+  "type": "Single",
+  "price": 50,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dcce1baecc2f34c7dfcc"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfd1"
+  },
+  "number": 102,
+  "type": "Double",
+  "price": 75,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dcce1baecc2f34c7dfcc"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfd4"
+  },
+  "number": 201,
+  "type": "Single",
+  "price": 60,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dcce1baecc2f34c7dfcd"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfd5"
+  },
+  "number": 202,
+  "type": "Double",
+  "price": 90,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dcce1baecc2f34c7dfcd"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dcce1baecc2f34c7dfd6"
+  },
+  "number": 203,
+  "type": "Suite",
+  "price": 120,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dcce1baecc2f34c7dfcd"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658de70cc9c3dd266d70bc8"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658de70cc9c3dd266d70bc6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658de70cc9c3dd266d70bc9"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658de70cc9c3dd266d70bc6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658de70cc9c3dd266d70bca"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658de70cc9c3dd266d70bc6"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dedac6b589706a383106"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dedac6b589706a383104"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dedac6b589706a383108"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dedac6b589706a383104"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658dedac6b589706a383107"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658dedac6b589706a383104"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658df2d6a1afb18ec6b1df9"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658df2d6a1afb18ec6b1df5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658df2d6a1afb18ec6b1df7"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658df2d6a1afb18ec6b1df5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658df2d6a1afb18ec6b1df8"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658df2d6a1afb18ec6b1df5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e031e0a22a142edf8423"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e031e0a22a142edf8421"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e031e0a22a142edf8424"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e031e0a22a142edf8421"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e031e0a22a142edf8425"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e031e0a22a142edf8421"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e09375fb3b613d0948a4"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e09375fb3b613d0948a1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e09375fb3b613d0948a5"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e09375fb3b613d0948a1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e09375fb3b613d0948a3"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e09375fb3b613d0948a1"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e0d308f70f15a73f0212"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e0d308f70f15a73f0210"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e0d308f70f15a73f0213"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e0d308f70f15a73f0210"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e0d308f70f15a73f0214"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e0d308f70f15a73f0210"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e103a9db39ee1d8a74e7"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e103a9db39ee1d8a74e5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e103a9db39ee1d8a74e9"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e103a9db39ee1d8a74e5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e103a9db39ee1d8a74e8"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e103a9db39ee1d8a74e5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e12030b9da5cd4236b99"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e12030b9da5cd4236b97"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e12030b9da5cd4236b9b"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e12030b9da5cd4236b97"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e12030b9da5cd4236b9a"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e12030b9da5cd4236b97"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e1492841266fca4cbd3a"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e1492841266fca4cbd36"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e1492841266fca4cbd39"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e1492841266fca4cbd36"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e1492841266fca4cbd38"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e1492841266fca4cbd36"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e1750cb10c5adb087515"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e1750cb10c5adb087513"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e1750cb10c5adb087516"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e1750cb10c5adb087513"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658e1750cb10c5adb087517"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6658e1750cb10c5adb087513"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665988edb707f6662b635295"
+  },
+  "number": 302,
+  "type": "test new",
+  "price": 5236,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659897f43d60deedf05aea5"
+  },
+  "number": 302,
+  "type": "test new",
+  "price": 5236,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665989d143d60deedf05aeaa"
+  },
+  "number": 302,
+  "type": "delexue",
+  "price": 800,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66598be3ce302f88cc0545ff"
+  },
+  "number": 501,
+  "type": "Super Delexue",
+  "price": 7800,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659958fce302f88cc05463b"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "hotel": {
+    "$oid": "6659958fce302f88cc054639"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659958fce302f88cc05463c"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "hotel": {
+    "$oid": "6659958fce302f88cc054639"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659958fce302f88cc05463d"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "hotel": {
+    "$oid": "6659958fce302f88cc054639"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a3130e3c045c9059f15a"
+  },
+  "number": 101,
+  "type": "Deluxe",
+  "price": 100,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a3130e3c045c9059f15d"
+  },
+  "number": 102,
+  "type": "Standard",
+  "price": 80,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a80909257a3086633739"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a80a09257a308663373c"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a80a09257a308663373f"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8a6d166e5162a708c83"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8a6d166e5162a708c86"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8a6d166e5162a708c89"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8aed166e5162a708c8e"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8aed166e5162a708c91"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8aed166e5162a708c94"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8c59fea5403884f6a49"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8c59fea5403884f6a4c"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a8c59fea5403884f6a4f"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659a921981d62d82100236c"
+  },
+  "number": 302,
+  "type": "delexue",
+  "price": 800,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659ba3d676e03b308c60994"
+  },
+  "number": 101,
+  "type": "Suite",
+  "price": 400,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659ba3d676e03b308c60997"
+  },
+  "number": 102,
+  "type": "Deluxe",
+  "price": 350,
+  "available": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659ba3d676e03b308c6099a"
+  },
+  "number": 103,
+  "type": "Standard",
+  "price": 300,
+  "available": true,
+  "__v": 0
+}]

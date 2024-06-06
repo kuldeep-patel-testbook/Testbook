@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= hotel.name %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"><%= hotel.name %></h1>
+        
+        <div class="text-center mb-4">
+            <img src="<%= hotel.image %>" class="img-fluid" alt="<%= hotel.name %>">
+        </div>
+        
+        <p class="lead"><%= hotel.description %></p>
+        <p class="font-weight-bold">Price: $<%= hotel.price %> per night</p>
+        
+        <h2 class="mt-5">Rooms</h2>
+        <ul class="list-group">
+            <% hotel.rooms.forEach(room => { %>
+                <li class="list-group-item">
+                    <a href="/booking/<%= room._id %>" class="text-decoration-none">
+                        Room <%= room.number %> - <%= room.type %>
+                    </a>
+                    <p class="mb-0">Price: $<%= room.price %></p>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    
+    <div class="bokFooter mt-5">
+        <%- include('partials/footer') %>
+    </div>
+</body>
+</html>

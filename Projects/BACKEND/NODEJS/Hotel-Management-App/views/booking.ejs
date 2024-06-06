@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="container mt-5">
+        <h1 class="text-center">Booking Room <%= room.number %> at <%= room.name %></h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <p class="card-text"><strong>Room Type:</strong> <%= room.type %></p>
+                <p class="card-text"><strong>Price:</strong> $<%= room.price %> per night</p>
+                <p><a href="#" class="btn btn-primary">Confirm Booking</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="bokFooter mt-5">
+        <%- include('partials/footer') %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="container mt-3 loginone">
+        <br />
+        <h1>Login</h1>
+        <br />
+        <form action="/login" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="signup-label" for="email">
+                        Email
+                    </label>
+                    <input type="email" class="form-control"
+                        id="email" name="email" required />
+                </div>
+                <div class="form-group col-md-6">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="signup-label" for="password">
+                        Password
+                    </label>
+                     
+                    <input type="password" class="form-control"
+                        id="password" name="password" required />
+                </div>
+                <div class="form-group col-md-6"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        </form>
+    </div>
+    <div class="bokFooter mt-5">
+        <%- include('partials/footer') %>
+    </div>
+</body>
+</html>

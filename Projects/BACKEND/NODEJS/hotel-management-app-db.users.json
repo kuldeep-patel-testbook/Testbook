@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "66587703db3ecf2245233e81"
+  },
+  "username": "test 1",
+  "email": "test1@test.com",
+  "password": "$2a$10$AF2NXEtQ53q6VtlLc0.RPuGqYQIHONP7El2cUk793oJvXQ9z8ntPO",
+  "cpassword": "test123",
+  "phone": {
+    "$numberLong": "7894561236"
+  },
+  "city": "test city",
+  "state": "test state",
+  "address": "test address",
+  "role": "user",
+  "isAdmin": false,
+  "id": 11,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6658daeed75a07f930038a3e"
+  },
+  "username": "admin",
+  "email": "admin@admin.com",
+  "password": "$2a$10$/DmQCVBXVZMzihGLGSgVxu7PUQDrsdqRbeoKhHpZckVQ6Qj6g2FqC",
+  "cpassword": "admin@123",
+  "phone": {
+    "$numberLong": "9999999999"
+  },
+  "city": "admin city",
+  "state": "admin state",
+  "address": "admin address",
+  "role": "admin",
+  "isAdmin": true,
+  "id": 13,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6659692677c316ec1be46825"
+  },
+  "username": "testnew",
+  "email": "testnew@test.com",
+  "password": "$2a$10$fnLGGLcICiodSVAuXAGDQ.DmpX8gTvtZgbCwoj89hs4AiKXz9Dl/K",
+  "cpassword": "test123",
+  "phone": {
+    "$numberLong": "21212121121"
+  },
+  "city": "test city",
+  "state": "test state",
+  "address": "test address",
+  "role": "user",
+  "isAdmin": false,
+  "id": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665969f8d7833433b63fa44d"
+  },
+  "username": "testnew1",
+  "email": "testnew1@test.com",
+  "password": "$2a$10$jd/SDeOfHxLGF5o9ave.KeYvsqm6zJD1LJ/YI75adX.aNTqA4G30.",
+  "cpassword": "test123",
+  "phone": {
+    "$numberLong": "21212121121"
+  },
+  "city": "test city",
+  "state": "test state",
+  "address": "test address",
+  "role": "user",
+  "isAdmin": false,
+  "id": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66596a668b19f00eb2fb179b"
+  },
+  "username": "test123",
+  "email": "test123@test.com",
+  "password": "$2a$10$6aeRtRlynrr0TnOqpWTQaOYTuoKwSneN6yI1mQKV9rNQ6pegIsHmO",
+  "cpassword": "test123",
+  "phone": {
+    "$numberLong": "12121122121"
+  },
+  "city": "test city",
+  "state": "test state",
+  "address": "test address",
+  "role": "user",
+  "isAdmin": false,
+  "id": 17,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66598c2ece302f88cc054604"
+  },
+  "username": "ktest",
+  "email": "ktest3063@gmail.com",
+  "password": "$2a$10$jN0TDDowRrt7F59jRwY8beQY4K1f7OdZcN0R8k2DHSgrjt5BNsvHa",
+  "cpassword": "ktest123",
+  "phone": {
+    "$numberLong": "5467896123"
+  },
+  "city": "test city",
+  "state": "tyest",
+  "address": "test address",
+  "role": "user",
+  "isAdmin": false,
+  "id": 18,
+  "__v": 0
+}]
