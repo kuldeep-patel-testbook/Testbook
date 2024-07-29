@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item>.active {
+    border-bottom: 2px solid red;
+    color: white;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid red;
+    transform: translateY(-2px);
+}
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.not-found-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust based on your navbar height */
+}
+
+.customTopicLink {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item-custom {
+    margin: 0 15px;
+  }
+
+  .nav-link-custom {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+.nav-link-custom:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.nav-link-custom:active {
+    background-color: #0056b3;
+    transform: translateY(0);
+}
+
+.TopicDetails {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.topicTitle {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  .topicParagraph {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .btnGoBack {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .btnGoBack:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }

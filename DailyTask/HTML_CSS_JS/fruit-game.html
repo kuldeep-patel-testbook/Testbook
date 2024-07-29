@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Game || Memory Match Game</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 420px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1) rotateY(180deg);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .matched {
+            pointer-events: none;
+            background-color: #b3ffb3;
+        }
+
+        .message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .score {
+            position: fixed;
+            top: 40px;
+            right: 32px;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .timer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        .disabled {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container"></div>
+    <div class="message" id="message"></div>
+    <div class="score" id="score">Score: 0</div>
+    <div class="timer" id="timer">Time Left:60s</div>
+
+    <script>
+        const container = document.getElementById('container');
+        const message = document.getElementById('message');
+        const scoreDisplay = document.getElementById('score');
+        const timerDisplay = document.getElementById('timer');
+
+        let fruits = ['🍎', '🍉', '🥝', '🍒', '🍍', '🍓', '🍇', '🍌', '🍊'];
+        let cards = [...fruits, ...fruits];
+
+        console.log(cards);
+
+        let flippedCards = [];
+        let matches = 0;
+        let score = 0;
+        let timer = 60;
+        let gameOver = false;
+        let timeInterval;
+        let comparing = false;
+
+        shuffle(cards);
+
+        cards.forEach((fruit, index) => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            card.dataset.index = index;
+            console.log(card.dataset.index);
+
+            const cardContent = document.createElement('span');
+            cardContent.classList.add('hidden');
+            cardContent.textContent = fruit;
+            card.appendChild(cardContent);
+            card.addEventListener('click', handleCardClick);
+            container.appendChild(card);
+        });
+
+        timeInterval = setInterval(updateTimer, 1000);
+
+        function handleCardClick() {
+            if (gameOver) return;
+            const clickedCard = this;
+            console.log(clickedCard);
+
+            const index = clickedCard.dataset.index;
+
+            if (flippedCards.length === 2 || clickedCard.classList.contains('fliped') || comparing) {
+                return;
+            }
+
+            showCard(clickedCard);
+            flippedCards.push(clickedCard);
+
+            if (flippedCards.length === 2) {
+                comparing = true;
+                if (gameOver) return;
+
+                setTimeout(() => {
+                    const [firstCard, secondCard] = flippedCards;
+                    console.log('firstCard', firstCard, 'secondCard', secondCard);
+
+                    if (firstCard.textContent === secondCard.textContent) {
+                        firstCard.classList.add('matched');
+                        secondCard.classList.add('matched');
+                        matches++;
+                        score += 10;
+
+                        updateScore();
+                    } else {
+                        hideCard(firstCard);
+                        hideCard(secondCard);
+                    }
+                    flippedCards = [];
+                    comparing = false;
+
+                }, 1000);
+            }
+
+        }
+
+        function showCard(card) {
+            if (gameOver) return;
+            card.classList.add('flipped');
+            card.children[0].classList.remove('hidden');
+        }
+
+        function updateScore() {
+            scoreDisplay.textContent = 'Score: ' + score;
+        }
+
+        function hideCard(card) {
+            card.classList.remove('flipped');
+            card.children[0].classList.add('hidden');
+        }
+
+        function updateTimer() {
+            if (timer > 0) {
+                timer--;
+                timerDisplay.textContent = "Time left: " + timer + "s";
+            } else {
+                clearInterval(timeInterval);
+                endGame();
+            }
+        }
+
+        function endGame() {
+            gameOver = true;
+            message.style.display = 'block';
+
+            document.querySelectorAll('.card').forEach(card => {
+                hideCard(card);
+                card.classList.add('disabled');
+
+                if (card.classList.contains('matched')) {
+                    message.textContent = "Congratulations! You have matched all the pairs.";
+                } else {
+                    message.textContent = "Better luck! try next time.";
+                }
+            });
+        }
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

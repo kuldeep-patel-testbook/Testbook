@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 4px;
+        }
+        .child {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Propogation</h1>
+    <div class="parent" id="parent">
+        Parent Div
+        <div class="child" id="child">Child Div</div>
+    </div>
+
+    <script>
+        const parent = document.getElementById('parent');
+        const child = document.getElementById('child');
+
+        parent.addEventListener('click', (e)=> {
+            console.log("Parent Div Clicked");
+        }, true);
+
+        child.addEventListener('click', (e)=> {
+            console.log("Child Div Clicked");
+            e.stopPropagation();
+        });
+
+    </script>
+</body>
+</html>

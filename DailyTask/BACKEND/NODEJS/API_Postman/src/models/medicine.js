@@ -1,18 +1,20 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+const AutoIncrement = require('mongoose-sequence')(mongoose);
 
 const medicineSchema = new mongoose.Schema({
-    id:String,
-    medicine_name:String,
-    medicine_salt:String,
-    medicine_mfg:String,
-    medicine_expiration:String,
-    medicine_usage:String,
-    medicine_storing_place:String,
-    best_time_to_take_medicine:String,
-    medicine_dosage:String,
-    medicine_side_effects:String,
-    medicine_prescription_required:String
+    id: Number,
+    medicine_name: String,
+    medicine_salt: String,
+    medicine_mfg: String,
+    medicine_expiration: String,
+    medicine_usage: String,
+    medicine_storing_place: String,
+    best_time_to_take_medicine: String,
+    medicine_dosage: String,
+    medicine_side_effects: String,
+    medicine_prescription_required: String
 });
 
+medicineSchema.plugin(AutoIncrement, { inc_field: 'id' });
 const medicineRecord = new mongoose.model('medicinerecord', medicineSchema);
 module.exports = medicineRecord;
