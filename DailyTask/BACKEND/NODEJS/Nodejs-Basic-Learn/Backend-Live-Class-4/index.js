@@ -13,7 +13,7 @@ console.log(__filename);
 
 
 const http = require('http');
-const port = 4002;
+const port = 3001;
 const fs = require('fs');
 const os = require('os');
 
@@ -85,6 +85,9 @@ const Server = http.createServer((req, res) => {
     }
     else if(req.url === '/about') {
         res.end("This is About Page");
+    }
+    else if(req.url === '/contact') {
+        res.end("This is Contact Page");
     } else {
         res.statusCode = 404;
         res.end("Page not found");

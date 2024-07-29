@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="fetch-button">Fetch Data</button>
+    <div id="data-container"></div>
+
+    <script>
+        const apiUrl='https://api.npoint.io/9045c260b1565daa9e15'
+        // function fetchData(url){
+        //     fetch(url)
+        //     .then(res=>res.json())
+        //     .then(data=>console.log(data))
+        //     .catch((err)=>console.log(err))
+        // }
+        // fetchData(apiUrl)
+        function fetchData(url,callback){
+            fetch(url)
+            .then(res=>res.json())
+            .then(data=>callback(null,data))
+            .catch((err)=>callback(err,null))
+        }
+     
+        function DataProcessed(data,callback){
+            try{
+                const processedData=data.map(item=>{
+                    return{
+                        name:item.name,
+                        benefits:item.benefits,
+                        best_time_to_intake:item.best_time_to_intake,
+                        importance:item.importance
+
+                    }
+                });
+                callback(null,processedData)
+            }
+            catch(error){
+                callback(error,null)
+            }
+        }
+
+
+        function displaData(data){
+            const dataContainer=document.getElementById('data-container');
+            dataContainer.innerHTML='';
+
+            data.forEach(item=> {
+                const div=document.createElement('div');
+                div.textContent=`Name is ${item.name}, Benefits are ${item.benefits}, best_time_to_intake is ${item.best_time_to_intake}, importance is ${item.importance}`;
+                dataContainer.appendChild(div);
+            })
+        }
+
+        document.getElementById('fetch-button').addEventListener('click',()=>{
+            fetchData(apiUrl,(fetchError,fetchData)=>{
+                if(fetchError){
+                    return console.error("Errptoin feching this ",fetchError);
+                }
+
+                DataProcessed(fetchData,(processError,processedData)=>{
+                    if(processError){
+                        return console.error("Error fetching process data",processError)
+                    }
+                    displaData(processedData)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

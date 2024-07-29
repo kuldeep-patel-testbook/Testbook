@@ -1,88 +1,84 @@
 const express = require('express');
-
 const app = express();
-const cors = require("cors");
-const bodyParser = require('body-parser');
-const path = require('path');
 const PORT = 3200;
-app.use(cors());
-
+const CORS = require('cors');
+app.use(CORS());
+const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.json());
+const connectDB = require('./db/connection');
+connectDB();
 
 const medicineRecord = require('./models/medicine');
 
-require('./db/connection');
-
-app.use(express.json());
-
-app.get('/', (req,res) =>{
-    res.send('<h1>Welcome to API Creation of Medicines</h1>');
-    //res.sendFile(path.join(__dirname, '../medicine.html'));
+app.get('/', (req, res) => {
+    res.send(`<h1>Welcome To Medicine Record World!</h1>`)
 });
 
-app.get('/medicinedata', async(req, res) => {
+app.get('/medicinedata', async (req, res) => {
     try {
-        const medData = await medicineRecord.find().sort({"_id":1});
-        res.status(201).json(medData);
+        const fetchData = await medicineRecord.find().sort({ "id": 1 });
+        console.log("Medicine Data Fetch Successfully");
+        res.status(201).json(fetchData);
+
     } catch (error) {
-        console.log(error);
+        console.log("Can not get medicine data", error);
+        res.status(500).json({ error: 'Internal Server error' });
     }
 });
 
+app.post('/medicines', async (req, res) => {
+    try {
+        const newMedicine = await medicineRecord.create(req.body);
+        console.log("Medicine Data saved successfully");
+        res.status(201).json(newMedicine);
 
-app.post('/medicines', async(req, res) => {
-try {
-    const newMedicine = await medicineRecord.create(req.body);
-    res.status(201).json(newMedicine);
-} catch (error) {
-    console.error(error);
-    res.status(500).json({error: 'Internal Server error'});
-}
+    } catch (error) {
+        console.log("Medicine Data saved error", error);
+        res.status(500).json({ error: 'Internal Server error' });
+    }
 });
 
-app.put('/medicine/:id', async (req, res) => {
-    const id = req.params.id;
-    //name = req.params.name;
-    const newData = req.body;
-
-    console.log("Receive update request for", id);
-    console.log("Data to update:", newData);
-
+app.get('/medicines/:id', async (req, res) => {
     try {
-        const updateRecord = await medicineRecord.findOneAndUpdate( { id: id }, newData, {new: true});
-        if(!updateRecord) {
-            console.log("Medicine not Found!");
-            return res.status(404).json({ error: "Medicine not found" });
+        const medicine = await medicineRecord.findOne({ id: req.params.id });
+        return res.status(200).json(medicine)
+    } catch (error) {
+        res.status(500).send("Server Error at record by userid", error);
+    }
+});
+
+app.put('/medicines/:id', async (req, res) => {
+    try {
+        const newData = req.body;
+        const updateMedicine = await medicineRecord.findOneAndUpdate({id: req.params.id}, newData, {new: true} );
+        if(!updateMedicine) {
+             console.log(`Medicine not found`);
+             return res.status(404).json({ error: "Medicine not found" });
         }
-        console.log("update successfully", updateRecord);
-        res.status(200).json(updateRecord);
+        console.log("Medicine Data updated successfully");
+        res.status(201).json(updateMedicine);
+
     } catch (error) {
-        console.error("Error updateing medicine", error);
-        res.status(500).json({ error : "Intenal server error"});
+        console.log("Medicine Data update time save error", error);
+        res.status(500).json({ error: 'Internal Server error' });
     }
 });
 
-app.delete('/medicine/:id', async (req, res) => {
-    const id = req.params.id;
-
+app.delete('/medicines/:id', async (req, res) => {
     try {
-        const deleteMedicine = await medicineRecord.findOneAndDelete({ id: id });
+        const deleteMedicine = await medicineRecord.findOneAndDelete({ id: req.params.id });
         if(!deleteMedicine) {
-            return res.status(404).json({error: "Medicine not Found"})
-        }
-        return res.status(202).json(deleteMedicine);
+            console.log(`Medicine not found`);
+            return res.status(404).json({ error: "Medicine not found" });
+       }
+        return res.status(200).json(deleteMedicine)
     } catch (error) {
-        return res.status(500).json({error: "Internal Server error"});
+        res.status(500).send("Server Error at record delete by userid", error);
     }
 });
 
-
-app.listen(PORT, ()=>{
-    try {
-        console.log(`connecting port listerning at ${PORT}`);
-    } catch (error) {
-        console.log(`not connecting port listerning at ${PORT}`);
-    }
-    
+app.listen(PORT, () => {
+    console.log(`Server Connecting at ${PORT}`);
 });

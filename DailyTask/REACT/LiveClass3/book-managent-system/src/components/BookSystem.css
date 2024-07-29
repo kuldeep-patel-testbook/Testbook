@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-image: url('https://media.istockphoto.com/id/1066991874/photo/blur-school-library-or-study-room-with-book-shelves-for-education-background.jpg?s=612x612&w=0&k=20&c=ZzpFcVKekh_sDyZGcUJiTltcslKma8gPaU0_zuHX-oU=');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container .main {
+    /* margin-top: 0; */
+    color: white;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h3 {
+    background-color: rgba(255, 0, 0, 0.2);
+    width: 180px;
+    text-align: center;
+    /* margin: 10px 0px 10px 200px; */
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btnadd {
+    margin-top: 10px;
+    background-color: #a78f92;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.btnadd:hover {
+    background-color: #fffaf7;
+    color: #a78f92;
+}
+
+.selectCategory {
+    color: black;
+}
+
+.searchFilter {
+    display: flex;
+    gap: 28px;
+}
+
+.displayNovels {
+    width: 700px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    display: flex;
+}
+
+.displayNovelList {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.listInside {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 25px;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
+    background-image: url('https://media.istockphoto.com/id/1066991874/photo/blur-school-library-or-study-room-with-book-shelves-for-education-background.jpg?s=612x612&w=0&k=20&c=ZzpFcVKekh_sDyZGcUJiTltcslKma8gPaU0_zuHX-oU=');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .main h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .heading h3 {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .formData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .formData div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  
+  .formData div:last-child {
+    margin-right: 0; 
+  }
+  
+  .formData label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .formData input, .formData select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 42px; 
+  }
+  
+  .dropdown select {
+    padding: 0 10px; 
+  }
+  
+  .btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btnadd {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnadd:hover {
+    background-color: #218838;
+  }
+  
+  .searchFilter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .userSearch input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .filter select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .displayNovels {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .displayNovels h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .displayNovelList {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .displayNovelList:last-child {
+    border-bottom: none;
+  }
+  
+  .listInside h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .listInside p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .formData {
+      flex-direction: column;
+    }
+  
+    .formData div {
+      margin-right: 0;
+    }
+  
+    .searchFilter {
+      flex-direction: column;
+    }
+  
+    .userSearch input {
+      margin-bottom: 10px;
+    }
+  } */

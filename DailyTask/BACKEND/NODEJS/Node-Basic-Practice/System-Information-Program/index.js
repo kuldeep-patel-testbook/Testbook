@@ -20,5 +20,4 @@ let size = (bytes) => {
 
 console.log("convert total memory", os.totalmem(), "to GB", size(os.totalmem()));
 console.log("free memory", os.freemem());
-
 console.log("convert free memory", os.freemem(), "to GB", size(os.freemem()));

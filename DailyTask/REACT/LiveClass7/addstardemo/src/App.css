@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.App {
+  position: absolute;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.starContainer {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.circleMoon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightyellow;
+  background-color: lightyellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.circleMoon::before {
+  content: '';
+  width: 230px;
+  height: 260px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translateX(-50%);
+  rotate: 40deg;
+  
+}
+
+.btnonoff {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.star {
+  position: absolute;
+  /* background-clip: ⭐; */
+  /* color: #FFFF55; */
+  color: lightyellow;
+  z-index: 1;
+  
+}
+.btnStar {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.shoutingStar {
+  top: 130px;
+  left: 10px;
+}
+
+.glow {
+    /* animation: glow-animation 1s alternate infinite; */
+    /* animation: moveStar 3s infinite; */
+    animation: twinkle 1.5s infinite alternate;
+    /* animation: fall 3s infinite linear; */
+}
+
+/* @keyframes glow-animation {
+
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+} */
+
+/* @keyframes moveStar {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(180px, 180px); }
+} */
+
+@keyframes twinkle {
+  0%, 100% { 
+    opacity: 1; transform: scale(1);
+  }
+  50% { 
+    opacity: 0.5; transform: scale(0.8);
+  }
+}
+
+/* @keyframes fall {
+  0% { top: -10px; left: 50%; opacity: 1; }
+  100% { top: 100%; left: 50%; opacity: 0; }
+} */
+
+.shotStar {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(white, transparent);
+  animation: shoot 5s linear infinite;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(-500px, -500px) rotate(120deg);
+    opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: translate(500px, 500px) rotate(120deg);
+      opacity: 0;
+  }
+}
