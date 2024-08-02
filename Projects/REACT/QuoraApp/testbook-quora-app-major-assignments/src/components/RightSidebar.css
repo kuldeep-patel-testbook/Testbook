@@ -1,0 +1,51 @@
+.rightsidebar {
+  width: 300px;
+  padding: 0 14px 14px 14px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.rightsidebar h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.rightsidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.space:hover {
+  background-color: #f0f0f0;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.space-details {
+  flex: 1;
+}
+
+.space-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.space-description {
+  font-size: 14px;
+  color: #666;
+}
