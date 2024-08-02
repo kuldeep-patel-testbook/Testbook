@@ -1,0 +1,23 @@
+.filter-section {
+  width: 15%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.filter-section h3 {
+  margin-bottom: 20px;
+}
+
+.filter-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-section ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter-section ul li:hover {
+  background-color: #f0f0f0;
+}
