@@ -2,18 +2,18 @@ import React from 'react'
 import './Projects.css';
 import Carousel from 'better-react-carousel';
 
-import slideOne from '../../public/images/Byka1.png';
-import slideOne1 from '../../public/images/Byka2.png';
-import slideTwo from '../../public/images/Noje1.png';
-import slideTwo1 from '../../public/images/Noje2.png';
-import slideThree from '../../public/images/Champ1.png';
-import slideThree1 from '../../public/images/Champ2.png';
-import slideFour from '../../public/images/Zeq1.png';
-import slideFour1 from '../../public/images/Zeq2.png';
-import slideFive from '../../public/images/Ici1.png';
-import slideFive1 from '../../public/images/Ici2.png';
-import slideSix from '../../public/images/pe.png';
-import slideSix1 from '../../public/images/pe2.png';
+import slideOne from '/images/Byka1.png';
+import slideOne1 from '/images/Byka2.png';
+import slideTwo from '/images/Noje1.png';
+import slideTwo1 from '/images/Noje2.png';
+import slideThree from '/images/Champ1.png';
+import slideThree1 from '/images/Champ2.png';
+import slideFour from '/images/Zeq1.png';
+import slideFour1 from '/images/Zeq2.png';
+import slideFive from '/images/Ici1.png';
+import slideFive1 from '/images/Ici2.png';
+import slideSix from '/images/pe.png';
+import slideSix1 from '/images/pe2.png';
 
 const Projects = () => {
     return (

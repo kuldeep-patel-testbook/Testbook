@@ -10,11 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -400px;
     min-height: 90vh;
     background-color: #fff;
     overflow: hidden;
     animation: backgroundAnimation 10s linear infinite alternate;
+    /* margin-left: 20%; */
 }
 
 .intro {
@@ -47,8 +47,9 @@
     text-align: left;
     margin: -10px 0 30px 0; 
 }
+
 .lines h2 {
-    margin-top:-20px;
+    margin-top: -20px;
 }
 
 .lines > p {  
@@ -86,9 +87,8 @@
 
 .description {
     font-size: 24px;
-    /* margin-top: 2.8rem; */
     text-align: center;
-    margin:3.5rem 0 10rem -280px;
+    margin: 3.5rem 0 10rem -280px;
 }
 
 .learn-more {
@@ -137,7 +137,6 @@
     margin-left: 8px;
 }
 
-
 .uniqueColor {
     color: black;
 }
@@ -169,8 +168,6 @@
 }
 
 .chatuser {
-    /* border:  1px solid #ddd; */
-    /* border-radius: 10px; */
     padding: 15px;
     margin: 10px 0;
     display: flex;
@@ -230,7 +227,6 @@
 .request .bubble {
     background-color: #f0f0f0;
     border-bottom: 2px solid #030073;
-
 }
 
 .response .bubble {
@@ -244,7 +240,6 @@
 }
 
 @keyframes backgroundAnimation {
-
     0% {
         background: linear-gradient(to bottom right, #ffffff, #c7d9fe);
     }
@@ -255,7 +250,6 @@
 }
 
 @keyframes iconAnimation {
-
     0% {
         background: linear-gradient(45deg, #ffffff, #5a8df4);
     }
@@ -278,14 +272,22 @@
 }
 
 @keyframes arrowBounce {
-
     0%,
-    20%,
     100% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes btnHover {
+    0% {
+        color: #030073;
+    }
+
+    100% {
+        transform: scale(1.2);
     }
 }

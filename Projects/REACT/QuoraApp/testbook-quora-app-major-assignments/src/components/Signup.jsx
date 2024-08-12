@@ -23,6 +23,7 @@ const Signup = () => {
           margin="normal"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <TextField
           label="Password"
@@ -31,6 +32,7 @@ const Signup = () => {
           margin="normal"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <Button type="submit" variant="contained" color="primary">
           Signup

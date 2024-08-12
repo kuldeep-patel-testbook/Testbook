@@ -189,7 +189,7 @@ const Login = () => {
               <li className="privacy">Privacy</li>
               <li className="terms">Terms</li>
               <li className="contact">Contact</li>
-              <li className="copyright">@ Quora Inc. 2019</li>
+              <li className="copyright">@ Quora Inc. 2024</li>
             </ul>
           </div>
         </div>
