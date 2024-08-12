@@ -1,0 +1,14 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore environment variables file
+.env
+
+# Ignore other files or folders
+.DS_Store
+*.log
+coverage/
+
+# Others
+.vscode/
+.idea/
