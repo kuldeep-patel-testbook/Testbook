@@ -1,0 +1,155 @@
+/* General Styles */
+.card-basic-horizontal {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-basic-horizontal:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styles */
+.cart-item-book-img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Details Section */
+.card-item-details {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title and Author */
+#item-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.item-author {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin: 0.5rem 0;
+}
+
+/* Price and Discount */
+.price-details {
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin: 0.5rem 0;
+}
+
+.discount-on-card {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* Quantity Management */
+.item-cart-quantity {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.quantity-manage-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-change {
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    transition: background 0.3s, color 0.3s;
+}
+
+.quantity-change:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+/* Quantity Input */
+.cart-item-quantity-input {
+    width: 3.5rem;
+    text-align: center;
+    margin: 0 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Button Styles */
+.cart-horizontal-card-btns {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.solid-primary-btn, .outline-primary-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.solid-primary-btn {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.solid-primary-btn:hover {
+    background-color: #e64a19;
+}
+
+.outline-primary-btn {
+    background-color: #fff;
+    border: 2px solid #ff5722;
+    color: #ff5722;
+}
+
+.outline-primary-btn:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+/* Badge Styles */
+.badge-on-card {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    font-size: 1rem;
+}

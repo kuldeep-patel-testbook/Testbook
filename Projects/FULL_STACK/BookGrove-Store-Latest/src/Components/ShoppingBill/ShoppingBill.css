@@ -1,0 +1,188 @@
+/* General Styles */
+.bill-heading {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Darker shade for better readability */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.cart-bill hr {
+    margin: 1rem 0;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ecf0f1; /* Light grey border */
+}
+
+/* Cart Item Containers */
+.cart-price-container, 
+.cart-discount-container, 
+.cart-delivery-charges-container, 
+.cart-total-charges-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ecf0f1; /* Light grey border for separation */
+}
+
+.cart-item-bookname,
+.cart-item-quantity,
+.cart-item-total-price,
+.cart-item-total-discount,
+.cart-item-total-delivery-charges {
+    padding: 0.5rem;
+}
+
+.cart-item-bookname {
+    width: 60%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #34495e; /* Slightly lighter text color */
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart-item-quantity {
+    width: 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Grey for less emphasis */
+}
+
+.cart-item-total-price,
+.cart-item-total-discount-amount,
+.cart-item-total-delivery-charges-amount {
+    width: 20%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #27ae60; /* Green color for pricing */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Coupon Section */
+.apply-coupon-container {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apply-coupon-container p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+}
+
+.apply-coupon-container input {
+    padding: 0.75rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.apply-coupon-container input:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Blue shadow on focus */
+}
+
+/* Button Styles */
+.place-order-btn {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6f61, #d32f2f); /* Gradient from pink to red */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.place-order-btn:hover {
+    background: linear-gradient(45deg, #ff3d00, #b71c1c); /* Darker gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+.place-order-btn:active {
+    background: linear-gradient(45deg, #e53935, #b71c1c); /* Even darker gradient on click */
+    transform: scale(0.98);
+}
+
+/* Discount and Delivery Charges Containers */
+.cart-item-total-discount,
+.cart-item-total-delivery-charges {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Container for payment methods */
+.payment-method-container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    margin: 20px 0;
+}
+
+/* Style for each radio button label */
+.payment-method-container label {
+    display: flex;
+    align-items: center; /* Center items vertically within each label */
+    margin-right: 20px; /* Space between radio buttons */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Hide the default radio button appearance */
+.payment-method-container input[type="radio"] {
+    display: none;
+}
+
+/* Custom radio button style */
+.payment-method-container input[type="radio"] + span {
+    position: relative;
+    padding-left: 30px; /* Space for custom radio button */
+    cursor: pointer;
+    line-height: 24px; /* Align text with radio button */
+}
+
+/* Style for the custom radio button */
+.payment-method-container input[type="radio"] + span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff; /* Default border color */
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Checked state for the radio button */
+.payment-method-container input[type="radio"]:checked + span::before {
+    background-color: #007bff; /* Background color when checked */
+    border-color: #007bff;
+}
+
+/* Inner circle when checked */
+.payment-method-container input[type="radio"]:checked + span::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff; /* Inner circle color */
+}

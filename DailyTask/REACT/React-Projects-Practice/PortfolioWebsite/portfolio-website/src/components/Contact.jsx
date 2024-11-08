@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
@@ -26,11 +26,11 @@ const Contact = () => {
                         </form>
                     </div>
 
-                    <div className="contact-inner-section">
+                    <div className="contact-inner-section info-section">
                         <p>Feel free to reach out for any inquiries or collaborations. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                        <p>Email: kuldeep3063@gmail.com</p>
-                        <p>Phone: (+91) 9898719097</p>
-                        <p>Address: 3-8-89 Gujarwado, Patan, Gujarat, 384265</p>
+                        <p><strong>Email:</strong> kuldeep3063@gmail.com</p>
+                        <p><strong>Phone:</strong> (+91) 9898719097</p>
+                        <p><strong>Address:</strong> 3-8-89 Gujarwado, Patan, Gujarat, 384265</p>
                     </div>
 
                 </div>
@@ -40,4 +40,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact;

@@ -1,0 +1,82 @@
+/* General Container */
+.home-component-container {
+    background-color: var(--pure-white);
+}
+
+/* Home Page Image Container */
+.home-page-img-container {
+    position: relative;
+    width: 100%;
+    height: 60rem; /* Adjusted height for better fit */
+}
+
+/* Background Image */
+.home-page-background-img {
+    object-fit: cover;
+}
+
+/* Book Home Category */
+.book-home-category {
+    margin-top: -150px; /* Adjusted for better alignment */
+    text-align: center;
+    color: #333; /* Dark gray color for text */
+}
+
+/* Homepage Headings */
+.homepage-headings {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    background-color: #ffffff; /* Clean white background */
+    color: #333; /* Dark gray text */
+    font-family: 'Roboto', sans-serif; /* Updated font family */
+}
+
+/* Genre Cards Container */
+.genre-cards-container {
+    height: fit-content;
+    padding: 5rem 8rem; /* Increased padding for better spacing */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Increased gap for better spacing */
+    justify-content: center;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Explore All Button */
+.homepage-explore-all-btn {
+    margin-top: -200px;
+    color: #ffffff; /* White text color */
+    background-color: #e63946; /* Vibrant red color */
+    font-family: 'Roboto', sans-serif; /* Updated font family */
+    font-weight: bold;
+    padding: 1rem 2rem; /* Increased padding for better button size */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s; /* Smoother transitions */
+}
+
+.homepage-explore-all-btn:hover {
+    background: #d62839; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.homepage-explore-all-btn:active {
+    background-color: #c81d25; /* Even darker red when active */
+    transform: scale(1); /* Reset scale */
+}
+
+/* New Arrivals Container */
+.new-arrivals-container {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Increased gap for better spacing */
+    padding: 4rem;
+    justify-content: center;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
