@@ -14,3 +14,9 @@ http://localhost:3100/admin/delete-room/id
 http://localhost:3100/hotels
 
 http://localhost:3100/edit/:id
+
+
+
+Ecommerce store api url:
+
+user signup: http://localhost:3001/api/signup
