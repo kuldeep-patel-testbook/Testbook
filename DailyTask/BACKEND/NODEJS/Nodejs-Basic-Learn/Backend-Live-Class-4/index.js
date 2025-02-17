@@ -17,6 +17,8 @@ const port = 3001;
 const fs = require('fs');
 const os = require('os');
 
+console.log("CPU LENGTH=======", os.cpus().length);
+
 //console.log(fs);
 console.log("Start reading");
 

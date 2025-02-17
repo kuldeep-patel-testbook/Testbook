@@ -2,10 +2,9 @@
 
 console.log("CPU Information");
 const os = require('os');
-
 console.log("CPU Information", os.cpus());
-console.log("Model", os.cpus()[0]);
-console.log(os.EOL);
-console.log(os.EOL);
-console.log("cpus length", os.cpus().length);
-console.log(os.constants);
+//console.log("Model", os.cpus()[0]);
+//console.log(os.EOL);
+//console.log(os.EOL);
+//console.log("cpus length", os.cpus().length);
+//console.log(os.constants);

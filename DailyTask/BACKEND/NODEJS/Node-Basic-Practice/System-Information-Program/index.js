@@ -3,10 +3,10 @@ console.log("System Information");
 such as the operating system, platform, architecture and total memory available, free memory and so on.*/
 
 const os = require('os');
-console.log("operating system", os.version());
-console.log("platform", os.platform());
-console.log("architecture", os.arch());
-console.log("total memory", os.totalmem());
+console.log("operating system---", os.version());
+console.log("platform---", os.platform());
+console.log("architecture---", os.arch());
+console.log("total memory---", os.totalmem());
 
 let size = (bytes) => {
     
