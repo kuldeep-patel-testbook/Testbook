@@ -1,0 +1,43 @@
+# 🔹 Node.js / NPM
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 🔹 Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# 🔹 Build / Output
+dist/
+build/
+.vite/
+.vitepress/cache/
+.next/
+out/
+coverage/
+*.log
+
+# 🔹 IDE / Editor Settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# 🔹 Debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 🔹 Misc
+*.bak
+*.tmp

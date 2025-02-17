@@ -1,9 +1,8 @@
-/*3) Uptime Display: Create a Nod.Js script that uses the os module to  determine the uptime of the system and display it in a human-readble format, 
+/*3) Uptime Display: Create a Node.Js script that uses the os module to determine the uptime of the system and display it in a human-readble format, 
 showing days, hours, minutes, and seconds. 
 */
 
 const os = require('os');
-
 let osTime = os.uptime();
 const hours = Math.floor(osTime / 3600);
 const minutes = Math.floor((osTime % 3600) / 60);

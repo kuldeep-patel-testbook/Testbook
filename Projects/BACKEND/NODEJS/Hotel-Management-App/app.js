@@ -21,7 +21,6 @@ app.use(cookieParser());
 
 app.set('view engine', 'ejs');
 
-
 app.use(authRoutes);
 app.use(hotelRoutes);
 app.use(adminRoutes);

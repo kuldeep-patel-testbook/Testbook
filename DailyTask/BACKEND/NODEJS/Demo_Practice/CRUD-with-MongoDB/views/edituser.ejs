@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>User Form</h1>
+        <div class="signupForm">
+            <form action="/users/edituser/<%= user._id %>?_method=PUT" method="POST"
+                onsubmit="return confirm('Are you sure you want to update this user?')">
+                <!-- <form action="/users/edituser/<%= user._id %>" method="POST"> -->
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" value="<%= user.first_name %>" required>
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" value="<%= user.last_name %>" required>
+                <br>
+                <label for="user_name">User Name:</label>
+                <input type="text" id="user_name" name="user_name" value="<%= user.user_name %>" disabled required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="<%= user.email %>" disabled required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="<%= user.password %>" required>
+                <br>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" required><%= user.address %></textarea>
+                <br>
+                <label for="contact_no">Contact No:</label>
+                <input type="text" id="contact_no" name="contact_no" value="<%= user.contact_no %>" required>
+                <br>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

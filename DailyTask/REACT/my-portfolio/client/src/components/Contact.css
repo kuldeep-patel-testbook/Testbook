@@ -1,0 +1,82 @@
+.contact {
+    padding: 10px 10px 60px;
+    background-color: #e0e0e0; /* Light background color */
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the sections */
+    justify-content: center; /* Center the sections horizontally */
+}
+
+.contact-inner-section {
+    flex: 1 1 45%; /* Adjusted width for both sections to be side by side */
+    padding: 25px;
+    background-color: #ffffff; /* White background for the sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 12px 20px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+.info-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.info-section strong {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contact-main-section {
+        flex-direction: column; /* Stack sections on smaller screens */
+        gap: 20px; /* Adjust gap for stacking */
+    }
+
+    .contact-inner-section {
+        flex: 1 1 100%; /* Ensure full width for stacked sections */
+    }
+}
