@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({ 
-    baseURL: 'http://localhost:3200/api/users',
+    baseURL: 'https://testbookreactnodecrud.onrender.com/api/users',
     headers: {
         'Content-Type': 'application/json'
     },

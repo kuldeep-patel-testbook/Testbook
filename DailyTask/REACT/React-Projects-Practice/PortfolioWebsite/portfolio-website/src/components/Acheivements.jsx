@@ -10,49 +10,49 @@ const Acheivements = () => {
         {
             id: 1,
             title: "Fullstack Development Program",
-            image: "/images/certifications/kuldeep_patel_fullstack_course.jpg",
+            image: "images/certifications/kuldeep_patel_fullstack_course.jpg",
             description: "Details about Fullstack development course"
         },
         {
             id: 2,
             title: "Magento Developer",
-            image: "/images/certifications/Adobe-Certified-Professional.jpg",
+            image: "images/certifications/Adobe-Certified-Professional.jpg",
             description: "Details about Magento Developer"
         },
         {
             id: 3,
             title: "ReactJS",
-            image: "/images/certifications/Kuldeep_Patel_REACTJS_FUREF63A.png",
+            image: "images/certifications/Kuldeep_Patel_REACTJS_FUREF63A.png",
             description: "Details about React JS"
         },
         {
             id: 4,
             title: "NodeJS",
-            image: "/images/certifications/Kuldeep_Patel_MONGO_DB_AND_NODEJS_FUMOF63A.png",
+            image: "images/certifications/Kuldeep_Patel_MONGO_DB_AND_NODEJS_FUMOF63A.png",
             description: "Details about NodeJS"
         },
         {
             id: 5,
             title: "Javascript",
-            image: "/images/certifications/Kuldeep_Patel_JAVASCRIPT_FUJAF63A.png",
+            image: "images/certifications/Kuldeep_Patel_JAVASCRIPT_FUJAF63A.png",
             description: "Details about Javascript"
         },
         {
             id: 6,
             title: "HTML & CSS",
-            image: "/images/certifications/Kuldeep_Patel_HTML_AND_CSS_FUHTF63A.png",
+            image: "images/certifications/Kuldeep_Patel_HTML_AND_CSS_FUHTF63A.png",
             description: "Details about HTML and CSS"
         },
         {
             id: 7,
             title: "ChatGPT",
-            image: "/images/certifications/certificate-Chatgpt-1.png",
+            image: "images/certifications/certificate-Chatgpt-1.png",
             description: "Details about ChatGPT"
         },
         {
             id: 8,
             title: "Docker",
-            image: "/images/certifications/certificate-docker-1.png",
+            image: "images/certifications/certificate-docker-1.png",
             description: "Details about Docker"
         }
     ];

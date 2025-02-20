@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Home.css';
-import downArrow from '/images/down-arrow-svg.svg';
-import profileImage from '/images/profileImgone.png';
+import downArrow from '/src/assets/images/down-arrow-svg.svg';
+import profileImage from '/src/assets/images/profileImgone.png';
 
 const Home = () => {
   const [showMore, setShowMore] = useState(false);

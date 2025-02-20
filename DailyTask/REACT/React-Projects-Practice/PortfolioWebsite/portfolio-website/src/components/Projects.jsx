@@ -1,115 +1,68 @@
-import React from 'react'
+import React from 'react';
 import './Projects.css';
-import Carousel from 'better-react-carousel';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import slideOne from '/images/nbf_home.png';
-import slideOne1 from '/images/nbf_logo_1.svg';
-import slideTwo from '/images/surplusfurniture_home.png';
-import slideTwo1 from '/images/surplusfurniture_logo.png';
-import slideThree from '/images/eureka_home.png';
-import slideThree1 from '/images/eureka_logo.svg';
-import slideFour from '/images/funexpress_home.png';
-import slideFour1 from '/images/funexpress_logo.png';
-import slideFive from '/images/teensunite_home.png';
-import slideFive1 from '/images/teensunite_logo.png';
-import slideSix from '/images/plumpersonnel_home.png';
-import slideSix1 from '/images/plumpersonnel_logo.png';
+import slideOne from '/src/assets/images/nbf_home.png';
+import slideOne1 from '/src/assets/images/nbf_logo_1.svg';
+import slideTwo from '/src/assets/images/surplusfurniture_home.png';
+import slideTwo1 from '/src/assets/images/surplusfurniture_logo.png';
+import slideThree from '/src/assets/images/eureka_home.png';
+import slideThree1 from '/src/assets/images/eureka_logo.svg';
+import slideFour from '/src/assets/images/funexpress_home.png';
+import slideFour1 from '/src/assets/images/funexpress_logo.png';
+import slideFive from '/src/assets/images/teensunite_home.png';
+import slideFive1 from '/src/assets/images/teensunite_logo.png';
+import slideSix from '/src/assets/images/plumpersonnel_home.png';
+import slideSix1 from '/src/assets/images/plumpersonnel_logo.png';
+
+const projects = [
+    { name: 'NBF Central', img: slideOne, logo: slideOne1, link: 'https://www.centralrestaurant.com/' },
+    { name: 'Surplus Furniture', img: slideTwo, logo: slideTwo1, link: 'https://www.surplusfurniture.com/' },
+    { name: 'Eureka Forbes', img: slideThree, logo: slideThree1, link: 'https://www.eurekaforbes.com/' },
+    { name: 'FunExpress', img: slideFour, logo: slideFour1, link: 'https://www.funexpress.com/' },
+    { name: 'Teens Unite', img: slideFive, logo: slideFive1, link: 'https://www.teensunite.org/' },
+    { name: 'Plum Personnel', img: slideSix, logo: slideSix1, link: 'https://www.plum-personnel.co.uk/' }
+];
 
 const Projects = () => {
     return (
-        <>
-            <section id="projects" className="projects">
-                <h2>My projects ✨</h2>
+        <section id="projects" className="projects">
+            <h2>My projects ✨</h2>
 
-                <Carousel cols={2} rows={1} gap={8} loop autoplay={3000} containerClass="carousel-container" itemClass="carousel-item" transition={0.5}>
-                    <Carousel.Item>
-                        <div className="project item slideone" >
-                            <h3>NBF Central</h3>
+            <Swiper
+                spaceBetween={20}
+                slidesPerView={3}
+                loop={true}
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                pagination={{ clickable: true }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="project-carousel"
+            >
+                {projects.map((project, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="project item">
+                            <h3>{project.name}</h3>
                             <div className="image">
-                                <img className='img1' src={slideOne} alt="central-restaurant" />
-                                <img className='img2' src={slideOne1} alt="central-restaurant" />
+                                <img className='img1' src={project.img} alt={project.name} />
+                                <img className='img2' src={project.logo} alt={project.name} />
                             </div>
                             <div className='link-description'>
-                                <a className="project-link" href="https://www.centralrestaurant.com/">Link to the platform</a>
+                                <a className="project-link" href={project.link} target="_blank" rel="noopener noreferrer">
+                                    Link to the platform
+                                </a>
                                 <p>Web developing / Presentation</p>
                             </div>
                         </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="project item slidetwo">
-                            <h3>Surplus Furniture</h3>
-                            <div className="image">
-                                <img className='img1' src={slideTwo} alt="surplus-furniture" />
-                                <img className='img2' src={slideTwo1} alt="surplus-furniture" />
-                            </div>
-
-                            <div className='link-description'>
-                                <a className="project-link" href="https://www.surplusfurniture.com/">Link to the platform</a>
-                                <p>Web developing / Presentation</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="project item slidethree">
-                            <h3>Eureka Forbes</h3>
-                            <div className="image">
-                                <img className='img1' src={slideThree} alt="eureka-forbes" />
-                                <img className='img2' src={slideThree1} alt="eureka-forbes" />
-                            </div>
-
-                            <div className='link-description'>
-                                <a className="project-link" href="https://www.eurekaforbes.com/">Link to the platform</a>
-                                <p>Web developing / Presentation</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="project item slidefour">
-                            <h3>FunExpress</h3>
-                            <div className="image">
-                                <img className='img1' src={slideFour} alt="fun-express" />
-                                <img className='img2' src={slideFour1} alt="fun-express" />
-                            </div>
-
-                            <div className='link-description'>
-                                <a className="project-link" href="https://www.funexpress.com/">Link to the platform</a>
-                                <p>Web developing / Presentation</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="project item slidefive">
-                            <h3>Teens Unite</h3>
-                            <div className="image">
-                                <img className='img1' src={slideFive} alt="teens-unite" />
-                                <img className='img2' src={slideFive1} alt="teens-unite" />
-                            </div>
-
-                            <div className='link-description'>
-                                <a className="project-link" href="https://www.teensunite.org/">Link to the platform</a>
-                                <p>Web developing / Presentation</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="project item slidesix">
-                            <h3>Plum Personnel</h3>
-                            <div className="image">
-                                <img className='img1' src={slideSix} alt="plum-personnel" />
-                                <img className='img2' src={slideSix1} alt="plum-personnel" />
-                            </div>
-
-                            <div className='link-description'>
-                                <a className="project-link" href="https://www.plum-personnel.co.uk/">Link to the platform</a>
-                                <p>Web developing / Presentation</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
-
-            </section>
-        </>
-    )
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </section>
+    );
 }
 
-export default Projects
+export default Projects;

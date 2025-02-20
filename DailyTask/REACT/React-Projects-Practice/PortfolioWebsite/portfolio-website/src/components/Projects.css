@@ -1,129 +1,135 @@
 .projects {
-    padding: 20px 0px;
-    margin-top: -70px;
-    width: 100vw;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
 }
 
 .projects h2 {
-    margin-top: 80px;
-}
-
-.project {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 0;
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-.project a {
-    text-decoration: none;
+    margin-top: 60px;
+    font-size: 2rem;
+    font-weight: bold;
     color: #333;
 }
 
-.project-link {
-    display: block;
-    margin-top: 24px;
-}
-
-.project-link:hover {
-    color: #8581f8;
-    font-weight: bold;
-}
-
-.link-description {
-    display: block;
-    font-size: 18px;
+/* Project Cards */
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.link-description:hover {
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Project Titles */
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+/* Project Links */
+.project a {
+    text-decoration: none;
+    color: #444;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.project-link {
+    display: inline-block;
+    font-weight: 600;
+    color: #0073e6;
+}
+
+.project-link:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
 
-.link-description p:hover {
-    color: #8581f8;
-    font-weight: bold;
+/* Description Section */
+.link-description {
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 0px;
+    color: #666;
 }
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+.link-description:hover {
+    color: #333;
 }
 
-.carousel-item {
-    position: relative;
-    overflow: hidden;
-}
-
+/* Image Container */
 .item .image {
-    width: 55%;
-    height: 30vh;
-    cursor: pointer;
+    width: 100%;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .item .image:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.carousel-item {
-    animation: fadeIn 0.5s;
-}
-
-.slideone {
-    background-color:#F5FFF8;
-    background-image: linear-gradient(rgb(255, 255, 255),#a8e0e08c,#ffec8b7e, rgb(255, 255, 255));
-}
-.slidetwo {
-    background-color:#F5FFF8;
-    background-image: linear-gradient(rgb(255, 255, 255),#FFE6C5, rgb(255, 255, 255));
-}
-.slidethree {
-    background-color:#F5FFF8;
-    background-image: linear-gradient(rgb(255, 255, 255),#fbffde, rgb(255, 255, 255));
-}
-.slidefour {
-    background-color:#F5FFF8;
-    background-image: linear-gradient(rgb(255, 255, 255),#E2F8FF, rgb(255, 255, 255));
-}
-.slidefive {
-    background-color:#F5FFF8;
-    background-image: linear-gradient(rgb(255, 255, 255),#f7bac6, rgb(255, 255, 255));
-}
-.slidesix{
-    background-color:#E9FFFF;
-    background-image: linear-gradient(rgb(255, 255, 255),#E9FFFF, rgb(255, 255, 255));
-}
-
+/* Images */
 .img1 {
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
 }
 
 .img2 {
-    width: 200px;
-    padding-left: 16px;
+    width: 140px;
+    padding-left: 12px;
 }
 
-.dZkckO {
-    margin-right: 354px;
+/* Swiper Styles */
+.swiper {
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remove Swiper default arrows */
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    display: none;
+}
+
+/* Project Backgrounds */
+.slideone { background-image: linear-gradient(to bottom, #fff, #a8e0e08c, #ffec8b7e, #fff); }
+.slidetwo { background-image: linear-gradient(to bottom, #fff, #FFE6C5, #fff); }
+.slidethree { background-image: linear-gradient(to bottom, #fff, #fbffde, #fff); }
+.slidefour { background-image: linear-gradient(to bottom, #fff, #E2F8FF, #fff); }
+.slidefive { background-image: linear-gradient(to bottom, #fff, #f7bac6, #fff); }
+.slidesix { background-image: linear-gradient(to bottom, #fff, #E9FFFF, #fff); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 1.8rem;
+    }
+
+    .project {
+        padding: 16px;
+    }
+
+    .img1, .img2 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+    }
 }

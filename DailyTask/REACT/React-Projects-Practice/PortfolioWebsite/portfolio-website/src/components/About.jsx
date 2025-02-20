@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './About.css';
-import MyResume from '/resume/KuldeepCV2025.pdf';
+import MyResume from '../assets/resume/KuldeepCV2025.pdf';
 // At the top of your `About.js` or any component using the carousel, import the CSS directly
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -43,62 +43,62 @@ const About = () => {
     {
         id: 1,
         title: "Magento",
-        image: "/images/tech-icons/magento.svg",
+        image: "images/tech-icons/magento.svg",
     },
     {
         id: 2,
         title: "JavaScript",
-        image: "/images/tech-icons/javascript.svg",
+        image: "images/tech-icons/javascript.svg",
     },
     {
         id: 3,
         title: "React",
-        image: "/images/tech-icons/reactJS.svg",
+        image: "images/tech-icons/reactJS.svg",
     },
     {
         id: 4,
         title: "Redux",
-        image: "/images/tech-icons/redux.svg",
+        image: "images/tech-icons/redux.svg",
     },
     {
         id: 5,
         title: "Tailwind CSS",
-        image: "/images/tech-icons/tailwindcss.svg",
+        image: "images/tech-icons/tailwindcss.svg",
     },
     {
         id: 6,
         title: "Node.js",
-        image: "/images/tech-icons/nodeJS.svg",
+        image: "images/tech-icons/nodeJS.svg",
     },
     {
         id: 7,
         title: "MongoDB",
-        image: "/images/tech-icons/mongodb.svg",
+        image: "images/tech-icons/mongodb.svg",
     },
     {
         id: 8,
         title: "GitHub",
-        image: "/images/tech-icons/github.svg",
+        image: "images/tech-icons/github.svg",
     },
     {
       id: 9,
       title: "Express.js",
-      image: "/images/tech-icons/expressJS.svg",
+      image: "images/tech-icons/expressJS.svg",
     },
     {
       id: 10,
       title: "Jquery",
-      image: "/images/tech-icons/jquery.svg",
+      image: "images/tech-icons/jquery.svg",
     },
     {
       id: 11,
       title: "MySQL",
-      image: "/images/tech-icons/mysql.svg",
+      image: "images/tech-icons/mysql.svg",
     },
     {
       id: 12,
       title: "Docker",
-      image: "/images/tech-icons/docker.svg",
+      image: "images/tech-icons/docker.svg",
     }
 ];
 
