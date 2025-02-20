@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import profileImage from '/images/profileImgone.png';
-import home from '/images/home-icon.svg';
-import project from '/images/projects.svg';
-import certificate from '/images/certificatesvg.svg';
-import about from '/images/about.svg';
-import contact from '/images/contacts.svg';
+import profileImage from '/src/assets/images/profileImgone.png';
+import home from '/src/assets/images/home-icon.svg';
+import project from '/src/assets/images/projects.svg';
+import certificate from '/src/assets/images/certificatesvg.svg';
+import about from '/src/assets/images/about.svg';
+import contact from '/src/assets/images/contacts.svg';
 
-import LinkedInImage from '/images/linkedin.png';
-import InstagramImage from '/images/instagram.png';
-import FacebookImage from '/images/facebook.png';
-import WhatsappImage from '/images/whatsapp.png';
+import LinkedInImage from '/src/assets/images/linkedin.png';
+import InstagramImage from '/src/assets/images/instagram.png';
+import FacebookImage from '/src/assets/images/facebook.png';
+import WhatsappImage from '/src/assets/images/whatsapp.png';
 
 const Sidebar = () => {
     const [active, setActive] = useState('#home');
