@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execution Context and Call Stack</title>
+</head>
+<body>
+    <h2>Execution Context Example</h2>
+    <script>
+        function first() {
+            console.log("Function First Call");
+            // debugger;
+            second();
+        }
+
+        function second() {
+            console.log("Function Second Call");
+            // debugger;
+            third();
+        }
+
+        function third() {
+            console.log("Function Third Call");
+        }
+        first();
+    </script>
+</body>
+</html>
+
+
+
+
+
