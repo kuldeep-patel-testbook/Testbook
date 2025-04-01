@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../DailyTask"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DailyTask"
+	}
+}
