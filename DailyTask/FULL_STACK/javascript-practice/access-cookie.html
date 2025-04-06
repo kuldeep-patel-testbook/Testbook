@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Cookies</title>
+</head>
+<body>
+  <h1>Access Cookies</h1> 
+  <button onclick="accessCookies()">Access</button> 
+
+  <div id="info"></div> 
+
+  <script>
+    function accessCookies()
+    {
+        console.log(document.cookie)
+        console.log("accessing cookies...")
+    }
+    function getcookie(name)
+    {
+        let arr= document.cookie.split(";");
+        for(let item of arr)
+        {
+
+            let data = item.split(";");
+
+            if(data[0]=== name)
+            {
+                return data[1]
+            }
+        }
+    }
+    let age = getcookie("age");
+    console.log(age)
+        
+    console.log(getcookie("username"))
+    console.log(getcookie("city"))
+    
+  </script>
+</body>
+</html>
