@@ -1,5 +1,4 @@
 // identifies duplicate elements or strings in an array
-const array = ["Apple","Avacado","Banana","Watermelon","Kiwi","Banana","Orange","Kiwi"];
 
 function findDuplicate(array) {
     console.log("original array => ", array);
@@ -18,4 +17,5 @@ function findDuplicate(array) {
     return [...duplicates]; // Convert the set to an array and return it
 }
 
+const array = ["Apple","Avacado","Banana","Watermelon","Kiwi","Banana","Orange","Kiwi"];
 console.log(findDuplicate(array));
