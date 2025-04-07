@@ -1,0 +1,10 @@
+  .todolist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    color: gray;
+  }
+  
