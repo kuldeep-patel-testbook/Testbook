@@ -12,3 +12,5 @@ coverage/
 # Others
 .vscode/
 .idea/
+.next/
+.next
