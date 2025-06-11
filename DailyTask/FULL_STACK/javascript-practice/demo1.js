@@ -1,10 +1,8 @@
 
-// X = 30
-// console.log(`X value is ${X}`);
-
-// var X = 10;
-
-// console.log(`X value is ${X}`);
+X = 30
+console.log(`X value is ${X}`);
+var X = 10;
+console.log(`X value is ${X}`);
 
 
 // Call Stack Example

@@ -1,10 +1,10 @@
 // Another Example
 
-console.log(a);
-console.log(b);
-var a = 5;
-var b = a;
-console.log("===========");
+// console.log(a);
+// console.log(b);
+// var a = 5;
+// var b = a;
+// console.log("===========");
 
 var a = 5;
 console.log(a++);
